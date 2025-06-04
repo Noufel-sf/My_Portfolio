@@ -1,0 +1,7 @@
+@import "tailwindcss";
+.app-impact-font {
+  font-family: 'Orbitron', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
