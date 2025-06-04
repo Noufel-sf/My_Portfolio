@@ -6,7 +6,7 @@ function Profile() {
   return (
     <div
       id="Profile"
-      className="flex flex-col lg:flex-row items-center gap-10 w-full lg:w-[80%] mx-auto"
+      className="flex flex-col lg:flex-row items-center gap-10 w-full lg:w-[80%] mx-auto px-4"
     >
       {/* Left: Text Content */}
       <div
@@ -17,7 +17,7 @@ function Profile() {
         <p className="text-gray-500 ml-4">&lt;body&gt;</p>
         <p className="text-gray-500 ml-4 text-3xl">&lt;h1&gt;</p>
 
-        <h1 className="text-5xl lg:text-6xl font-extrabold uppercase ml-8 leading-snug app-impact-font tracking-[8px]">
+        <h1 className="text-3xl lg:text-5xl lg:text-6xl font-extrabold uppercase ml-8 leading-snug app-impact-font tracking-[8px]">
           Hi <br />
           I am Noufel Seif <br />
           El Islam <br />
