@@ -4,7 +4,7 @@ function Education() {
   return (
     <div
       id="Education"
-      className="w-full lg:w-[80%] mx-auto my-20  text-white app-impact-font rounded-lg shadow-2xl p-10"
+      className="w-full lg:w-[80%] mx-auto my-20  text-white app-impact-font rounded-lg  p-10"
     >
       <div className="flex flex-col gap-6">
         <p className="text-gray-500 ml-4 text-3xl tracking-wide">&lt;h2&gt;</p>

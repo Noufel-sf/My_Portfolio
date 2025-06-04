@@ -6,7 +6,7 @@ import Linkedin from '../Assets/linkedin.png'
 function Contact() {
   return (
     <div className="p-22">
-        <div id='Contact' className='flex mx-auto items-center flex-col gap-12 my-40 w-full lg:w-[80%] p-12 bg-[#0D0C0C] text-white app-impact-font rounded-lg shadow-2xl'>
+        <div id='Contact' className='flex mx-auto items-center flex-col gap-12 my-40 w-full lg:w-[80%] p-12 bg-[#0D0C0C] text-white app-impact-font rounded-lg'>
             <h1 className='text-6xl capitalize tracking-[3px]' data-aos="fade-up">contact me </h1>
             <div className="flex items-center gap-12">
               <a href="https://www.linkedin.com/in/noufel-seif-el-islam-nasri/">

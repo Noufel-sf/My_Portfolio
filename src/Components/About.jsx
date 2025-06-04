@@ -6,7 +6,7 @@ function About() {
   return (
     <div
       id="About"
-      className="flex items-center w-full lg:w-[80%] mx-auto justify-between gap-10 lg:gap-0 lg:flex-row flex-col bg-[#0D0C0C] text-white app-impact-font my-40 rounded-lg shadow-2xl"
+      className="flex items-center w-full lg:w-[80%] mx-auto justify-between gap-10 lg:gap-0 lg:flex-row flex-col bg-[#0D0C0C] text-white app-impact-font my-40 rounded-lg"
     >
       <div className="flex items-start gap-12 flex-col p-10  lg:w-1/2 w-full">
         <p className="text-gray-500 ml-4 text-3xl">&lt;h1&gt;</p>
