@@ -16,9 +16,9 @@ function Contact() {
                 <img src={Github} alt="" className='w-[60px]' />
               </a>  
             </div>
-            <h2 className='lg:text-3xl text-xl'>noufel_seif_el_islam.nasri@univ-constantine2.dz</h2>
+            <h2 className='lg:text-3xl tracking-[1px]'>noufel_seif_el_islam.nasri@univ-constantine2.dz</h2>
 
-            <h2 className='text-2xl'>+213 796 52 88 94</h2>
+            <h2 className='text-xl'>+213 796 52 88 94</h2>
             <h3 className='text-3xl capitalize '>algeria (mila)</h3>
         </div>
           <p className="text-gray-500 ml-4">&lt;/body&gt;</p>

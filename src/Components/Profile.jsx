@@ -37,13 +37,13 @@ function Profile() {
       {/* Right: Image with Shape */}
       <div className="relative mt-12 lg:mt-0 flex-1 flex justify-center">
         {/* Rotated white shape */}
-        <div className="absolute w-[300px] h-[300px] sm:h-[580px] md:h-[600px] lg:w-[1000px] lg:h-[1000px] sm:w-[600px]  bg-white top-[-30px] left-[-70px] lg:top-[-240px] lg:left-[180px] z-10 transform rotate-[22deg] rounded-lg shadow-2xl opacity-5"></div>
+        <div className="absolute w-[300px] h-[300px] sm:h-[580px] md:h-[600px] lg:w-[1000px] lg:h-[1000px] sm:w-[600px]  bg-white top-[-2px] left-[-5px] lg:top-[-240px] lg:left-[180px] z-10 transform rotate-[22deg] rounded-lg shadow-2xl opacity-5"></div>
         {/* Person image */}
         <img
           data-aos="fade-in"
           src={Noufel}
           alt="Noufel Seif El Islam"
-          className="relative z-20 w-[200px] lg:w-[600px] sm:w-[520px] md:w-[500px]"
+          className="relative z-20 w-[300px] lg:w-[600px] sm:w-[520px] md:w-[500px]"
         />
       </div>
     </div>

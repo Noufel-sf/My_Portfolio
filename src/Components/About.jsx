@@ -19,7 +19,7 @@ function About() {
           <p className="text-gray-500 text-3xl my-4">&lt;p&gt;</p> A junior
           front-end developer focused on building beautiful, responsive web apps
           using React and Tailwind, with a strong interest in UI/UX and
-          leadership in team projects.” 📸 Outside of tech, I’m passionate about
+          leadership in team projects.” <br /><br />📸 Outside of tech, I’m passionate about
           photography. Capturing moments and telling visual stories helps me
           stay creative and detail-oriented
         </p>{" "}
