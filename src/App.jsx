@@ -10,17 +10,28 @@ import Contact from './Components/Contact';
 import Skills from './Components/Skills';
 import Navbarr from './Components/Navbarr';
 import Education from './Components/Education';
+import { ThemeProvider, useTheme } from './contexts/ThemeContext';
 
 import "./App.css";
 // the portfolio app 
 
-function App() {
+function AppContent() {
+  const { getThemeStyles } = useTheme();
+  const themeStyles = getThemeStyles();
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
   return (  
-    <div className='bg-[#0D0C0C] text-white app-impact-font overflow-hidden '>
+    <div className={`${themeStyles.textColor} app-impact-font overflow-hidden`}
+       style={{
+      background: themeStyles.background,
+      backgroundImage: themeStyles.backgroundImage,
+      backgroundSize: themeStyles.backgroundSize,
+      backgroundPosition: themeStyles.backgroundPosition,
+    }}
+    >
          <Navbarr />
          <Profile />
          <About />
@@ -31,4 +42,14 @@ function App() {
   )
 }
 
+function App() {
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
+  );
+}
+
 export default App
+
+

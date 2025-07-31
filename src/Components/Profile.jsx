@@ -25,7 +25,7 @@ function Profile() {
         </h1>
         <p className="text-gray-500 ml-4 text-3xl">&lt;/h1&gt;</p>
         <p className="text-gray-500 ml-8 text-3xl">
-          &lt;p&gt; Front end Developer &lt;/p&gt;
+          &lt;p&gt; Mern stack / Next js developer &lt;/p&gt;
         </p>
         <div className="ml-8">
           <a href="#Contact">
@@ -37,7 +37,7 @@ function Profile() {
       {/* Right: Image with Shape */}
       <div className="relative mt-12 lg:mt-0 flex-1 flex justify-center">
         {/* Rotated white shape */}
-        <div className="absolute w-[300px] h-[300px] sm:h-[580px] md:h-[600px] lg:w-[1000px] lg:h-[1000px] sm:w-[600px]  bg-white top-[-2px] left-[-5px] lg:top-[-240px] lg:left-[180px] z-10 transform rotate-[22deg] rounded-lg shadow-2xl opacity-5"></div>
+        {/* <div className="absolute w-[300px] h-[300px] sm:h-[580px] md:h-[600px] lg:w-[1000px] lg:h-[1000px] sm:w-[600px]  bg-white top-[-2px] left-[-5px] lg:top-[-240px] lg:left-[180px] z-10 transform rotate-[22deg] rounded-lg shadow-2xl opacity-5"></div> */}
         {/* Person image */}
         <img
           data-aos="fade-in"

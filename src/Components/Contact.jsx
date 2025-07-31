@@ -2,11 +2,14 @@ import React from 'react'
 // Adjust the import paths and names as per your project structure
 import Github from '../Assets/github.png'
 import Linkedin from '../Assets/linkedin.png'
+import { useTheme } from '../contexts/ThemeContext'
 
 function Contact() {
+  const { isDarkMode } = useTheme();
+  
   return (
     <div className="p-6">
-        <div id='Contact' className='flex mx-auto items-center flex-col gap-12 my-40 w-full lg:w-[80%] p-12 bg-[#0D0C0C] text-white app-impact-font rounded-lg'>
+        <div id='Contact' className={`flex mx-auto items-center flex-col gap-12 my-40 w-full lg:w-[80%] p-12 ${isDarkMode ? 'bg-[#0D0C0C] text-white' : 'bg-gray-50 text-black'} app-impact-font rounded-lg`}>
             <h1 className='text-6xl capitalize tracking-[3px]' data-aos="fade-up">contact me </h1>
             <div className="flex items-center gap-12">
               <a href="https://www.linkedin.com/in/noufel-seif-el-islam-nasri/">

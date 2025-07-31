@@ -14,7 +14,7 @@ function Skills() {
    <div id='Skills' className="">    
             <FrontTech />
         <div className='flex items-center gap-12 flex-col p-12'>
-        <h1 className='capitalize text-5xl  lg:text-6xl tracking-[3px]'>my skills</h1>
+        <h1 className='capitalize text-5xl  lg:text-7xl tracking-[3px]'>my skills</h1>
 
         <div className="flex items-center justify-around gap-12 flex-wrap w-full">
                 <div className="flex items-center gap-8 flex-col" data-aos="fade-up">
