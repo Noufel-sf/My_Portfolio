@@ -13,15 +13,16 @@ import Html from "../Assets/html.png";
 
 // back end icons :
 import typescript from "../Assets/typescript_original_logo_icon_146317.png"
-import nodejs from "../Assets/nodejs_original_logo_icon_146411.png"
-import nextjs from "../Assets/nextjs-removebg-preview (1).png"
+import nodejs from "../Assets/nodejs_original_wordmark_logo_icon_146412.png"
+import nextjs from "../Assets/nextjs3-removebg-preview.png"
+import supabase from "../Assets/supabase-removebg-preview.png";
 //databases icons 
 import mongodb from "../Assets/mongodb_original_logo_icon_146424.png"
 import mysql from "../Assets/mysql_original_wordmark_logo_icon_146417.png"
 
 
 
-const frontend_techIcons = [js, css, React_icon, Adobexd, Html, figma, tailwindcss ,nodejs ,typescript ,nextjs,mongodb ,mysql];
+const frontend_techIcons = [js, css, React_icon, Adobexd, Html, figma, tailwindcss ,nodejs ,typescript ,nextjs,mongodb ,mysql ,supabase];
 
 const FrontTech = () => {
   return (

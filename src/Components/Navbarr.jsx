@@ -13,6 +13,9 @@ function Navbarr() {
         <p className="text-gray-500 ml-4 cursor-pointer text-3xl">&lt;html&gt;</p>
       </div>
       {/* Hamburger Icon with React Icons */}
+      <div className="flex gap-5">
+
+
       <button
         className={`lg:hidden justify-center items-center z-50 ${isDarkMode ? 'text-white' : 'text-black'} text-3xl cursor-pointer`}
         onClick={() => setOpen(!open)}
@@ -21,12 +24,20 @@ function Navbarr() {
         {open ? <FaTimes /> : <FaBars />}
       </button>
       {/* Nav Links */}
+          <button 
+            onClick={toggleTheme}
+            className="text-2xl lg:hidden cursor-pointer hover:text-gray-500 transition"
+            aria-label="Toggle theme"
+          >
+            {isDarkMode ? <MdLightMode /> : <MdDarkMode />}
+          </button>
+      </div>
       <ul
         className={`
           flex-col gap-8 text-lg font-semibold z-[103] ${isDarkMode ? 'bg-[#181818]' : 'bg-gray-100'} rounded-lg p-8 absolute top-full left-0 w-full shadow-lg transition-all duration-300
           ${open ? "flex" : "hidden"}
           lg:flex lg:flex-row lg:static lg:bg-transparent lg:shadow-none lg:p-0 lg:w-auto lg:items-center
-        `}
+          `}
         onClick={() => setOpen(false)}
       >
         <li>
@@ -58,15 +69,15 @@ function Navbarr() {
             Contact
           </a>
         </li>
-        <li>
+       <li>
           <button 
             onClick={toggleTheme}
-            className="text-2xl cursor-pointer hover:text-gray-500 transition"
+            className="text-2xl hidden lg:block cursor-pointer hover:text-gray-500 transition"
             aria-label="Toggle theme"
           >
             {isDarkMode ? <MdLightMode /> : <MdDarkMode />}
           </button>
-        </li>
+        </li> 
       </ul>
     </nav>
   );
