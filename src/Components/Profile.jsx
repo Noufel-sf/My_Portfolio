@@ -6,46 +6,46 @@ function Profile() {
   return (
     <div
       id="Profile"
-      className="flex flex-col lg:flex-row items-center gap-10 w-full lg:w-[80%] mx-auto px-4"
+      className="flex flex-col p-5  lg:flex-row items-center  w-full  mx-auto px-4"
     >
       {/* Left: Text Content */}
       <div
-        className="flex flex-col gap-6 lg:gap-10 text-left flex-1"
+        className="flex flex-col gap-12 md:gap-3  items-center flex-1"
         data-aos="fade-in"
       >
-        {/* <p className="text-gray-500">&lt;html&gt;</p> */}
-        <p className="text-gray-500 ml-4">&lt;body&gt;</p>
-        <p className="text-gray-500 ml-4 text-3xl">&lt;h1&gt;</p>
 
-        <h1 className="text-3xl lg:text-5xl lg:text-6xl font-extrabold uppercase ml-8 leading-snug app-impact-font tracking-[8px]">
-          Hi <br />
-          I am Noufel Seif <br />
-          El Islam <br />
-          Web Developer
+        <h1 className="text-5xl lg:text-[15rem] font-extrabold uppercase ml-8 leading-snug app-impact-font tracking-[8px]">
+          Noufel
         </h1>
-        <p className="text-gray-500 ml-4 text-3xl">&lt;/h1&gt;</p>
-        <p className="text-gray-500 ml-8 text-3xl">
-          &lt;p&gt; Mern stack / Next js developer &lt;/p&gt;
-        </p>
-        <div className="ml-8">
-          <a href="#Contact">
-            <Btn text="Contact Me" />
-          </a>
-        </div>
-      </div>
 
-      {/* Right: Image with Shape */}
-      <div className="relative mt-12 lg:mt-0 flex-1 flex justify-center">
-        {/* Rotated white shape */}
-        {/* <div className="absolute w-[300px] h-[300px] sm:h-[580px] md:h-[600px] lg:w-[1000px] lg:h-[1000px] sm:w-[600px]  bg-white top-[-2px] left-[-5px] lg:top-[-240px] lg:left-[180px] z-10 transform rotate-[22deg] rounded-lg shadow-2xl opacity-5"></div> */}
-        {/* Person image */}
-        <img
-          data-aos="fade-in"
-          src={Noufel}
-          alt="Noufel Seif El Islam"
-          className="relative z-20 w-[300px] lg:w-[600px] sm:w-[520px] md:w-[500px]"
-        />
-      </div>
+        <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-8 ">
+          {/* Location */}
+          <div className="flex-1 flex flex-col items-center">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00FF00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mb-2"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+            <div className="text-center">
+              <span className="font-bold text-white text-lg lg:text-xl">BASED IN LOS ANGELES,</span><br />
+              <span className="text-gray-400 text-base lg:text-lg">CALIFORNIA</span>
+            </div>
+          </div>
+          {/* Available Worldwide */}
+          <div className="flex-1 flex flex-col items-center">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mb-2"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="10" ry="3"/><path d="M2 12a10 10 0 0 0 20 0"/></svg>
+            <div className="text-center">
+              <span className="font-bold text-white text-lg lg:text-xl">AVAILABLE ALL AROUND</span><br />
+              <span className="text-gray-400 text-base lg:text-lg">WORLDWIDE</span>
+            </div>
+          </div>
+          {/* Digital Designer */}
+          <div className="flex-1 flex flex-col items-center">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00BFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mb-2"><polygon points="12 2 15 8.5 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 9 8.5 12 2"/></svg>
+            <div className="text-center">
+              <span className="font-bold text-white text-lg lg:text-xl">DIGITAL DESIGNER</span><br />
+              <span className="text-gray-400 text-base lg:text-lg">+FRAMER DEVELOPER</span>
+            </div>
+          </div>
+        </div>
+    
+    </div>
     </div>
   );
 }

@@ -1,34 +1,114 @@
-import React from "react";
-import { useTheme } from "../contexts/ThemeContext";
+import React, { memo } from "react";
+import { motion } from "framer-motion";
+import { GraduationCap, Award, BookOpen } from "lucide-react";
 
-function Education() {
-  const { isDarkMode } = useTheme();
-  
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15, delayChildren: 0.2 },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+  },
+};
+
+const Education = memo(() => {
   return (
-    <div
-      id="Education"
-      className={`w-full lg:w-[80%] mx-auto my-20 ${isDarkMode ? 'bg-[#0D0C0C] text-white' : 'bg-gray-50 text-black'} app-impact-font rounded-lg p-10`}
-    >
-      <div className="flex flex-col gap-6">
-        <p className="text-gray-500 ml-4 text-3xl tracking-wide">&lt;h2&gt;</p>
-        <h2 className="capitalize text-4xl lg:text-5xl font-bold tracking-wider mb-2"
-         data-aos="fade-up"
+    <div className="w-full mt-20 min-h-full md:h-full flex flex-col items-center  p-6 md:p-12 overflow-visible">
+      <div className="w-full max-w-3xl flex flex-col items-center mt-4 md:mt-0 px-4 md:px-12">
+        <motion.div
+          className="flex flex-col items-center text-center z-20"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-10% 0px" }}
         >
-          Education
-        </h2>
-        <p className="text-gray-500 ml-4 text-3xl tracking-wide">&lt;/h2&gt;</p>
-        <div className="ml-8">
-          <h3 className="text-2xl font-semibold mb-1">
-            Bachelor of Science in Computer Science
-          </h3>
-          <p className={`text-lg ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} mb-1`}>
-            Université Abdelhamid Mehri - Constantine 2, Algeria
-          </p>
-          <p className={`text-md ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>2023 - Present</p>
-        </div>
+          <motion.div variants={itemVariants} className="mb-4 md:mb-4 relative">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white tracking-tight leading-tight">
+              My
+              <div className="relative inline-block ml-3">
+                <span className="font-designer font-normal relative z-10">
+                  Education
+                </span>
+              </div>
+            </h2>
+          </motion.div>
+
+          <motion.div
+            variants={itemVariants}
+            className="prose prose-lg text-gray-400 mb-6 md:mb-6"
+          >
+            <p className="text-lg md:text-xl leading-relaxed font-medium text-gray-200 mb-4 md:mb-4">
+              A journey of{" "}
+              <span className="bg-purple-500/20 px-1 rounded-md text-purple-300">
+                continuous learning
+              </span>{" "}
+              and
+              <span className="bg-cyan-500/20 px-1 rounded-md text-cyan-300 ml-1">
+                growth
+              </span>{" "}
+              that shaped my expertise in design and sales.
+            </p>
+            <p className="leading-relaxed text-base md:text-lg text-gray-400">
+              I am a computer science student at the University of Abdelhamid
+              Mehri - Constantine 2, Algeria with a strong, hands-on background
+              across multiple industries
+            </p>
+          </motion.div>
+
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-wrap justify-center gap-4 md:gap-6 pt-6 md:pt-6  w-full"
+          >
+            <div className="flex items-center gap-3">
+              <div className="p-2 bg-purple-500/20 rounded-full text-purple-400">
+                <GraduationCap size={18} />
+              </div>
+              <div>
+                <p className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">
+                  Degree
+                </p>
+                <p className="font-bold text-white text-sm">Bachelor's</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <div className="p-2 bg-cyan-500/20 rounded-full text-cyan-400">
+                <Award size={18} />
+              </div>
+              <div>
+                <p className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">
+                  Certifications
+                </p>
+                <p className="font-bold text-white text-sm">5+ Courses</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <div className="p-2 bg-yellow-500/20 rounded-full text-yellow-400">
+                <BookOpen size={18} />
+              </div>
+              <div>
+                <p className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">
+                  Learning
+                </p>
+                <p className="font-bold text-white text-sm">Always</p>
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );
-}
+});
+
+Education.displayName = "Education";
 
 export default Education;
