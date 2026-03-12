@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 import { Link } from "react-router-dom";
+import SEO from "../Components/Seo";
 
 // ── ICONS ────────────────────────────────────────────────────────────────────
 const Icon = ({ d, size = 20 }) => (
@@ -251,6 +252,11 @@ export default function HomePage() {
 
   return (
     <>
+      <SEO
+        title="Home"
+        description="Nasri Noufel Seif El Islam portfolio: Full Stack Developer specializing in React, Next.js, Node.js, and scalable web applications."
+        url="/"
+      />
       <div
         className="min-h-screen py-5 bg-[#080808] text-white"
         style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}
@@ -555,8 +561,8 @@ export default function HomePage() {
               <div className="flex flex-col flex-1 justify-between gap-0">
                 {[
                   { v: "12+", l: "Projects Built" },
-                  { v: "3+", l: "Years Exp." },
-                  { v: "20+", l: "Blog Posts" },
+                  { v: "1.5+", l: "Years Exp." },
+                  { v: "3+", l: "Contributions" },
                 ].map((s, i, a) => (
                   <div key={s.l}>
                     <p

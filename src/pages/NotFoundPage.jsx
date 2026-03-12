@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
+import SEO from "../Components/Seo";
 
 export default function NotFoundPage() {
   return (
     <div className="min-h-screen bg-[#080808] flex flex-col items-center justify-center px-4">
+      <SEO
+        title="Page Not Found"
+        description="The page you are looking for does not exist. Return to Nasri Noufel's portfolio homepage."
+        url="/404"
+        noindex={true}
+      />
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=DM+Mono:wght@400&display=swap');
         @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.35;transform:scale(.65)} }

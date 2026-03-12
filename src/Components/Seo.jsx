@@ -1,26 +1,31 @@
 import { Helmet } from "react-helmet";
 
+const SITE_NAME = "Nasri Noufel Portfolio";
+const SITE_URL = "https://noufel-sf.github.io/My_Portfolio";
+const DEFAULT_IMAGE = `${SITE_URL}/seo-star.svg`;
+const DEFAULT_DESCRIPTION =
+  "Portfolio of Nasri Noufel Seif El Islam, Full Stack Developer building performant web apps with React, Next.js, Node.js, and clean architecture.";
+
 
 export default function SEO({
   title,
-  description,
+  description = DEFAULT_DESCRIPTION,
   keywords,
-  url,
   type = "website",
   author,
   publishedTime,
   modifiedTime,
   noindex = false,
 }) {
-  const siteName = "Noufel seif el islam";
-  const siteUrl = "https://rokaichabab.vercel.app";
-  const defaultImage = `${siteUrl}/p.jpg`;
-  const defaultKeywords = keywords || "Noufel seif el islam, Mern stack developer, Next js developer, Software Engineer, Portfolio, Projects";
+  const pageTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
+  const defaultKeywords =
+    keywords ||
+    "Nasri Noufel, Full Stack Developer, MERN Stack Developer, React Developer, Next.js Developer, Portfolio, Projects";
 
   return (
     <Helmet>
       {/* Title */}
-      <title>{title} | {siteName}</title>
+      <title>{pageTitle}</title>
 
       {/* Basic Meta Tags */}
       <meta name="description" content={description} />
@@ -37,28 +42,25 @@ export default function SEO({
       <meta name="theme-color" content="#1e293b" />
 
       {/* Open Graph */}
-      <meta property="og:site_name" content={siteName} />
-      <meta property="og:title" content={`${title} | ${siteName}`} />
+      <meta property="og:site_name" content={SITE_NAME} />
+      <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={defaultImage} />
-      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image" content={DEFAULT_IMAGE} />
+      <meta property="og:image:type" content="image/svg+xml" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content={title} />
+      <meta property="og:image:alt" content="Nasri Noufel Portfolio logo star" />
       <meta property="og:type" content={type} />
-      {url && <meta property="og:url" content={url} />}
       {publishedTime && <meta property="article:published_time" content={publishedTime} />}
       {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={`${title} | ${siteName}`} />
+      <meta name="twitter:title" content={pageTitle} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={defaultImage} />
-      <meta name="twitter:image:alt" content={title} />
+      <meta name="twitter:image" content={DEFAULT_IMAGE} />
+      <meta name="twitter:image:alt" content="Nasri Noufel Portfolio logo star" />
 
-      {/* Canonical URL */}
-      {url && <link rel="canonical" href={url} />}
       
       {/* Additional Meta Tags */}
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />

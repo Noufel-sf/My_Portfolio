@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import SEO from "../Components/Seo";
 
 // ── ICONS ────────────────────────────────────────────────────────────────────
 const Icon = ({ d, size = 20 }) => (
@@ -251,10 +252,16 @@ export default function Projects() {
     filter === "All" ? PROJECTS : PROJECTS.filter((p) => p.category === filter);
 
   return (
-    <div
-      className="min-h-screen bg-[#080808] text-white"
-      style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}
-    >
+    <>
+      <SEO
+        title="Projects"
+        description="Explore projects built by Nasri Noufel: full stack products, real-world platforms, and modern web solutions with preview and GitHub links."
+        url="/projects"
+      />
+      <div
+        className="min-h-screen bg-[#080808] text-white"
+        style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}
+      >
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: -24 }}
@@ -266,7 +273,7 @@ export default function Projects() {
           <svg
             viewBox="0 0 22 24"
             fill="currentColor"
-            class="w-5 h-5 m-4 text-white animate-[spin_10s_linear_infinite]"
+            className="w-5 h-5 m-4 text-white animate-[spin_10s_linear_infinite]"
           >
             <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"></path>
           </svg>
@@ -358,7 +365,7 @@ export default function Projects() {
               opportunities and collaborations.
             </p>
             <motion.a
-              href="mailto:you@email.com"
+              href="https://www.linkedin.com/in/noufel-seif-el-islam-nasri/"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center gap-2 bg-[#7A93A8] hover:bg-[#7A93A8]/90 text-white font-bold text-sm px-7 py-3.5 rounded-full transition-colors duration-200"
@@ -368,6 +375,7 @@ export default function Projects() {
           </div>
         </Card>
       </motion.div>
-    </div>
+      </div>
+    </>
   );
 }
