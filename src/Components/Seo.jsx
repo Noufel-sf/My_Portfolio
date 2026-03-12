@@ -2,15 +2,21 @@ import { Helmet } from "react-helmet";
 
 const SITE_NAME = "Nasri Noufel Portfolio";
 const SITE_URL = "https://noufel-sf.github.io/My_Portfolio";
-const DEFAULT_IMAGE = `${SITE_URL}/seo-star.svg`;
+const DEFAULT_IMAGE = `${SITE_URL}/p.jpg`;
 const DEFAULT_DESCRIPTION =
   "Portfolio of Nasri Noufel Seif El Islam, Full Stack Developer building performant web apps with React, Next.js, Node.js, and clean architecture.";
+
+function toAbsoluteUrl(path = "/") {
+  if (/^https?:\/\//i.test(path)) return path;
+  return `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
+}
 
 
 export default function SEO({
   title,
   description = DEFAULT_DESCRIPTION,
   keywords,
+  url = "/",
   type = "website",
   author,
   publishedTime,
@@ -18,6 +24,7 @@ export default function SEO({
   noindex = false,
 }) {
   const pageTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
+  const absoluteUrl = toAbsoluteUrl(url);
   const defaultKeywords =
     keywords ||
     "Nasri Noufel, Full Stack Developer, MERN Stack Developer, React Developer, Next.js Developer, Portfolio, Projects";
@@ -49,8 +56,9 @@ export default function SEO({
       <meta property="og:image:type" content="image/svg+xml" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="Nasri Noufel Portfolio logo star" />
+      <meta property="og:image:alt" content="Nasri Noufel portfolio preview image" />
       <meta property="og:type" content={type} />
+      <meta property="og:url" content={absoluteUrl} />
       {publishedTime && <meta property="article:published_time" content={publishedTime} />}
       {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
 
@@ -59,7 +67,9 @@ export default function SEO({
       <meta name="twitter:title" content={pageTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={DEFAULT_IMAGE} />
-      <meta name="twitter:image:alt" content="Nasri Noufel Portfolio logo star" />
+      <meta name="twitter:image:alt" content="Nasri Noufel portfolio preview image" />
+
+      <link rel="canonical" href={absoluteUrl} />
 
       
       {/* Additional Meta Tags */}
