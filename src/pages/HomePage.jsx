@@ -312,7 +312,7 @@ export default function HomePage() {
                 </p>
                 <p className="text-neutral-700 text-sm leading-relaxed max-w-md">
                   Passionate about web performance &amp; clean architecture.
-                  Part-time YouTube creator &amp; technical blogger.
+                  helping businesses grow online with scalable, maintainable solutions.
                 </p>
               </div>
 
