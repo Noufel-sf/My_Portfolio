@@ -807,7 +807,7 @@ export default function HomePage() {
               <motion.a
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
-                href="mailto:you@email.com"
+                href="https://www.linkedin.com/in/noufel-seif-el-islam-nasri/"
                 className="inline-flex items-center capitalize gap-2 bg-[#7A93A8] hover:bg-[#7A93A8]/90 text-white font-bold text-sm px-7 py-3.5 rounded-full transition-colors duration-200 shrink-0 no-underline"
               >
                 get in touch <ArrowSvg size={14} />

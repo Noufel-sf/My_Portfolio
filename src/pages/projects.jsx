@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { AnimatePresence, motion, useInView } from "framer-motion";
 import SEO from "../Components/Seo";
 
 // ── ICONS ────────────────────────────────────────────────────────────────────
@@ -46,18 +46,18 @@ const PROJECTS = [
     preview: "https://rokaichabab.vercel.app/",
     github: "https://github.com/Noufel-sf/Rokai_website",
   },
-  //   {
-  //     id: 2,
-  //     name: "Social Media Web App",
-  //     desc: "Real-time social platform with posts, likes, comments, and live chat using WebSocket.",
-  //     longDesc: "A modern social media platform featuring real-time messaging, post interactions, user profiles, image uploads, and notifications. Built with the MERN stack and Socket.io for live updates.",
-  //     image: "/project2.jpg",
-  //     tech: ["React", "Node.js", "Socket.io", "MongoDB"],
-  //     category: "Full Stack",
-  //     date: "Sept 2025",
-  //     preview: "https://your-social.vercel.app",
-  //     github: "https://github.com/yourusername/social-media",
-  //   },
+    {
+      id: 2,
+      name: "Library management system api",
+      desc: "A RESTful API for managing a library's book inventory, user accounts, and borrowing transactions.",
+      longDesc: "A robust API built with Node.js and Nest.js, featuring secure authentication jwt, database integration with PostgreSQL Neon prisma orm, and comprehensive endpoints for book management, user operations, and transaction handling.",
+      image: "/b1.jpg",
+      tech: ["Nest.js", "Node.js", "Rest api", "PostgreSQL" ,"Prisma"],
+      category: "backend",
+      date: "March 2026",
+      preview: "https://github.com/Noufel-sf/nest_redis_library_system",
+      github: "https://github.com/Noufel-sf/nest_redis_library_system",
+    },
   //   {
   //     id: 3,
   //     name: "Association Club Website",
@@ -306,7 +306,7 @@ export default function Projects() {
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               onClick={() => setFilter(cat)}
-              className={`px-4 py-2 rounded-full font-mono text-[11px] tracking-wider transition-all duration-200 ${
+              className={`px-4 cursor-pointer py-2 rounded-full font-mono text-[11px] tracking-wider transition-all duration-200 ${
                 filter === cat
                   ? "bg-[#7A93A8] text-white border border-[#7A93A8]"
                   : "bg-[#111] text-neutral-600 border border-[#2a2a2a] hover:border-[#7A93A8]/50"
@@ -327,15 +327,20 @@ export default function Projects() {
         className="max-w-[1300px] mx-auto px-4 pb-20"
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filteredProjects.map((project) => (
-            <motion.div
-              key={project.id}
-              variants={up}
-              className={project.featured ? "sm:col-span-2" : ""}
-            >
-              <ProjectCard project={project} featured={project.featured} />
-            </motion.div>
-          ))}
+          <AnimatePresence mode="popLayout">
+            {filteredProjects.map((project) => (
+              <motion.div
+                key={`${filter}-${project.id}`}
+                layout
+                variants={up}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+              >
+                <ProjectCard project={project} />
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
 
         {/* Empty State */}
