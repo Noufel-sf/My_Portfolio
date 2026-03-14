@@ -91,7 +91,6 @@ const EDUCATION = [
     year: "2025",
     primary: false,
   },
- 
 ];
 const EXPERIENCE = [
   {
@@ -111,14 +110,20 @@ const EXPERIENCE = [
 ];
 const SOCIALS = [
   { icon: GITHUB, label: "GitHub", href: "https://github.com/Noufel-sf" },
-  { icon: LINKEDIN, label: "LinkedIn", href: "https://www.linkedin.com/in/noufel-seif-el-islam-nasri/" },
-  { icon: INSTAGRAM, label: "Instagram", href: "https://www.instagram.com/noufel_sf?igsh=dGFpbGJyamVmbzky" },
+  {
+    icon: LINKEDIN,
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/noufel-seif-el-islam-nasri/",
+  },
+  {
+    icon: INSTAGRAM,
+    label: "Instagram",
+    href: "https://www.instagram.com/noufel_sf?igsh=dGFpbGJyamVmbzky",
+  },
 ];
 
 // ── VARIANTS ─────────────────────────────────────────────────────────────────
 const stagger = { hidden: {}, show: { transition: { staggerChildren: 0.07 } } };
-
-
 
 const up = {
   hidden: { opacity: 0, y: 24 },
@@ -212,8 +217,7 @@ function Magnetic({ href, children, className }) {
 
 // ── CARD ─────────────────────────────────────────────────────────────────────
 function Card({ children, className = "", id }) {
-  
-    return (
+  return (
     <div
       id={id}
       className={`bg-[#111] border border-[#1e1e1e] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#2e2e2e] hover:bg-[#141414] ${className}`}
@@ -261,7 +265,6 @@ export default function HomePage() {
         className="min-h-screen py-5 bg-[#080808] text-white"
         style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}
       >
-     
         {/* ── BENTO GRID ──────────────────────────────────────────────── */}
         <motion.div
           ref={ref}
@@ -312,7 +315,8 @@ export default function HomePage() {
                 </p>
                 <p className="text-neutral-700 text-sm leading-relaxed max-w-md">
                   Passionate about web performance &amp; clean architecture.
-                  helping businesses grow online with scalable, maintainable solutions.
+                  helping businesses grow online with scalable, maintainable
+                  solutions.
                 </p>
               </div>
 
@@ -326,7 +330,8 @@ export default function HomePage() {
                 ))}
                 <div className="w-px h-5 bg-[#1e1e1e] mx-1" />
                 <a
-                  href="/cv.pdf" download="Noufelseifelislam_CV.pdf"
+                  href="/cv.pdf"
+                  download="Noufelseifelislam_CV.pdf"
                   className="flex items-center gap-1.5 font-mono text-[11px] text-neutral-700 hover:text-white transition-colors duration-200"
                 >
                   Download CV <ArrowSvg />
@@ -372,17 +377,27 @@ export default function HomePage() {
                   Soft Skills
                 </span>
               </div>
-              
+
               <div className="space-y-4">
                 <div className="group">
                   <div className="flex items-center gap-2 mb-1.5">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#7A93A8]">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      className="text-[#7A93A8]"
+                    >
                       <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                       <circle cx="9" cy="7" r="4"></circle>
                       <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
                       <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                     </svg>
-                    <h3 className="font-semibold text-[13px] text-white">Leadership</h3>
+                    <h3 className="font-semibold text-[13px] text-white">
+                      Leadership
+                    </h3>
                   </div>
                   <p className="text-[11px] text-neutral-600 leading-relaxed">
                     Team coordination & mentoring
@@ -393,10 +408,20 @@ export default function HomePage() {
 
                 <div className="group">
                   <div className="flex items-center gap-2 mb-1.5">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#7A93A8]">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      className="text-[#7A93A8]"
+                    >
                       <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                     </svg>
-                    <h3 className="font-semibold text-[13px] text-white">Communication</h3>
+                    <h3 className="font-semibold text-[13px] text-white">
+                      Communication
+                    </h3>
                   </div>
                   <p className="text-[11px] text-neutral-600 leading-relaxed">
                     Clear articulation & active listening
@@ -407,11 +432,21 @@ export default function HomePage() {
 
                 <div className="group">
                   <div className="flex items-center gap-2 mb-1.5">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#7A93A8]">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      className="text-[#7A93A8]"
+                    >
                       <path d="M9 11l3 3L22 4"></path>
                       <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                     </svg>
-                    <h3 className="font-semibold text-[13px] text-white">Project Management</h3>
+                    <h3 className="font-semibold text-[13px] text-white">
+                      Project Management
+                    </h3>
                   </div>
                   <p className="text-[11px] text-neutral-600 leading-relaxed">
                     Agile methodologies & delivery
@@ -426,7 +461,9 @@ export default function HomePage() {
             <Card className="p-6 h-full bg-gradient-to-br from-[#7A93A8]/10 to-[#111]">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-8 h-8 rounded-lg bg-[#7A93A8]/20 flex items-center justify-center">
-                  <span className="font-black text-[14px] text-[#7A93A8]">E</span>
+                  <span className="font-black text-[14px] text-[#7A93A8]">
+                    E
+                  </span>
                 </div>
                 <span className="font-mono text-[10px] tracking-[.16em] uppercase text-neutral-700">
                   Personality
@@ -436,7 +473,7 @@ export default function HomePage() {
               <h3 className="font-bold text-[16px] text-white mb-2">
                 ENTJ Mindset
               </h3>
-              
+
               <p className="text-[11px] text-neutral-500 leading-relaxed mb-4">
                 Strategic Commander • Natural Leader
               </p>
@@ -473,13 +510,16 @@ export default function HomePage() {
           {/* QUOTE ─ col-span-6 */}
           <motion.div variants={up} className="sm:col-span-2 lg:col-span-6">
             <Card className="p-7 flex flex-col justify-center bg-gradient-to-br from-[#111] to-[#161616] h-full">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="#7A93A8" >
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="#7A93A8">
                 <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
               </svg>
               <blockquote className="mt-4 text-2xl font-semibold text-neutral-300 leading-relaxed ">
                 "There is nothing imposible to him who will try"
               </blockquote>
               <div className="mt-4 w-8 h-0.5 bg-[#7A93A8] rounded-full" />
+              <p className="mt-4 text-sm text-neutral-500 font-mono tracking-wider uppercase">
+                Alexander the great
+              </p>
             </Card>
           </motion.div>
 
@@ -656,7 +696,6 @@ export default function HomePage() {
               </div>
 
               {/* Core Systems Label */}
-             
 
               {/* SVG Background - Orbital Rings */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -692,8 +731,8 @@ export default function HomePage() {
                   <div className="font-black text-4xl sm:text-5xl md:text-6xl tracking-tight mb-1">
                     TECHNICAL
                   </div>
-                   <div className="   font-mono text-[10px] tracking-[.24em] uppercase text-neutral-700">
-                     CORE SYSTEMS
+                  <div className="   font-mono text-[10px] tracking-[.24em] uppercase text-neutral-700">
+                    CORE SYSTEMS
                   </div>
                   <div
                     className="font-black text-4xl sm:text-5xl md:text-6xl tracking-tight"
@@ -710,14 +749,16 @@ export default function HomePage() {
 
                 <div className="marquee-mask">
                   <div className="marquee-track">
-                    {[...SKILLS, ...SKILLS, ...SKILLS , ...SKILLS].map((s, i) => (
-                      <span
-                        key={i}
-                        className="inline-flex items-center bg-[#161616] border border-[#232323] rounded-full px-3 py-1 font-mono text-[11px] text-neutral-700 whitespace-nowrap"
-                      >
-                        {s}
-                      </span>
-                    ))}
+                    {[...SKILLS, ...SKILLS, ...SKILLS, ...SKILLS].map(
+                      (s, i) => (
+                        <span
+                          key={i}
+                          className="inline-flex items-center bg-[#161616] border border-[#232323] rounded-full px-3 py-1 font-mono text-[11px] text-neutral-700 whitespace-nowrap"
+                        >
+                          {s}
+                        </span>
+                      ),
+                    )}
                   </div>
                 </div>
               </div>
@@ -773,10 +814,7 @@ export default function HomePage() {
               </motion.a>
             </Card>
           </motion.div>
-
         </motion.div>
-
-   
       </div>
     </>
   );
