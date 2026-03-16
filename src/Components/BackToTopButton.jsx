@@ -32,7 +32,7 @@ export default function BackToTopButton() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 12, scale: 0.9 }}
           transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed bottom-6 right-4 sm:right-6 z-[60] h-11 w-11 rounded-full border border-[#273440] bg-[#0d1116]/95 text-[#7A93A8] shadow-[0_10px_25px_rgba(0,0,0,0.35)] backdrop-blur-md transition-all duration-200 hover:-translate-y-1 hover:border-[#7A93A8] hover:bg-[#7A93A8] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7A93A8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#080808]"
+          className="fixed bottom-6 cursor-pointer right-4 sm:right-6 z-[60] h-11 w-11 rounded-full border border-[#273440] bg-[#0d1116]/95 text-[#7A93A8] shadow-[0_10px_25px_rgba(0,0,0,0.35)] backdrop-blur-md transition-all duration-200 hover:-translate-y-1 hover:border-[#7A93A8] hover:bg-[#7A93A8] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7A93A8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#080808]"
         >
           <svg
             width="18"
