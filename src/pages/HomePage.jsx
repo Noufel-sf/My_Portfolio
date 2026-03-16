@@ -134,54 +134,6 @@ const up = {
   },
 };
 
-// ── LIVE CLOCK ───────────────────────────────────────────────────────────────
-function Clock({ tz, label, dotClass }) {
-  const [t, setT] = useState("");
-  const [d, setD] = useState("");
-  useEffect(() => {
-    const tick = () => {
-      const n = new Date();
-      setT(
-        new Intl.DateTimeFormat("en-US", {
-          timeZone: tz,
-          hour: "2-digit",
-          minute: "2-digit",
-          second: "2-digit",
-          hour12: false,
-        }).format(n),
-      );
-      setD(
-        new Intl.DateTimeFormat("en-US", {
-          timeZone: tz,
-          weekday: "short",
-          month: "short",
-          day: "numeric",
-        }).format(n),
-      );
-    };
-    tick();
-    const id = setInterval(tick, 1000);
-    return () => clearInterval(id);
-  }, [tz]);
-  return (
-    <div className="flex flex-col gap-1.5">
-      <div className="flex items-center gap-2 mb-1">
-        <div className={`w-2 h-2 rounded-full pulse shrink-0 ${dotClass}`} />
-        <span className="font-mono text-[10px] tracking-[0.16em] uppercase text-neutral-600">
-          {label}
-        </span>
-      </div>
-      <p className="font-mono text-[11px] text-neutral-700">{d}</p>
-      <p
-        className="font-mono font-bold text-white tracking-tight"
-        style={{ fontSize: "clamp(1.5rem,4vw,1.9rem)", lineHeight: 1 }}
-      >
-        {t}
-      </p>
-      <p className="font-mono text-[10px] text-neutral-800 mt-1">{tz}</p>
-    </div>
-  );
-}
 
 // ── MAGNETIC LINK ────────────────────────────────────────────────────────────
 function Magnetic({ href, children, className }) {
@@ -684,7 +636,7 @@ export default function HomePage() {
             variants={up}
             className="col-span-1 sm:col-span-2 lg:col-span-12"
           >
-            <Card className="relative p-8 sm:p-12 overflow-hidden min-h-[350px]">
+            <div className="relative bg-[#7A93A8] rounded-2xl p-8 sm:p-12 overflow-hidden min-h-[350px]">
               {/* Header */}
               <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
                 <span className="font-mono text-[10px] tracking-[.16em] uppercase text-neutral-700">
@@ -728,16 +680,16 @@ export default function HomePage() {
               {/* Center Title */}
               <div className="relative z-10 py-5 flex flex-col items-center justify-center h-full">
                 <h2 className="text-center mb-12">
-                  <div className="font-black text-4xl sm:text-5xl md:text-6xl tracking-tight mb-1">
+                  <div className="font-black text-black text-4xl sm:text-5xl md:text-6xl tracking-tight mb-1">
                     TECHNICAL
                   </div>
                   <div className="   font-mono text-[10px] tracking-[.24em] uppercase text-neutral-700">
                     CORE SYSTEMS
                   </div>
                   <div
-                    className="font-black text-4xl sm:text-5xl md:text-6xl tracking-tight"
+                    className="font-black text-black text-4xl sm:text-5xl md:text-6xl tracking-tight"
                     style={{
-                      WebkitTextStroke: "1.5px white",
+                      WebkitTextStroke: "2px black",
                       WebkitTextFillColor: "transparent",
                       textStroke: "1.5px white",
                       color: "transparent",
@@ -753,7 +705,7 @@ export default function HomePage() {
                       (s, i) => (
                         <span
                           key={i}
-                          className="inline-flex items-center bg-[#161616] border border-[#232323] rounded-full px-3 py-1 font-mono text-[11px] text-neutral-700 whitespace-nowrap"
+                          className="inline-flex items-center font-bold border  border-[#232323] rounded-full px-3 py-1 font-mono text-[11px] text-neutral-800 whitespace-nowrap"
                         >
                           {s}
                         </span>
@@ -770,12 +722,12 @@ export default function HomePage() {
                   height="30"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="text-white animate-[spin_5s_linear_infinite]"
+                  className="text-black animate-[spin_5s_linear_infinite]"
                 >
                   <path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z" />
                 </svg>
               </div>
-            </Card>
+            </div>
           </motion.div>
 
           {/* CTA ─ full width */}

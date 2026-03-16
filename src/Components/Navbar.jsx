@@ -21,8 +21,16 @@ const CLOSE = "M6 18L18 6M6 6l12 12";
 
 const SOCIALS = [
   { icon: GITHUB, label: "GitHub", href: "https://github.com/Noufel-sf" },
-  { icon: LINKEDIN, label: "LinkedIn", href: "https://www.linkedin.com/in/noufel-seif-el-islam-nasri/" },
-  { icon: INSTAGRAM, label: "Instagram", href: "https://www.instagram.com/noufel_sf?igsh=dGFpbGJyamVmbzky" },
+  {
+    icon: LINKEDIN,
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/noufel-seif-el-islam-nasri/",
+  },
+  {
+    icon: INSTAGRAM,
+    label: "Instagram",
+    href: "https://www.instagram.com/noufel_sf?igsh=dGFpbGJyamVmbzky",
+  },
 ];
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -70,7 +78,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="mailto:you@email.com"
+            href="https://www.linkedin.com/in/noufel-seif-el-islam-nasri/"
             className="hidden sm:inline-flex font-mono text-[11px] tracking-[.14em] uppercase px-4 py-2 rounded-full border border-[#7A93A8] text-[#7A93A8] hover:bg-[#7A93A8] hover:text-white transition-all duration-200"
           >
             Hire Me

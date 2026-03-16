@@ -5,6 +5,7 @@ import Projects from "./pages/projects";
 import NotFoundPage from "./pages/NotFoundPage";
 import ErrorFallback from "./ErrorBondry/ErrorBondry";
 import Footer from "./Components/Footer";
+import BackToTopButton from "./Components/BackToTopButton";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
 
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
+        <BackToTopButton />
         <Footer />
       </div>
     // </ErrorFallback>

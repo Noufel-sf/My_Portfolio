@@ -40,36 +40,38 @@ const PROJECTS = [
     longDesc:
       "A comprehensive online store platform featuring product management, shopping cart, secure payment processing with Stripe, order tracking, and a powerful admin dashboard for inventory and sales management.",
     image: "/rokay.png",
-    tech: ["React.js", "MongoDB", "Express js", "Tailwind CSS"],
+    tech: ["React.js", "MongoDB", "TypeScript" , "Express js", "Tailwind CSS"],
     category: "website",
     date: "february 2026",
     preview: "https://rokaichabab.vercel.app/",
     github: "https://github.com/Noufel-sf/Rokai_website",
   },
-    {
-      id: 2,
-      name: "Library management system api",
-      desc: "A RESTful API for managing a library's book inventory, user accounts, and borrowing transactions.",
-      longDesc: "A robust API built with Node.js and Nest.js, featuring secure authentication jwt, database integration with PostgreSQL Neon prisma orm, and comprehensive endpoints for book management, user operations, and transaction handling.",
-      image: "/b1.jpg",
-      tech: ["Nest.js", "Node.js", "Rest api", "PostgreSQL" ,"Prisma"],
-      category: "backend",
-      date: "March 2026",
-      preview: "https://github.com/Noufel-sf/nest_redis_library_system",
-      github: "https://github.com/Noufel-sf/nest_redis_library_system",
-    },
-  //   {
-  //     id: 3,
-  //     name: "Association Club Website",
-  //     desc: "Landing page for club registration and event management with modern UI.",
-  //     longDesc: "Professional website for a student association featuring event registration, member management, resource organization, and an admin panel for content updates.",
-  //     image: "/project3.jpg",
-  //     tech: ["React", "Express", "PostgreSQL"],
-  //     category: "Web App",
-  //     date: "2024",
-  //     preview: "https://your-club.com",
-  //     github: "https://github.com/yourusername/club-website",
-  //   },
+  {
+    id: 2,
+    name: "Library management system api",
+    desc: "A RESTful API for managing a library's book inventory, user accounts, and borrowing transactions.",
+    longDesc:
+      "A robust API built with Node.js and Nest.js, featuring secure authentication jwt, database integration with PostgreSQL Neon prisma orm, and comprehensive endpoints for book management, user operations, and transaction handling.",
+    image: "/b1.jpg",
+    tech: ["Nest.js", "Node.js", "Rest api", "PostgreSQL", "Prisma"],
+    category: "backend",
+    date: "March 2026",
+    preview: "https://github.com/Noufel-sf/nest_redis_library_system",
+    github: "https://github.com/Noufel-sf/nest_redis_library_system",
+  },
+  {
+    id: 3,
+    name: "Portfolio Website",
+    desc: "A personal portfolio website showcasing skills, and experience with a modern design and responsive layout.",
+    longDesc:
+      "A modern, responsive portfolio website built with React and Tailwind CSS, featuring a clean design and smooth animations to showcase my skills and experience.",
+    image: "/p2.jpg",
+    tech: ["React.js", "Gsap", "framer-motion", "Tailwind CSS"],
+    category: "frontend",
+    date: "2026",
+    preview: "https://abdou-portfolio-tau.vercel.app/",
+    github: "https://github.com/Noufel-sf/Abdou_portfolio",
+  },
 ];
 
 // ── VARIANTS ─────────────────────────────────────────────────────────────────
@@ -206,10 +208,8 @@ function ProjectCard({ project, featured = false }) {
           {/* Tech Stack */}
           <div className="flex flex-wrap gap-1.5 mb-3">
             {project.tech.map((tech) => (
-              <span
-                key={tech}
-                className="inline-flex items-center bg-[#161616] border border-[#232323] rounded px-2 py-0.5 font-mono text-[10px] text-neutral-700"
-              >
+              <span key={tech} className="inline-flex items-center gap-2 bg-[#7A93A8]/10 border border-[#7A93A8]/25 rounded-lg px-3 py-1 font-mono text-[10px] tracking-wider text-[#7A93A8]">
+                <span className="w-1.5 h-1.5 rounded-sm bg-[#7A93A8] pulse inline-block" />
                 {tech}
               </span>
             ))}
@@ -262,124 +262,124 @@ export default function Projects() {
         className="min-h-screen bg-[#080808] text-white"
         style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}
       >
-      {/* Header */}
-      <motion.div
-        initial={{ opacity: 0, y: -24 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="max-w-[1300px] mx-auto px-4 pt-20 pb-12"
-      >
-        <div className="flex items-center gap-2 mb-3">
-          <svg
-            viewBox="0 0 22 24"
-            fill="currentColor"
-            className="w-5 h-5 m-4 text-white animate-[spin_10s_linear_infinite]"
-          >
-            <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"></path>
-          </svg>
-          <span className="font-mono text-[12px] tracking-[.16em] uppercase text-neutral-700">
-            Projects
-          </span>
-        </div>
-
-        <h1
-          className="font-extrabold leading-none tracking-tight mb-4"
-          style={{
-            fontSize: "clamp(2.5rem,6vw,4rem)",
-            letterSpacing: "-0.03em",
-          }}
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: -24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="max-w-[1300px] mx-auto px-4 pt-20 pb-12"
         >
-          Featured <span className="text-[#7A93A8]">Projects</span>
-        </h1>
-
-        <p className="text-neutral-500 leading-relaxed max-w-2xl mb-8">
-          A collection of my recent work showcasing full-stack development,
-          modern UI/UX design, and clean code practices. Each project includes
-          live previews and source code.
-        </p>
-
-        {/* Filter Buttons */}
-        <div className="flex flex-wrap gap-2">
-          {categories.map((cat) => (
-            <motion.button
-              key={cat}
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              onClick={() => setFilter(cat)}
-              className={`px-4 cursor-pointer py-2 rounded-full font-mono text-[11px] tracking-wider transition-all duration-200 ${
-                filter === cat
-                  ? "bg-[#7A93A8] text-white border border-[#7A93A8]"
-                  : "bg-[#111] text-neutral-600 border border-[#2a2a2a] hover:border-[#7A93A8]/50"
-              }`}
+          <div className="flex items-center gap-2 mb-3">
+            <svg
+              viewBox="0 0 22 24"
+              fill="currentColor"
+              className="w-5 h-5 m-4 text-white animate-[spin_10s_linear_infinite]"
             >
-              {cat}
-            </motion.button>
-          ))}
-        </div>
-      </motion.div>
+              <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"></path>
+            </svg>
+            <span className="font-mono text-[12px] tracking-[.16em] uppercase text-neutral-700">
+              Projects
+            </span>
+          </div>
 
-      {/* Projects Grid */}
-      <motion.div
-        ref={ref}
-        variants={stagger}
-        initial="hidden"
-        animate={inView ? "show" : "hidden"}
-        className="max-w-[1300px] mx-auto px-4 pb-20"
-      >
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <AnimatePresence mode="popLayout">
-            {filteredProjects.map((project) => (
-              <motion.div
-                key={`${filter}-${project.id}`}
-                layout
-                variants={up}
-                initial="hidden"
-                animate="show"
-                exit="hidden"
+          <h1
+            className="font-extrabold leading-none tracking-tight mb-4"
+            style={{
+              fontSize: "clamp(2.5rem,6vw,4rem)",
+              letterSpacing: "-0.03em",
+            }}
+          >
+            Featured <span className="text-[#7A93A8]">Projects</span>
+          </h1>
+
+          <p className="text-neutral-500 leading-relaxed max-w-2xl mb-8">
+            A collection of my recent work showcasing full-stack development,
+            modern UI/UX design, and clean code practices. Each project includes
+            live previews and source code.
+          </p>
+
+          {/* Filter Buttons */}
+          <div className="flex flex-wrap gap-2">
+            {categories.map((cat) => (
+              <motion.button
+                key={cat}
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                onClick={() => setFilter(cat)}
+                className={`px-4 cursor-pointer py-2 rounded-full font-mono text-[11px] tracking-wider transition-all duration-200 ${
+                  filter === cat
+                    ? "bg-[#7A93A8] text-white border border-[#7A93A8]"
+                    : "bg-[#111] text-neutral-600 border border-[#2a2a2a] hover:border-[#7A93A8]/50"
+                }`}
               >
-                <ProjectCard project={project} />
-              </motion.div>
+                {cat}
+              </motion.button>
             ))}
-          </AnimatePresence>
-        </div>
-
-        {/* Empty State */}
-        {filteredProjects.length === 0 && (
-          <div className="text-center py-20">
-            <p className="text-neutral-600 font-mono text-sm">
-              No projects found in this category
-            </p>
           </div>
-        )}
-      </motion.div>
+        </motion.div>
 
-      {/* Footer CTA */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className="max-w-[1300px] mx-auto px-4 pb-20"
-      >
-        <Card className="p-8 sm:p-12 bg-gradient-to-br from-[#131313] to-[#0f0f0f] border-[#202020]">
-          <div className="text-center">
-            <h2 className="font-extrabold text-2xl sm:text-3xl tracking-tight mb-3">
-              Let's Build Something Together
-            </h2>
-            <p className="text-neutral-600 mb-6 max-w-lg mx-auto">
-              Have a project in mind? I'm always open to discussing new
-              opportunities and collaborations.
-            </p>
-            <motion.a
-              href="https://www.linkedin.com/in/noufel-seif-el-islam-nasri/"
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.97 }}
-              className="inline-flex items-center gap-2 bg-[#7A93A8] hover:bg-[#7A93A8]/90 text-white font-bold text-sm px-7 py-3.5 rounded-full transition-colors duration-200"
-            >
-              Get In Touch <ArrowSvg size={14} />
-            </motion.a>
+        {/* Projects Grid */}
+        <motion.div
+          ref={ref}
+          variants={stagger}
+          initial="hidden"
+          animate={inView ? "show" : "hidden"}
+          className="max-w-[1300px] mx-auto px-4 pb-20"
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <AnimatePresence mode="popLayout">
+              {filteredProjects.map((project) => (
+                <motion.div
+                  key={`${filter}-${project.id}`}
+                  layout
+                  variants={up}
+                  initial="hidden"
+                  animate="show"
+                  exit="hidden"
+                >
+                  <ProjectCard project={project} />
+                </motion.div>
+              ))}
+            </AnimatePresence>
           </div>
-        </Card>
-      </motion.div>
+
+          {/* Empty State */}
+          {filteredProjects.length === 0 && (
+            <div className="text-center py-20">
+              <p className="text-neutral-600 font-mono text-sm">
+                No projects found in this category
+              </p>
+            </div>
+          )}
+        </motion.div>
+
+        {/* Footer CTA */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="max-w-[1300px] mx-auto px-4 pb-20"
+        >
+          <Card className="p-8 sm:p-12 bg-gradient-to-br from-[#131313] to-[#0f0f0f] border-[#202020]">
+            <div className="text-center">
+              <h2 className="font-extrabold text-2xl sm:text-3xl tracking-tight mb-3">
+                Let's Build Something Together
+              </h2>
+              <p className="text-neutral-600 mb-6 max-w-lg mx-auto">
+                Have a project in mind? I'm always open to discussing new
+                opportunities and collaborations.
+              </p>
+              <motion.a
+                href="https://www.linkedin.com/in/noufel-seif-el-islam-nasri/"
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.97 }}
+                className="inline-flex items-center gap-2 bg-[#7A93A8] hover:bg-[#7A93A8]/90 text-white font-bold text-sm px-7 py-3.5 rounded-full transition-colors duration-200"
+              >
+                Get In Touch <ArrowSvg size={14} />
+              </motion.a>
+            </div>
+          </Card>
+        </motion.div>
       </div>
     </>
   );
