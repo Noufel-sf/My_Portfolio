@@ -41,6 +41,9 @@ const SKILLS = [
   "Next.js",
   "Node.js",
   "Express.js",
+  "Rest APIs",
+  "jest",
+  "mysql",
   "NestJS",
   "MongoDB",
   "PostgreSQL",
@@ -639,10 +642,10 @@ export default function HomePage() {
             <div className="relative bg-[#7A93A8] rounded-2xl p-8 sm:p-12 overflow-hidden min-h-[350px]">
               {/* Header */}
               <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
-                <span className="font-mono text-[10px] tracking-[.16em] uppercase text-neutral-700">
+                <span className="font-mono text-[10px] tracking-[.16em] uppercase text-black">
                   (STACK)
                 </span>
-                <span className="font-mono text-[10px] tracking-[.16em] uppercase text-neutral-700">
+                <span className="font-mono text-[10px] tracking-[.16em] uppercase text-black">
                   OVERVIEW
                 </span>
               </div>

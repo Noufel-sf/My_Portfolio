@@ -106,3 +106,80 @@ body {
     transparent
   );
 }
+
+.route-transition {
+  position: relative;
+  isolation: isolate;
+}
+
+.route-transition-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #7a93a8, transparent);
+  transform-origin: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.route-transition-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.route-transition-overlay-backdrop {
+  position: absolute;
+  inset: 0;
+  transform-origin: top;
+  background:
+    radial-gradient(70% 30% at 50% 50%, rgba(122, 147, 168, 0.16) 0%, rgba(8, 8, 8, 0.95) 58%),
+    #080808;
+}
+
+.route-transition-overlay-line {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(122, 147, 168, 0.9), transparent);
+  opacity: 0.95;
+}
+
+.route-transition-overlay-line-top {
+  top: 20%;
+}
+
+.route-transition-overlay-line-bottom {
+  bottom: 20%;
+}
+
+.route-transition-brand {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-family: "DM Mono", monospace;
+  font-size: clamp(2rem, 9vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #f8fafc;
+  text-shadow: 0 0 25px rgba(122, 147, 168, 0.5);
+}
+
+.route-transition-sub {
+  position: relative;
+  z-index: 2;
+  margin: 0.35rem 0 0;
+  font-family: "DM Mono", monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(148, 163, 184, 0.9);
+}
