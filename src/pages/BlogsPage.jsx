@@ -33,9 +33,9 @@ const Blogs = [
   {
     id: 1,
     name: "React js Blog Notion page",
-    desc: "A website to to organize the association members and events and new members registerations .",
+    desc: "A notion page for React js consepts.",
     longDesc:
-      "A comprehensive online store platform featuring product management, shopping cart, secure payment processing with Stripe, order tracking, and a powerful admin dashboard for inventory and sales management.",
+      "A notion page where I share my notes and insights on React js, covering everything from hooks and state management to performance optimization and best practices. It's a resource for developers of all levels looking to deepen their understanding of React.",
     image: "/r.png",
     tech: ["React", "hooks", "React Query", "Redux", "Tailwind CSS"],
     category: "frontend",
