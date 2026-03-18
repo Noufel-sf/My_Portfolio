@@ -38,6 +38,9 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Projects", path: "/projects" },
+    { name: "Blogs", path: "/blogs" },
+
+    
   ];
 
   return (
@@ -54,7 +57,7 @@ export default function Navbar() {
           <svg
             viewBox="0 0 22 24"
             fill="currentColor"
-            class="w-5 h-5 m-4 text-white animate-[spin_10s_linear_infinite]"
+            className="w-5 h-5 m-4 text-white animate-[spin_10s_linear_infinite]"
           >
             <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"></path>
           </svg>

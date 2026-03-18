@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import HomePage from "./pages/HomePage";
 import Projects from "./pages/projects";
 import NotFoundPage from "./pages/NotFoundPage";
+import BlogsPage from "./pages/BlogsPage";
 import Footer from "./Components/Footer";
 import BackToTopButton from "./Components/BackToTopButton";
 
@@ -34,6 +35,8 @@ export default function App() {
             <Routes location={location}>
               <Route path="/" element={<HomePage />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/blogs" element={<BlogsPage />} />
+
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </MotionMain>

@@ -9,9 +9,6 @@ const Icon = ({ d, size = 20 }) => (
   </svg>
 );
 
-const GITHUB =
-  "M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z";
-
 const EXTERNAL_LINK =
   "M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3";
 const ARROW = "M7 17L17 7M17 7H7M17 7v10";
@@ -32,71 +29,19 @@ const ArrowSvg = ({ size = 14 }) => (
 );
 
 // ── PROJECT DATA ─────────────────────────────────────────────────────────────
-const PROJECTS = [
+const Blogs = [
   {
     id: 1,
-    name: "Association website",
+    name: "React js Blog Notion page",
     desc: "A website to to organize the association members and events and new members registerations .",
     longDesc:
       "A comprehensive online store platform featuring product management, shopping cart, secure payment processing with Stripe, order tracking, and a powerful admin dashboard for inventory and sales management.",
-    image: "/rokay.png",
-    tech: ["React.js", "MongoDB", "TypeScript" , "Express js", "Tailwind CSS"],
-    category: "website",
-    date: "february 2026",
-    preview: "https://rokaichabab.vercel.app/",
-    github: "https://github.com/Noufel-sf/Rokai_website",
-  },
-  {
-    id: 2,
-    name: "Library management system api",
-    desc: "A RESTful API for managing a library's book inventory, user accounts, and borrowing transactions.",
-    longDesc:
-      "A robust API built with Node.js and Nest.js, featuring secure authentication jwt, database integration with PostgreSQL Neon prisma orm, and comprehensive endpoints for book management, user operations, and transaction handling.",
-    image: "/b1.jpg",
-    tech: ["Nest.js", "Node.js", "Redis", "Rest api", "PostgreSQL", "Prisma"],
-    category: "backend",
-    date: "March 2026",
-    preview: "https://github.com/Noufel-sf/nest_redis_library_system",
-    github: "https://github.com/Noufel-sf/nest_redis_library_system",
-  },
-  {
-    id: 3,
-    name: "Portfolio Website",
-    desc: "A personal portfolio website showcasing skills, and experience with a modern design and responsive layout.",
-    longDesc:
-      "A modern, responsive portfolio website built with React and Tailwind CSS, featuring a clean design and smooth animations to showcase my skills and experience.",
-    image: "/p2.jpg",
-    tech: ["React.js", "Gsap", "framer-motion", "Tailwind CSS"],
+    image: "/r.png",
+    tech: ["React", "hooks", "React Query", "Redux", "Tailwind CSS"],
     category: "frontend",
-    date: "2026",
-    preview: "https://abdou-portfolio-tau.vercel.app/",
-    github: "https://github.com/Noufel-sf/Abdou_portfolio",
-  },
-  {
-    id: 4,
-    name: "Social media platform",
-    desc: "A social media platform for users to share posts, connect with friends, and engage with content.",
-    longDesc:
-      "A modern, responsive social media platform built with React and Tailwind CSS, featuring a clean design and smooth animations to showcase my skills and experience.",
-    image: "/p3.png",
-    tech: ["React.js", "socket.io", "session", "expressjs", "Rest API", "Tailwind CSS"],
-    category: "Mern stack",
-    date: "2025",
-    preview: "https://github.com/Noufel-sf/Social_mediaApp",
-    github: "https://github.com/Noufel-sf/Social_mediaApp",
-  },
-   {
-    id: 5,
-    name: "Restorant reservation system",
-    desc: "A Restorent website platform for users to order food and make reservations.",
-    longDesc:
-      "A modern website for restaurant built with Next.js and Tailwind CSS, featuring a clean design and smooth animations to showcase my skills and experience.",
-    image: "/r2.png",
-    tech: ["Next.js", "drizzle", "SSR", "postgresql", "typescript", "Rest API", "Tailwind CSS"],
-    category: "Next.js",
-    date: "2025",
-    preview: "https://github.com/Noufel-sf/Restorent_postgress",
-    github: "https://github.com/Noufel-sf/Restorent_postgress",
+    date: "december 2025",
+    preview:
+      "https://same-sunfish-30e.notion.site/react-notes-noufel-seif-el-islam",
   },
 ];
 
@@ -137,11 +82,11 @@ const Badge = ({ children, muted }) =>
   );
 
 // ── PROJECT CARD ─────────────────────────────────────────────────────────────
-function ProjectCard({ project, featured = false }) {
+function BlogCard({ blog }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Card className={featured ? "sm:col-span-2" : ""}>
+    <Card>
       <div
         className="group relative h-full"
         onMouseEnter={() => setIsHovered(true)}
@@ -149,10 +94,10 @@ function ProjectCard({ project, featured = false }) {
       >
         {/* Project Image */}
         <div className="relative h-48 bg-gradient-to-br from-[#1a1a1a] to-[#0f0f0f] overflow-hidden">
-          {project.image ? (
+          {blog.image ? (
             <img
-              src={project.image}
-              alt={project.name}
+              src={blog.image}
+              alt={blog.name}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
           ) : (
@@ -182,7 +127,7 @@ function ProjectCard({ project, featured = false }) {
             className="absolute inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center gap-3"
           >
             <motion.a
-              href={project.preview}
+              href={blog.preview}
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -201,64 +146,47 @@ function ProjectCard({ project, featured = false }) {
               </svg>
               Preview
             </motion.a>
-            <motion.a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
-            >
-              <Icon d={GITHUB} size={18} />
-            </motion.a>
           </motion.div>
+        </div>
+        {/* Tech Stack */}
+        <div className="flex flex-wrap p-4 gap-1.5 ">
+          {blog.tech.map((tech) => (
+            <span
+              key={tech}
+              className="inline-flex items-center gap-2 bg-[#7A93A8]/10 border border-[#7A93A8]/25 rounded-lg px-3 py-1 font-mono text-[10px] tracking-wider text-[#7A93A8]"
+            >
+              <span className="w-1.5 h-1.5 rounded-sm bg-[#7A93A8] pulse inline-block" />
+              {tech}
+            </span>
+          ))}
         </div>
 
         {/* Content */}
         <div className="p-5">
           <div className="flex items-center gap-2 mb-2 flex-wrap">
-            <Badge>{project.category}</Badge>
+            <Badge>{blog.category}</Badge>
             <span className="font-mono text-[10px] text-neutral-700">
-              {project.date}
+              {blog.date}
             </span>
           </div>
 
           <h3 className="font-bold text-[15px] tracking-tight mb-2 group-hover:text-[#7A93A8] transition-colors duration-200">
-            {project.name}
+            {blog.name}
           </h3>
 
           <p className="text-[13px] text-neutral-600 leading-relaxed mb-3">
-            {project.desc}
+            {blog.desc}
           </p>
-
-          {/* Tech Stack */}
-          <div className="flex flex-wrap gap-1.5 mb-3">
-            {project.tech.map((tech) => (
-              <span key={tech} className="inline-flex items-center gap-2 bg-[#7A93A8]/10 border border-[#7A93A8]/25 rounded-lg px-3 py-1 font-mono text-[10px] tracking-wider text-[#7A93A8]">
-                <span className="w-1.5 h-1.5 rounded-sm bg-[#7A93A8] pulse inline-block" />
-                {tech}
-              </span>
-            ))}
-          </div>
 
           {/* Action Links */}
           <div className="flex items-center gap-3 pt-3 border-t border-[#1a1a1a]">
             <a
-              href={project.preview}
+              href={blog.preview}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 font-mono text-[11px] text-neutral-600 hover:text-[#7A93A8] transition-colors"
             >
-              Live Site <ArrowSvg size={12} />
-            </a>
-            <span className="text-neutral-800">•</span>
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 font-mono text-[11px] text-neutral-600 hover:text-[#7A93A8] transition-colors"
-            >
-              Code <ArrowSvg size={12} />
+              Live blog <ArrowSvg size={12} />
             </a>
           </div>
         </div>
@@ -268,21 +196,21 @@ function ProjectCard({ project, featured = false }) {
 }
 
 // ── MAIN ─────────────────────────────────────────────────────────────────────
-export default function Projects() {
+export default function BlogsPage() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-50px" });
   const [filter, setFilter] = useState("All");
 
-  const categories = ["All", ...new Set(PROJECTS.map((p) => p.category))];
-  const filteredProjects =
-    filter === "All" ? PROJECTS : PROJECTS.filter((p) => p.category === filter);
+  const categories = ["All", ...new Set(Blogs.map((b) => b.category))];
+  const filteredBlogs =
+    filter === "All" ? Blogs : Blogs.filter((b) => b.category === filter);
 
   return (
     <>
       <SEO
-        title="Projects"
-        description="Explore projects built by Nasri Noufel: full stack products, real-world platforms, and modern web solutions with preview and GitHub links."
-        url="/projects"
+        title="Blogs"
+        description="Explore blog posts written by Nasri Noufel: full stack development, modern UI/UX design, and clean code practices."
+        url="/blogs"
       />
       <div
         className="min-h-screen bg-[#080808] text-white"
@@ -304,7 +232,7 @@ export default function Projects() {
               <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"></path>
             </svg>
             <span className="font-mono text-[12px] tracking-[.16em] uppercase text-neutral-700">
-              Projects
+              Blogs
             </span>
           </div>
 
@@ -315,13 +243,13 @@ export default function Projects() {
               letterSpacing: "-0.03em",
             }}
           >
-            Featured <span className="text-[#7A93A8]">Projects</span>
+            Featured <span className="text-[#7A93A8]">Blogs</span>
           </h1>
 
           <p className="text-neutral-500 leading-relaxed max-w-2xl mb-8">
             A collection of my recent work showcasing full-stack development,
-            modern UI/UX design, and clean code practices. Each project includes
-            live previews and source code.
+            modern UI/UX design, and clean code practices. Each blog post
+            includes live previews and source code.
           </p>
 
           {/* Filter Buttons */}
@@ -344,7 +272,7 @@ export default function Projects() {
           </div>
         </motion.div>
 
-        {/* Projects Grid */}
+        {/* Blog Grid */}
         <motion.div
           ref={ref}
           variants={stagger}
@@ -354,26 +282,26 @@ export default function Projects() {
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <AnimatePresence mode="popLayout">
-              {filteredProjects.map((project) => (
+              {filteredBlogs.map((blog) => (
                 <motion.div
-                  key={`${filter}-${project.id}`}
+                  key={`${filter}-${blog.id}`}
                   layout
                   variants={up}
                   initial="hidden"
                   animate="show"
                   exit="hidden"
                 >
-                  <ProjectCard project={project} />
+                  <BlogCard blog={blog} />
                 </motion.div>
               ))}
             </AnimatePresence>
           </div>
 
           {/* Empty State */}
-          {filteredProjects.length === 0 && (
+          {filteredBlogs.length === 0 && (
             <div className="text-center py-20">
               <p className="text-neutral-600 font-mono text-sm">
-                No projects found in this category
+                No blogs found in this category
               </p>
             </div>
           )}
