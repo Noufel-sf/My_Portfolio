@@ -82,15 +82,10 @@ const EDUCATION = [
     year: "present",
     primary: true,
   },
-  {
-    name: "ReactJS Certificate",
-    school: "Udemy",
-    year: "2022",
-    primary: false,
-  },
+  
   {
     name: "Agile scrum Certificate",
-    school: "simp learn",
+    school: "simplilearn",
     year: "2025",
     primary: false,
   },
@@ -99,14 +94,14 @@ const EXPERIENCE = [
   {
     role: "Mern Stack Developer",
     company: "freelence",
-    period: "2025 – Present",
+    period: "2024 – Present",
     desc: "Building scalable APIs and responsive UIs with React.js & express JS.",
     current: true,
   },
   {
     role: "Frontend Developer",
     company: "Freelance",
-    period: "2022 – 2024",
+    period: "2024 – 2026",
     desc: "Delivered 10+ client projects with React js, Next js TailwindCss, and modern tooling.",
     current: false,
   },
