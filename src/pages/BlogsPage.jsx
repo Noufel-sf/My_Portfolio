@@ -43,6 +43,19 @@ const Blogs = [
     preview:
       "https://same-sunfish-30e.notion.site/react-notes-noufel-seif-el-islam",
   },
+   {
+    id: 2,
+    name: "Git Essentials Blog Notion page",
+    desc: "A notion page for Git essentials consepts.",
+    longDesc:
+      "A notion page where I share my notes and insights on Git, covering everything from basic commands and branching to advanced workflows and best practices. It's a resource for developers of all levels looking to deepen their understanding of Git.",
+    image: "/git.png",
+    tech: ["Git", "GitHub", "Version Control", "Branching", "Merging"],
+    category: "version control",
+    date: "march 2026",
+    preview:
+      "https://same-sunfish-30e.notion.site/git-and-github-1ca094dafe0e807ab1bcc0c4fcc414d5#327094dafe0e8072959cfc8b6dc1e4a2",
+  },
 ];
 
 // ── VARIANTS ─────────────────────────────────────────────────────────────────
