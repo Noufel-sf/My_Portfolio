@@ -98,6 +98,19 @@ const PROJECTS = [
     preview: "https://github.com/Noufel-sf/Restorent_postgress",
     github: "https://github.com/Noufel-sf/Restorent_postgress",
   },
+   {
+    id: 6,
+    name: "website for defining dz young leaders project",
+    desc: "A website for defining the dz young leaders project.",
+    longDesc:
+      "A modern website for the dz young leaders project built with Next.js and Tailwind CSS, featuring a clean design and smooth animations to showcase my skills and experience.",
+    image: "/ilyas.png",
+    tech: ["Next.js", "typescript", "Tailwind CSS"],
+    category: "Next.js",
+    date: "2026",
+    preview: "https://i-bawsala.vercel.app/",
+    github: "https://i-bawsala.vercel.app/",
+  },
 ];
 
 // ── VARIANTS ─────────────────────────────────────────────────────────────────
