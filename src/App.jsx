@@ -7,6 +7,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import BlogsPage from "./pages/BlogsPage";
 import Footer from "./Components/Footer";
 import BackToTopButton from "./Components/BackToTopButton";
+import Preloader from "./Components/Preloader";
 
 export default function App() {
   const location = useLocation();
@@ -16,6 +17,7 @@ export default function App() {
   return (
     // <ErrorFallback>
       <div className="min-h-screen bg-[#080808]">
+        <Preloader />
         <Navbar />
         <AnimatePresence mode="wait" initial={false}>
           <MotionMain

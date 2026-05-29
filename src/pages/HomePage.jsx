@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useRef } from "react";
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 import { Link } from "react-router-dom";
 import SEO from "../Components/Seo";
