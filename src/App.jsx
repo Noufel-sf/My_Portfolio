@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Navbar from "./Components/Navbar";
+import Navbar2 from "./Components/Navbar2";
 import HomePage from "./pages/HomePage";
 import Projects from "./pages/projects";
 import NotFoundPage from "./pages/NotFoundPage";
@@ -18,7 +18,7 @@ export default function App() {
     // <ErrorFallback>
       <div className="min-h-screen bg-[#080808]">
         <Preloader />
-        <Navbar />
+        <Navbar2 />
         <AnimatePresence mode="wait" initial={false}>
           <MotionMain
             key={location.pathname}

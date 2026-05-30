@@ -1,12 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function BackToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const toggleVisibility = () => {
-      setIsVisible(window.scrollY > 320);
+      const currentScrollY = window.scrollY;
+      const isScrollingDown = currentScrollY > lastScrollY.current;
+
+      setIsVisible(!isScrollingDown || currentScrollY < 8);
+      lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener("scroll", toggleVisibility, { passive: true });
@@ -32,7 +37,7 @@ export default function BackToTopButton() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 12, scale: 0.9 }}
           transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed bottom-6 cursor-pointer right-6 sm:right-6 z-[60] h-11 w-11 rounded-full border border-[#273440] bg-[#0d1116]/95 text-[#7A93A8] shadow-[0_10px_25px_rgba(0,0,0,0.35)] backdrop-blur-md transition-all duration-200 hover:-translate-y-1 hover:border-[#7A93A8] hover:bg-[#7A93A8] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7A93A8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#080808]"
+          className="fixed bottom-6 right-6 z-60 h-11 w-11 cursor-pointer rounded-full border border-[#273440] bg-[#0d1116]/95 text-[#7A93A8] shadow-[0_10px_25px_rgba(0,0,0,0.35)] backdrop-blur-md transition-all duration-200 hover:-translate-y-1 hover:border-[#7A93A8] hover:bg-[#7A93A8] hover:text-white sm:right-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7A93A8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#080808]"
         >
           <svg
             width="18"

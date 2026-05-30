@@ -316,7 +316,7 @@ export default function Projects() {
             >
               <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"></path>
             </svg>
-            <span className="font-mono text-[12px] tracking-[.16em] uppercase text-neutral-700">
+            <span className="font-mono text-[12px] tracking-[.16em] uppercase text-neutral-400">
               Projects
             </span>
           </div>

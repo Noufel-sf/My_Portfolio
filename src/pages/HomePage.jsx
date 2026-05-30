@@ -47,32 +47,32 @@ const SKILLS = [
   "NestJS",
   "MongoDB",
   "PostgreSQL",
+  "React Native",
   "Tailwind CSS",
   "GraphQL",
   "Docker",
   "Redis",
   "Prisma",
   "Git",
-  "Figma",
 ];
 const PROJECTS = [
   {
     name: "Full stack Ecommerce project",
     desc: "A solution for stores to turn thier work online",
     date: "Oct 2026",
-    tag: "SaaS",
+    tag: "B2B",
   },
   {
     name: "Mern stack Social media website",
     desc: "social media website to practise websocket and enhance my mern stack skills",
     date: "Sept 2025",
-    tag: "B2B",
+    tag: "Personal",
   },
   {
     name: "Association club website",
     desc: "A landing pages for a club website to facilate registerations and organizing human resources",
     date: "2024",
-    tag: "Content",
+    tag: "Freelance",
   },
 ];
 const EDUCATION = [
@@ -212,7 +212,7 @@ export default function HomePage() {
         url="/"
       />
       <div
-        className="min-h-screen py-5 bg-[#080808] text-white"
+        className="min-h-screen py-18  md:py-22 bg-[#080808] text-white"
         style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}
       >
         {/* ── BENTO GRID ──────────────────────────────────────────────── */}
@@ -738,7 +738,7 @@ export default function HomePage() {
               id="contact"
             >
               <div>
-                <p className="font-mono text-[10px] tracking-[.16em] uppercase text-neutral-700 mb-2">
+                <p className="font-mono text-[10px] tracking-[.16em] uppercase text-neutral-400 mb-2">
                   Let's work together
                 </p>
                 <h2
