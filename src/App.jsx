@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Navbar2 from "./Components/Navbar2";
+import Navbar2 from "./Components/NavBar2";
 import HomePage from "./pages/HomePage";
 import Projects from "./pages/projects";
 import NotFoundPage from "./pages/NotFoundPage";
