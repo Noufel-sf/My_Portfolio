@@ -92,8 +92,8 @@ const PROJECTS = [
     longDesc:
       "A modern website for restaurant built with Next.js and Tailwind CSS, featuring a clean design and smooth animations to showcase my skills and experience.",
     image: "/r2.png",
-    tech: ["Next.js", "drizzle", "SSR", "postgresql", "typescript", "Rest API", "Tailwind CSS"],
-    category: "Next.js",
+    tech: ["Next.js", "drizzle", "framer-motion", "postgresql", "typescript", "Rest API", "Tailwind CSS"],
+    category: "full stack",
     date: "2025",
     preview: "https://github.com/Noufel-sf/Restorent_postgress",
     github: "https://github.com/Noufel-sf/Restorent_postgress",
@@ -105,7 +105,7 @@ const PROJECTS = [
     longDesc:
       "A modern website for the dz young leaders project built with Next.js and Tailwind CSS, featuring a clean design and smooth animations to showcase my skills and experience.",
     image: "/khadijahome.png",
-    tech: ["Next.js", "typescript", "Tailwind CSS"],
+    tech: ["Next.js", "typescript", "Tailwind CSS","gsap"],
     category: "frontend",
     date: "2026",
     preview: "https://rowad-chabab.vercel.app/",
@@ -123,6 +123,19 @@ const PROJECTS = [
     date: "2026",
     preview: "https://i-bawsala.vercel.app/",
     github: "https://i-bawsala.vercel.app/",
+  },
+    {
+    id: 8,
+    name: "Ecommerce and Job Match website",
+    desc: "A website for solving ecommerce and job issues",
+    longDesc:
+      "A modern website for solving ecommerce and job issues built with Next.js and Tailwind CSS, featuring a clean design  to showcase my skills and experience.",
+    image: "/Sauqli.png",
+    tech: ["Next.js", "typescript", "Tailwind CSS" ,"spring boot" , "cloudinary" , "postgress"],
+    category: "Full stack",
+    date: "2026",
+    preview: "https://ecom-jobs-saleh.vercel.app/",
+    github: "https://ecom-jobs-saleh.vercel.app/",
   },
 ];
 
