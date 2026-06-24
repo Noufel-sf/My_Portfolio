@@ -134,8 +134,21 @@ const PROJECTS = [
     tech: ["Next.js", "typescript", "Tailwind CSS" ,"spring boot" , "cloudinary" , "postgress"],
     category: "Full stack",
     date: "2026",
-    preview: "https://ecom-jobs-saleh.vercel.app/",
-    github: "https://ecom-jobs-saleh.vercel.app/",
+    preview: "https://www.souaqlidz.shop/",
+    github: "https://www.souaqlidz.shop/",
+  },
+   {
+    id: 9,
+    name: "website defining Dz young leaders project",
+    desc: "A website for defining legacy and storys of algeria",
+    longDesc:
+      "A modern website for defining legacy and storys of algeria built with Next.js and Tailwind CSS, featuring a clean design  to showcase my skills and experience.",
+    image: "/lina.png",
+    tech: ["Next.js", "Typescript", "Tailwind CSS" ,"Gsap"],
+    category: "frontend",
+    date: "2026",
+    preview: "https://dz-yound-leaders3-lina.vercel.app/",
+    github: "https://dz-yound-leaders3-lina.vercel.app/",
   },
 ];
 
