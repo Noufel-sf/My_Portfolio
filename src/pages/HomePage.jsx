@@ -82,7 +82,7 @@ const EDUCATION = [
     year: "present",
     primary: true,
   },
-  
+
   {
     name: "Agile scrum Certificate",
     school: "simplilearn",
@@ -102,7 +102,7 @@ const EXPERIENCE = [
     role: "Frontend Developer",
     company: "Freelance",
     period: "2024 – 2026",
-    desc: "Delivered 10+ client projects with React js, Next js TailwindCss, and modern tooling.",
+    desc: "Delivered 5+ client projects with React js, Next js TailwindCss, and modern tooling.",
     current: false,
   },
 ];
@@ -131,7 +131,6 @@ const up = {
     transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
   },
 };
-
 
 // ── MAGNETIC LINK ────────────────────────────────────────────────────────────
 function Magnetic({ href, children, className }) {
@@ -552,7 +551,7 @@ export default function HomePage() {
                 {[
                   { v: "12+", l: "Projects Built" },
                   { v: "1.5+", l: "Years Exp." },
-                  { v: "3+", l: "Contributions" },
+                  { v: "5+", l: "Clients Served" },
                 ].map((s, i, a) => (
                   <div key={s.l}>
                     <p
