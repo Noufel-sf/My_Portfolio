@@ -8,6 +8,7 @@ import BlogsPage from "./pages/BlogsPage";
 import Footer from "./Components/Footer";
 import BackToTopButton from "./Components/BackToTopButton";
 import Preloader from "./Components/Preloader";
+import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 
 export default function App() {
   const location = useLocation();
@@ -38,6 +39,7 @@ export default function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/blogs" element={<BlogsPage />} />
+              <Route path="/projectdetailspage/:id" element={<ProjectDetailsPage />} />
 
               <Route path="*" element={<NotFoundPage />} />
             </Routes>

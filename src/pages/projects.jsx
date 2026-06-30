@@ -1,6 +1,8 @@
 import { useState, useRef } from "react";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import SEO from "../Components/Seo";
+import { PROJECTS } from "../Components/data";
+import { Link } from "react-router-dom";
 
 // ── ICONS ────────────────────────────────────────────────────────────────────
 const Icon = ({ d, size = 20 }) => (
@@ -30,127 +32,6 @@ const ArrowSvg = ({ size = 14 }) => (
     <path d={ARROW} />
   </svg>
 );
-
-// ── PROJECT DATA ─────────────────────────────────────────────────────────────
-const PROJECTS = [
-  {
-    id: 1,
-    name: "Association website",
-    desc: "A website to to organize the association members and events and new members registerations .",
-    longDesc:
-      "A comprehensive online store platform featuring product management, shopping cart, secure payment processing with Stripe, order tracking, and a powerful admin dashboard for inventory and sales management.",
-    image: "/rokay.png",
-    tech: ["React.js", "MongoDB", "TypeScript" , "Express js", "Tailwind CSS"],
-    category: "website",
-    date: "february 2026",
-    preview: "https://rokaichabab.vercel.app/",
-    github: "https://github.com/Noufel-sf/Rokai_website",
-  },
-  {
-    id: 2,
-    name: "Library management system api",
-    desc: "A RESTful API for managing a library's book inventory, user accounts, and borrowing transactions.",
-    longDesc:
-      "A robust API built with Node.js and Nest.js, featuring secure authentication jwt, database integration with PostgreSQL Neon prisma orm, and comprehensive endpoints for book management, user operations, and transaction handling.",
-    image: "/b1.jpg",
-    tech: ["Nest.js", "Node.js", "Redis", "Rest api", "PostgreSQL", "Prisma"],
-    category: "backend",
-    date: "March 2026",
-    preview: "https://github.com/Noufel-sf/nest_redis_library_system",
-    github: "https://github.com/Noufel-sf/nest_redis_library_system",
-  },
-  {
-    id: 3,
-    name: "Portfolio Website",
-    desc: "A personal portfolio website showcasing skills, and experience with a modern design and responsive layout.",
-    longDesc:
-      "A modern, responsive portfolio website built with React and Tailwind CSS, featuring a clean design and smooth animations to showcase my skills and experience.",
-    image: "/p2.jpg",
-    tech: ["React.js", "Gsap", "framer-motion", "Tailwind CSS"],
-    category: "frontend",
-    date: "2026",
-    preview: "https://abdou-portfolio-tau.vercel.app/",
-    github: "https://github.com/Noufel-sf/Abdou_portfolio",
-  },
-  {
-    id: 4,
-    name: "Social media platform",
-    desc: "A social media platform for users to share posts, connect with friends, and engage with content.",
-    longDesc:
-      "A modern, responsive social media platform built with React and Tailwind CSS, featuring a clean design and smooth animations to showcase my skills and experience.",
-    image: "/p3.png",
-    tech: ["React.js", "socket.io", "session", "expressjs", "Rest API", "Tailwind CSS"],
-    category: "Mern stack",
-    date: "2025",
-    preview: "https://github.com/Noufel-sf/Social_mediaApp",
-    github: "https://github.com/Noufel-sf/Social_mediaApp",
-  },
-   {
-    id: 5,
-    name: "Restorant reservation system",
-    desc: "A Restorent website platform for users to order food and make reservations.",
-    longDesc:
-      "A modern website for restaurant built with Next.js and Tailwind CSS, featuring a clean design and smooth animations to showcase my skills and experience.",
-    image: "/r2.png",
-    tech: ["Next.js", "drizzle", "framer-motion", "postgresql", "typescript", "Rest API", "Tailwind CSS"],
-    category: "full stack",
-    date: "2025",
-    preview: "https://github.com/Noufel-sf/Restorent_postgress",
-    github: "https://github.com/Noufel-sf/Restorent_postgress",
-  },
-   {
-    id: 6,
-    name: "website for defining dz young leaders project",
-    desc: "A website for defining the dz young leaders project.",
-    longDesc:
-      "A modern website for the dz young leaders project built with Next.js and Tailwind CSS, featuring a clean design and smooth animations to showcase my skills and experience.",
-    image: "/khadijahome.png",
-    tech: ["Next.js", "typescript", "Tailwind CSS","gsap"],
-    category: "frontend",
-    date: "2026",
-    preview: "https://rowad-chabab.vercel.app/",
-    github: "https://rowad-chabab.vercel.app/",
-  },
-    {
-    id: 7,
-    name: "website for defining dz young leaders project",
-    desc: "A website for defining the dz young leaders project.",
-    longDesc:
-      "A modern website for the dz young leaders project built with Next.js and Tailwind CSS, featuring a clean design and smooth animations to showcase my skills and experience.",
-    image: "/ilyas.png",
-    tech: ["Next.js", "typescript", "Tailwind CSS" ,"gsap"],
-    category: "frontend",
-    date: "2026",
-    preview: "https://i-bawsala.vercel.app/",
-    github: "https://i-bawsala.vercel.app/",
-  },
-    {
-    id: 8,
-    name: "Ecommerce and Job Match website",
-    desc: "A website for solving ecommerce and job issues",
-    longDesc:
-      "A modern website for solving ecommerce and job issues built with Next.js and Tailwind CSS, featuring a clean design  to showcase my skills and experience.",
-    image: "/Sauqli.png",
-    tech: ["Next.js", "typescript", "Tailwind CSS" ,"spring boot" , "cloudinary" , "postgress"],
-    category: "Full stack",
-    date: "2026",
-    preview: "https://www.souaqlidz.shop/",
-    github: "https://www.souaqlidz.shop/",
-  },
-   {
-    id: 9,
-    name: "website defining Dz young leaders project",
-    desc: "A website for defining legacy and storys of algeria",
-    longDesc:
-      "A modern website for defining legacy and storys of algeria built with Next.js and Tailwind CSS, featuring a clean design  to showcase my skills and experience.",
-    image: "/lina.png",
-    tech: ["Next.js", "Typescript", "Tailwind CSS" ,"Gsap"],
-    category: "frontend",
-    date: "2026",
-    preview: "https://dz-yound-leaders3-lina.vercel.app/",
-    github: "https://dz-yound-leaders3-lina.vercel.app/",
-  },
-];
 
 // ── VARIANTS ─────────────────────────────────────────────────────────────────
 const stagger = { hidden: {}, show: { transition: { staggerChildren: 0.08 } } };
@@ -193,6 +74,10 @@ function ProjectCard({ project, featured = false }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
+    <Link
+    to={`/projectdetailspage/${project.id}`}
+    className="block"
+  >
     <Card className={featured ? "sm:col-span-2" : ""}>
       <div
         className="group relative h-full"
@@ -316,6 +201,7 @@ function ProjectCard({ project, featured = false }) {
         </div>
       </div>
     </Card>
+    </Link>
   );
 }
 
