@@ -16,14 +16,8 @@ export const PROJECTS = [
 
     image: "/rokay.png",
 
-    gallery: [
-      "/rokay.png",
-      "/rokay-dashboard.png",
-      "/rokay-members.png",
-      "/rokay-events.png",
-    ],
 
-    category: "Full Stack",
+    category: "full Stack",
 
     date: "February 2026",
 
@@ -37,24 +31,7 @@ export const PROJECTS = [
 
     github: "https://github.com/Noufel-sf/Rokai_website",
 
-    metrics: [
-      {
-        title: "Pages",
-        value: "15+",
-      },
-      {
-        title: "Components",
-        value: "45+",
-      },
-      {
-        title: "Responsive",
-        value: "100%",
-      },
-      {
-        title: "Development",
-        value: "3 Months",
-      },
-    ],
+    
 
     tech: {
       frontend: ["React", "TypeScript", "Tailwind CSS"],
@@ -67,10 +44,10 @@ export const PROJECTS = [
     },
 
     features: [
-      {
-        title: "Authentication",
-        description: "Secure authentication system for administrators.",
-      },
+      // {
+      //   title: "Authentication",
+      //   description: "Secure authentication system for administrators.",
+      // },
 
       {
         title: "Member Management",
@@ -283,7 +260,7 @@ export const PROJECTS = [
   {
     id: 3,
 
-    slug: "developer-portfolio",
+    slug: "designer-portfolio",
 
     name: "Developer Portfolio",
 
@@ -297,12 +274,7 @@ export const PROJECTS = [
 
     image: "/p2.jpg",
 
-    gallery: [
-      "/p2.jpg",
-      "/portfolio-home.png",
-      "/portfolio-projects.png",
-      "/portfolio-contact.png",
-    ],
+    
 
     category: "Frontend",
 
@@ -318,24 +290,7 @@ export const PROJECTS = [
 
     github: "https://github.com/Noufel-sf/Abdou_portfolio",
 
-    metrics: [
-      {
-        title: "Pages",
-        value: "8",
-      },
-      {
-        title: "Animations",
-        value: "30+",
-      },
-      {
-        title: "Performance",
-        value: "98",
-      },
-      {
-        title: "Responsive",
-        value: "100%",
-      },
-    ],
+  
 
     tech: {
       frontend: ["React", "Tailwind CSS", "Framer Motion", "GSAP"],
@@ -435,14 +390,9 @@ export const PROJECTS = [
 
     image: "/p3.png",
 
-    gallery: [
-      "/p3.png",
-      "/social-feed.png",
-      "/social-profile.png",
-      "/social-chat.png",
-    ],
+   
 
-    category: "Full Stack",
+    category: "full Stack",
 
     date: "2025",
 
@@ -456,24 +406,7 @@ export const PROJECTS = [
 
     github: "https://github.com/Noufel-sf/Social_mediaApp",
 
-    metrics: [
-      {
-        title: "REST APIs",
-        value: "25+",
-      },
-      {
-        title: "Real-Time",
-        value: "Socket.IO",
-      },
-      {
-        title: "Database",
-        value: "MongoDB",
-      },
-      {
-        title: "Modules",
-        value: "15+",
-      },
-    ],
+  
 
     tech: {
       frontend: ["React", "Tailwind CSS"],
@@ -507,10 +440,7 @@ export const PROJECTS = [
         description: "Create, edit and delete posts.",
       },
 
-      {
-        title: "Likes & Comments",
-        description: "Users can interact with posts in real time.",
-      },
+     
 
       {
         title: "Real-Time Communication",
@@ -563,667 +493,589 @@ export const PROJECTS = [
     ],
   },
   {
-  id: 5,
+    id: 5,
 
-  slug: "restaurant-reservation-system",
+    slug: "restaurant-reservation-system",
 
-  name: "Restaurant Reservation System",
+    name: "Restaurant Reservation System",
 
-  subtitle:
-    "A modern full-stack restaurant platform for reservations, online ordering and menu management.",
+    subtitle:
+      "A modern full-stack restaurant platform for reservations, online ordering and menu management.",
 
-  desc:
-    "A restaurant management platform built with Next.js, PostgreSQL and Drizzle ORM.",
+    desc: "A restaurant management platform built with Next.js, PostgreSQL and Drizzle ORM.",
 
-  overview:
-    "The Restaurant Reservation System was developed to modernize restaurant operations by allowing customers to browse the menu, reserve tables and place food orders online. The application includes a responsive customer interface and a scalable backend powered by PostgreSQL and Drizzle ORM. The project focuses on performance, user experience and maintainability while demonstrating modern full-stack development with Next.js.",
+    overview:
+      "The Restaurant Reservation System was developed to modernize restaurant operations by allowing customers to browse the menu, reserve tables and place food orders online. The application includes a responsive customer interface and a scalable backend powered by PostgreSQL and Drizzle ORM. The project focuses on performance, user experience and maintainability while demonstrating modern full-stack development with Next.js.",
 
-  image: "/r2.png",
+    image: "/r2.png",
+  
+    category: "full Stack",
 
-  gallery: [
-    "/r2.png",
-    "/restaurant-menu.png",
-    "/restaurant-booking.png",
-    "/restaurant-dashboard.png",
-  ],
+    date: "2025",
 
-  category: "Full Stack",
+    role: "Full Stack Developer",
 
-  date: "2025",
+    status: "Completed",
 
-  duration: "3 Months",
+    preview: "https://github.com/Noufel-sf/Restorent_postgress",
 
-  role: "Full Stack Developer",
+    github: "https://github.com/Noufel-sf/Restorent_postgress",
 
-  status: "Completed",
-
-  preview: "https://github.com/Noufel-sf/Restorent_postgress",
-
-  github: "https://github.com/Noufel-sf/Restorent_postgress",
-
-  metrics: [
-    {
-      title: "Pages",
-      value: "18",
-    },
-    {
-      title: "Database",
-      value: "PostgreSQL",
-    },
-    {
-      title: "Reservations",
-      value: "Online",
-    },
-    {
-      title: "Responsive",
-      value: "100%",
-    },
-  ],
-
-  tech: {
-    frontend: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
+    metrics: [
+      {
+        title: "Pages",
+        value: "18",
+      },
+      {
+        title: "Database",
+        value: "PostgreSQL",
+      },
+      {
+        title: "Reservations",
+        value: "Online",
+      },
+      {
+        title: "Responsive",
+        value: "100%",
+      },
     ],
 
-    backend: [
-      "Next.js API",
-      "Drizzle ORM",
-    ],
+    tech: {
+      frontend: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
 
-    database: [
-      "PostgreSQL",
-    ],
+      backend: ["Next.js API", "Drizzle ORM"],
 
-    deployment: [
-      "Vercel",
-    ],
-  },
+      database: ["PostgreSQL"],
 
-  features: [
-    {
-      title: "Restaurant Menu",
-      description:
-        "Browse food categories and menu items.",
+      deployment: ["Vercel"],
     },
 
-    {
-      title: "Table Reservation",
-      description:
-        "Reserve restaurant tables online.",
-    },
+    features: [
+      {
+        title: "Restaurant Menu",
+        description: "Browse food categories and menu items.",
+      },
 
-    {
-      title: "Online Ordering",
-      description:
-        "Customers can place food orders digitally.",
-    },
+    
 
-    {
-      title: "Responsive Design",
-      description:
-        "Optimized for desktop and mobile devices.",
-    },
+      {
+        title: "Online Ordering",
+        description: "Customers can place food orders digitally.",
+      },
 
-    {
-      title: "Animated UI",
-      description:
-        "Smooth page transitions using Framer Motion.",
-    },
+      {
+        title: "Responsive Design",
+        description: "Optimized for desktop and mobile devices.",
+      },
 
-    {
-      title: "Modern Database",
-      description:
-        "Efficient relational data management using PostgreSQL.",
-    },
-  ],
+      {
+        title: "Animated UI",
+        description: "Smooth page transitions using Framer Motion.",
+      },
 
-  architecture: {
-    frontend: [
-      "Next.js",
-      "Tailwind CSS",
-      "Framer Motion",
+      {
+        title: "Modern Database",
+        description: "Efficient relational data management using PostgreSQL.",
+      },
     ],
 
-    backend: [
-      "Next.js API Routes",
-      "Drizzle ORM",
+    architecture: {
+      frontend: ["Next.js", "Tailwind CSS", "Framer Motion"],
+
+      backend: ["Next.js API Routes", "Drizzle ORM"],
+
+      database: ["PostgreSQL"],
+
+      deployment: ["Vercel"],
+    },
+
+    challenges: [
+      {
+        problem: "Designing an intuitive reservation workflow.",
+
+        solution:
+          "Created a streamlined booking experience with clear validation and user feedback.",
+      },
+
+      {
+        problem: "Managing relational restaurant data.",
+
+        solution:
+          "Used PostgreSQL with Drizzle ORM for type-safe database operations.",
+      },
+
+      {
+        problem: "Maintaining responsiveness while displaying rich content.",
+
+        solution: "Adopted a mobile-first design using Tailwind CSS.",
+      },
     ],
 
-    database: [
-      "PostgreSQL",
-    ],
-
-    deployment: [
-      "Vercel",
+    learnings: [
+      "Building production-ready applications with Next.js.",
+      "Working with Drizzle ORM.",
+      "Designing relational database schemas.",
+      "Creating responsive booking experiences.",
     ],
   },
 
-  challenges: [
-    {
-      problem:
-        "Designing an intuitive reservation workflow.",
+  {
+    id: 5,
 
-      solution:
-        "Created a streamlined booking experience with clear validation and user feedback.",
+    slug: "dz-young-leaders",
+
+    name: "DZ Young Leaders project",
+
+    subtitle:
+      "A modern landing website introducing the DZ Young Leaders initiative and its mission.",
+
+    desc: "A responsive website presenting the DZ Young Leaders project with engaging animations.",
+
+    overview:
+      "This project was developed to present the DZ Young Leaders initiative through a clean and modern user experience. The website highlights the organization's mission, objectives, team and activities while providing visitors with an engaging browsing experience powered by GSAP animations and responsive layouts.",
+
+    image: "/khadijahome.png",
+
+
+    category: "Frontend",
+
+    date: "2026",
+
+
+    role: "Frontend Developer",
+
+    status: "Completed",
+
+    preview: "https://rowad-chabab.vercel.app/",
+
+    github: "https://rowad-chabab.vercel.app/",
+
+  
+
+    tech: {
+      frontend: ["Next.js", "TypeScript", "Tailwind CSS", "GSAP"],
+
+      backend: [],
+
+      database: [],
+
+      deployment: ["Vercel"],
     },
 
-    {
-      problem:
-        "Managing relational restaurant data.",
+    features: [
+      {
+        title: "Modern Landing Page",
+        description: "Beautiful hero section introducing the project.",
+      },
 
-      solution:
-        "Used PostgreSQL with Drizzle ORM for type-safe database operations.",
-    },
+      {
+        title: "Storytelling Layout",
+        description:
+          "Content organized to guide visitors naturally through the website.",
+      },
 
-    {
-      problem:
-        "Maintaining responsiveness while displaying rich content.",
+      {
+        title: "GSAP Animations",
+        description: "Smooth scroll-based animations improve user engagement.",
+      },
 
-      solution:
-        "Adopted a mobile-first design using Tailwind CSS.",
-    },
-  ],
+      {
+        title: "Responsive Design",
+        description: "Fully optimized for mobile, tablet and desktop.",
+      },
 
-  learnings: [
-    "Building production-ready applications with Next.js.",
-    "Working with Drizzle ORM.",
-    "Designing relational database schemas.",
-    "Creating responsive booking experiences.",
-  ],
-},
+      {
+        title: "SEO Friendly",
+        description: "Built with Next.js for better indexing and performance.",
+      },
 
-{
-  id: 6,
-
-  slug: "dz-young-leaders",
-
-  name: "DZ Young Leaders",
-
-  subtitle:
-    "A modern landing website introducing the DZ Young Leaders initiative and its mission.",
-
-  desc:
-    "A responsive website presenting the DZ Young Leaders project with engaging animations.",
-
-  overview:
-    "This project was developed to present the DZ Young Leaders initiative through a clean and modern user experience. The website highlights the organization's mission, objectives, team and activities while providing visitors with an engaging browsing experience powered by GSAP animations and responsive layouts.",
-
-  image: "/khadijahome.png",
-
-  gallery: [
-    "/khadijahome.png",
-    "/khadija-about.png",
-    "/khadija-team.png",
-    "/khadija-contact.png",
-  ],
-
-  category: "Frontend",
-
-  date: "2026",
-
-  duration: "1 Month",
-
-  role: "Frontend Developer",
-
-  status: "Completed",
-
-  preview: "https://rowad-chabab.vercel.app/",
-
-  github: "https://rowad-chabab.vercel.app/",
-
-  metrics: [
-    {
-      title: "Sections",
-      value: "10",
-    },
-    {
-      title: "Animations",
-      value: "25+",
-    },
-    {
-      title: "Performance",
-      value: "97",
-    },
-    {
-      title: "Responsive",
-      value: "100%",
-    },
-  ],
-
-  tech: {
-    frontend: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "GSAP",
+      {
+        title: "Reusable Components",
+        description: "Modular UI components improve maintainability.",
+      },
     ],
 
-    backend: [],
+    architecture: {
+      frontend: ["Next.js", "TypeScript", "Tailwind CSS", "GSAP"],
 
-    database: [],
+      backend: [],
 
-    deployment: [
-      "Vercel",
-    ],
-  },
+      database: [],
 
-  features: [
-    {
-      title: "Modern Landing Page",
-      description:
-        "Beautiful hero section introducing the project.",
+      deployment: ["Vercel"],
     },
 
-    {
-      title: "Storytelling Layout",
-      description:
-        "Content organized to guide visitors naturally through the website.",
-    },
+    challenges: [
+      {
+        problem: "Balancing rich animations with website performance.",
 
-    {
-      title: "GSAP Animations",
-      description:
-        "Smooth scroll-based animations improve user engagement.",
-    },
+        solution:
+          "Optimized GSAP timelines and animated only visible elements.",
+      },
 
-    {
-      title: "Responsive Design",
-      description:
-        "Fully optimized for mobile, tablet and desktop.",
-    },
+      {
+        problem: "Creating a professional visual identity.",
 
-    {
-      title: "SEO Friendly",
-      description:
-        "Built with Next.js for better indexing and performance.",
-    },
+        solution:
+          "Designed reusable layouts with consistent spacing and typography.",
+      },
 
-    {
-      title: "Reusable Components",
-      description:
-        "Modular UI components improve maintainability.",
-    },
-  ],
+      {
+        problem: "Ensuring responsiveness across devices.",
 
-  architecture: {
-    frontend: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "GSAP",
+        solution: "Used Tailwind CSS with a mobile-first approach.",
+      },
     ],
 
-    backend: [],
-
-    database: [],
-
-    deployment: [
-      "Vercel",
+    learnings: [
+      "Advanced GSAP animation techniques.",
+      "Building landing pages focused on storytelling.",
+      "Improving UI consistency.",
+      "Optimizing performance in animated websites.",
     ],
   },
 
-  challenges: [
-    {
-      problem:
-        "Balancing rich animations with website performance.",
 
-      solution:
-        "Optimized GSAP timelines and animated only visible elements.",
+  {
+    id: 6,
+
+    slug: "dz-young-leaders",
+
+    name: "DZ Young Leaders project",
+
+    subtitle:
+      "A modern landing website introducing the DZ Young Leaders initiative and its mission.",
+
+    desc: "A responsive website presenting the DZ Young Leaders project with engaging animations.",
+
+    overview:
+      "This project was developed to present the DZ Young Leaders initiative through a clean and modern user experience. The website highlights the organization's mission, objectives, team and activities while providing visitors with an engaging browsing experience powered by GSAP animations and responsive layouts.",
+
+    image: "/ilyas.png",
+    category: "Frontend",
+
+    date: "2026",
+
+    duration: "1 Month",
+
+    role: "Frontend Developer",
+
+    status: "Completed",
+
+    preview:  "https://i-bawsala.vercel.app/",
+
+    github: "https://i-bawsala.vercel.app/",
+
+   
+
+    tech: {
+      frontend: ["Next.js", "TypeScript", "Tailwind CSS", "GSAP"],
+
+      backend: [],
+
+      database: [],
+
+      deployment: ["Vercel"],
     },
 
-    {
-      problem:
-        "Creating a professional visual identity.",
+    features: [
+      {
+        title: "Modern Landing Page",
+        description: "Beautiful hero section introducing the project.",
+      },
 
-      solution:
-        "Designed reusable layouts with consistent spacing and typography.",
-    },
+      {
+        title: "Storytelling Layout",
+        description:
+          "Content organized to guide visitors naturally through the website.",
+      },
 
-    {
-      problem:
-        "Ensuring responsiveness across devices.",
+     
+      {
+        title: "Responsive Design",
+        description: "Fully optimized for mobile, tablet and desktop.",
+      },
 
-      solution:
-        "Used Tailwind CSS with a mobile-first approach.",
-    },
-  ],
+      {
+        title: "SEO Friendly",
+        description: "Built with Next.js for better indexing and performance.",
+      },
 
-  learnings: [
-    "Advanced GSAP animation techniques.",
-    "Building landing pages focused on storytelling.",
-    "Improving UI consistency.",
-    "Optimizing performance in animated websites.",
-  ],
-},
-{
-  id: 5,
-
-  slug: "restaurant-reservation-system",
-
-  name: "Restaurant Reservation System",
-
-  subtitle:
-    "A modern full-stack restaurant platform for reservations, online ordering and menu management.",
-
-  desc:
-    "A restaurant management platform built with Next.js, PostgreSQL and Drizzle ORM.",
-
-  overview:
-    "The Restaurant Reservation System was developed to modernize restaurant operations by allowing customers to browse the menu, reserve tables and place food orders online. The application includes a responsive customer interface and a scalable backend powered by PostgreSQL and Drizzle ORM. The project focuses on performance, user experience and maintainability while demonstrating modern full-stack development with Next.js.",
-
-  image: "/r2.png",
-
-  gallery: [
-    "/r2.png",
-    "/restaurant-menu.png",
-    "/restaurant-booking.png",
-    "/restaurant-dashboard.png",
-  ],
-
-  category: "Full Stack",
-
-  date: "2025",
-
-  duration: "3 Months",
-
-  role: "Full Stack Developer",
-
-  status: "Completed",
-
-  preview: "https://github.com/Noufel-sf/Restorent_postgress",
-
-  github: "https://github.com/Noufel-sf/Restorent_postgress",
-
-  metrics: [
-    {
-      title: "Pages",
-      value: "18",
-    },
-    {
-      title: "Database",
-      value: "PostgreSQL",
-    },
-    {
-      title: "Reservations",
-      value: "Online",
-    },
-    {
-      title: "Responsive",
-      value: "100%",
-    },
-  ],
-
-  tech: {
-    frontend: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
+      {
+        title: "Reusable Components",
+        description: "Modular UI components improve maintainability.",
+      },
     ],
 
-    backend: [
-      "Next.js API",
-      "Drizzle ORM",
+    architecture: {
+      frontend: ["Next.js", "TypeScript", "Tailwind CSS", "framer Motion"],
+
+      backend: [],
+
+      database: [],
+
+      deployment: ["Vercel"],
+    },
+
+    challenges: [
+      {
+        problem: "Balancing rich animations with website performance.",
+
+        solution:
+          "Optimized framer Motion and animated only visible elements.",
+      },
+
+      {
+        problem: "Creating a professional visual identity.",
+
+        solution:
+          "Designed reusable layouts with consistent spacing and typography.",
+      },
+
+      {
+        problem: "Ensuring responsiveness across devices.",
+
+        solution: "Used Tailwind CSS with a mobile-first approach.",
+      },
     ],
 
-    database: [
-      "PostgreSQL",
+    learnings: [
+      "trying framer Motion animation techniques.",
+      "Building landing pages focused on storytelling.",
+      "Improving UI consistency.",
+      "Optimizing performance in animated websites.",
+    ],
+  },
+ {
+    id: 7,
+
+    slug: "dz-young-leaders",
+
+    name: "DZ Young Leaders project",
+
+    subtitle:
+      "A modern landing website introducing the DZ Young Leaders initiative and its mission.",
+
+    desc: "A responsive website presenting the DZ Young Leaders project with engaging animations.",
+
+    overview:
+      "This project was developed to present the DZ Young Leaders initiative through a clean and modern user experience. The website highlights the organization's mission, objectives, team and activities while providing visitors with an engaging browsing experience powered by GSAP animations and responsive layouts.",
+
+    image: "/lina.png",
+
+
+    category: "Frontend",
+
+    date: "2026",
+
+
+    role: "Frontend Developer",
+
+    status: "Completed",
+
+    preview: "https://dz-yound-leaders3-lina.vercel.app/",
+
+    github: "https://dz-yound-leaders3-lina.vercel.app/",
+
+  
+
+    tech: {
+      frontend: ["Next.js", "TypeScript", "Tailwind CSS", "GSAP"],
+
+      backend: [],
+
+      database: [],
+
+      deployment: ["Vercel"],
+    },
+
+    features: [
+      {
+        title: "Modern Landing Page",
+        description: "Beautiful hero section introducing the project.",
+      },
+
+      {
+        title: "Storytelling Layout",
+        description:
+          "Content organized to guide visitors naturally through the website.",
+      },
+
+      {
+        title: "GSAP Animations",
+        description: "Smooth scroll-based animations improve user engagement.",
+      },
+
+      {
+        title: "Responsive Design",
+        description: "Fully optimized for mobile, tablet and desktop.",
+      },
+
+      {
+        title: "SEO Friendly",
+        description: "Built with Next.js for better indexing and performance.",
+      },
+
+      {
+        title: "Reusable Components",
+        description: "Modular UI components improve maintainability.",
+      },
     ],
 
-    deployment: [
-      "Vercel",
+    architecture: {
+      frontend: ["Next.js", "TypeScript", "Tailwind CSS", "GSAP"],
+
+      backend: [],
+
+      database: [],
+
+      deployment: ["Vercel"],
+    },
+
+    challenges: [
+      {
+        problem: "Balancing rich animations with website performance.",
+
+        solution:
+          "Optimized GSAP timelines and animated only visible elements.",
+      },
+
+      {
+        problem: "Creating a professional visual identity.",
+
+        solution:
+          "Designed reusable layouts with consistent spacing and typography.",
+      },
+
+      {
+        problem: "Ensuring responsiveness across devices.",
+
+        solution: "Used Tailwind CSS with a mobile-first approach.",
+      },
+    ],
+
+    learnings: [
+      "Advanced GSAP animation techniques.",
+      "Building landing pages focused on storytelling.",
+      "Improving UI consistency.",
+      "Optimizing performance in animated websites.",
     ],
   },
 
-  features: [
-    {
-      title: "Restaurant Menu",
-      description:
-        "Browse food categories and menu items.",
+   {
+    id: 8,
+
+    slug: "Full stack E-commerce & job matching platform",
+
+    name: "Ecommerce & job matching platform",
+
+    subtitle:
+      "A modern full-stack e-commerce & job matching platform like wad kniss.",
+
+    desc: "A ecommerce and job matching platform built with Next.js,Type script ,PostgreSQL and Spring boot cloudinary and .",
+
+    overview:
+      "The platform allows customers to browse products, add them to their cart, and complete purchases online. The application includes a responsive customer interface and a scalable backend powered by PostgreSQL and Drizzle ORM. The project focuses on performance, user experience and maintainability while demonstrating modern full-stack development with Next.js.",
+
+    image: "/Sauqli.png",
+  
+    category: "full Stack",
+
+    date: "2026",
+
+    role: "Full Stack Developer",
+
+    status: "Completed",
+
+    preview: "https://www.souaqlidz.shop/",
+
+    github: "https://www.souaqlidz.shop/",
+
+   
+
+    tech: {
+      frontend: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCn UI"],
+
+      backend: ["Cloudinary", "Spring boot" ],
+
+      database: ["PostgreSQL"],
+
+      deployment: ["Dz security" , "Vercel" ],
     },
 
-    {
-      title: "Table Reservation",
-      description:
-        "Reserve restaurant tables online.",
-    },
+    features: [
+      {
+        title: "Job Matching",
+        description: "Browse job listings and apply directly.",
+      },
 
-    {
-      title: "Online Ordering",
-      description:
-        "Customers can place food orders digitally.",
-    },
+      {
+        title: "Online Ordering",
+        description: "Customers can place food orders digitally.",
+      },
 
-    {
-      title: "Responsive Design",
-      description:
-        "Optimized for desktop and mobile devices.",
-    },
+      {
+        title: "Responsive Design",
+        description: "Optimized for desktop and mobile devices.",
+      },
 
-    {
-      title: "Animated UI",
-      description:
-        "Smooth page transitions using Framer Motion.",
-    },
+      {
+        title: "Admin Dashboards",
+        description: "Manage products, orders and job listings with ease.",
+      },
 
-    {
-      title: "Modern Database",
-      description:
-        "Efficient relational data management using PostgreSQL.",
-    },
-  ],
-
-  architecture: {
-    frontend: [
-      "Next.js",
-      "Tailwind CSS",
-      "Framer Motion",
+      {
+        title: "Modern Database",
+        description: "Efficient relational data management using PostgreSQL.",
+      },
+       {
+        title: "Secure Authentication",
+        description: "Implementing robust user authentication and authorization.",
+      },
     ],
 
-    backend: [
-      "Next.js API Routes",
-      "Drizzle ORM",
+    architecture: {
+      frontend: ["Next.js", "Tailwind CSS", "Framer Motion"],
+
+      backend: ["Next.js API Routes", "Drizzle ORM"],
+
+      database: ["PostgreSQL"],
+
+      deployment: ["Vercel"],
+    },
+
+    challenges: [
+      {
+        problem: "Designing an intuitive ordering workflow.",
+
+        solution:
+          "Created a streamlined booking experience with clear validation and user feedback.",
+      },
+
+      {
+        problem: "Managing relational website data.",
+
+        solution:
+          "Used Spring boot and PostgreSQL for type-safe database operations.",
+      },
+
+      {
+        problem: "Maintaining responsiveness while displaying rich content.",
+
+        solution: "Adopted a mobile-first design using Tailwind CSS.",
+      },
+       {
+        problem: "Server-side rendering and SEO optimization.",
+
+        solution: "Implemented Next.js SSR features and optimized meta tags for better search engine visibility.",
+      },
     ],
 
-    database: [
-      "PostgreSQL",
-    ],
-
-    deployment: [
-      "Vercel",
-    ],
-  },
-
-  challenges: [
-    {
-      problem:
-        "Designing an intuitive reservation workflow.",
-
-      solution:
-        "Created a streamlined booking experience with clear validation and user feedback.",
-    },
-
-    {
-      problem:
-        "Managing relational restaurant data.",
-
-      solution:
-        "Used PostgreSQL with Drizzle ORM for type-safe database operations.",
-    },
-
-    {
-      problem:
-        "Maintaining responsiveness while displaying rich content.",
-
-      solution:
-        "Adopted a mobile-first design using Tailwind CSS.",
-    },
-  ],
-
-  learnings: [
-    "Building production-ready applications with Next.js.",
-    "Working with Drizzle ORM.",
-    "Designing relational database schemas.",
-    "Creating responsive booking experiences.",
-  ],
-},
-
-{
-  id: 6,
-
-  slug: "dz-young-leaders",
-
-  name: "DZ Young Leaders",
-
-  subtitle:
-    "A modern landing website introducing the DZ Young Leaders initiative and its mission.",
-
-  desc:
-    "A responsive website presenting the DZ Young Leaders project with engaging animations.",
-
-  overview:
-    "This project was developed to present the DZ Young Leaders initiative through a clean and modern user experience. The website highlights the organization's mission, objectives, team and activities while providing visitors with an engaging browsing experience powered by GSAP animations and responsive layouts.",
-
-  image: "/khadijahome.png",
-  category: "Frontend",
-
-  date: "2026",
-
-  duration: "1 Month",
-
-  role: "Frontend Developer",
-
-  status: "Completed",
-
-  preview: "https://rowad-chabab.vercel.app/",
-
-  github: "https://rowad-chabab.vercel.app/",
-
-  metrics: [
-    {
-      title: "Sections",
-      value: "10",
-    },
-    {
-      title: "Animations",
-      value: "25+",
-    },
-    {
-      title: "Performance",
-      value: "97",
-    },
-    {
-      title: "Responsive",
-      value: "100%",
-    },
-  ],
-
-  tech: {
-    frontend: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "GSAP",
-    ],
-
-    backend: [],
-
-    database: [],
-
-    deployment: [
-      "Vercel",
+    learnings: [
+      "Building production-ready applications with Next.js.",
+      "Working with ShadCn UI and Tailwind CSS for responsive design.",
+      "Implementing secure authentication and authorization.",
+      "Seo optimization and server-side rendering techniques.",
     ],
   },
-
-  features: [
-    {
-      title: "Modern Landing Page",
-      description:
-        "Beautiful hero section introducing the project.",
-    },
-
-    {
-      title: "Storytelling Layout",
-      description:
-        "Content organized to guide visitors naturally through the website.",
-    },
-
-    {
-      title: "GSAP Animations",
-      description:
-        "Smooth scroll-based animations improve user engagement.",
-    },
-
-    {
-      title: "Responsive Design",
-      description:
-        "Fully optimized for mobile, tablet and desktop.",
-    },
-
-    {
-      title: "SEO Friendly",
-      description:
-        "Built with Next.js for better indexing and performance.",
-    },
-
-    {
-      title: "Reusable Components",
-      description:
-        "Modular UI components improve maintainability.",
-    },
-  ],
-
-  architecture: {
-    frontend: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "GSAP",
-    ],
-
-    backend: [],
-
-    database: [],
-
-    deployment: [
-      "Vercel",
-    ],
-  },
-
-  challenges: [
-    {
-      problem:
-        "Balancing rich animations with website performance.",
-
-      solution:
-        "Optimized GSAP timelines and animated only visible elements.",
-    },
-
-    {
-      problem:
-        "Creating a professional visual identity.",
-
-      solution:
-        "Designed reusable layouts with consistent spacing and typography.",
-    },
-
-    {
-      problem:
-        "Ensuring responsiveness across devices.",
-
-      solution:
-        "Used Tailwind CSS with a mobile-first approach.",
-    },
-  ],
-
-  learnings: [
-    "Advanced GSAP animation techniques.",
-    "Building landing pages focused on storytelling.",
-    "Improving UI consistency.",
-    "Optimizing performance in animated websites.",
-  ],
-},
 ];

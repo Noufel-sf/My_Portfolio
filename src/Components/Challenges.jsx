@@ -61,12 +61,12 @@ export default function Challenges({ challenges, lessons }) {
                   <div className="flex items-center gap-3 mb-6">
 
                     <TriangleAlert
-                      size={20}
+                      size={40}
                       className="text-[#7A93A8] md:hidden"
                     />
 
-                    <h3 className="text-2xl font-bold">
-                      {item.challenge}
+                    <h3 className="text-xl md:text-2xl font-bold">
+                      {item.problem}
                     </h3>
 
                   </div>
@@ -106,7 +106,7 @@ export default function Challenges({ challenges, lessons }) {
             duration: .6,
           }}
           viewport={{ once: true }}
-          className="mt-24 rounded-[32px] border border-[#202020] bg-gradient-to-br from-[#111] to-[#0d0d0d] p-10"
+          className="mt-24 rounded-[32px] border border-[#202020] bg-gradient-to-br from-[#111] to-[#0d0d0d] py-10 px-6 md:p-10"
         >
 
           <div className="flex items-center gap-3 mb-10">
@@ -159,7 +159,7 @@ export default function Challenges({ challenges, lessons }) {
           className="mt-20 text-center"
         >
 
-          <p className="max-w-4xl mx-auto text-2xl leading-relaxed font-light text-neutral-300 italic">
+          <p className="max-w-4xl mx-auto text-2xl leading-relaxed font-bold text-neutral-300 ">
             "Great software isn't just about shipping features.
             It's about solving real problems while building systems
             that remain maintainable, scalable and enjoyable to use."

@@ -88,7 +88,7 @@ export const NavBar2 = ({
             >
               <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
             </svg>
-            <span className="font-mono text-white text-lg font-bold uppercase tracking-[.2em]">
+            <span className=" text-white text-lg font-bold uppercase tracking-[.2em]">
               NSF
             </span>
           </Link>

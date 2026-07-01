@@ -42,7 +42,17 @@ const architecture = [
   },
 ];
 
-export default function Architecture() {
+export default function Architecture({ architecture: projectArchitecture }) {
+  const sections = projectArchitecture && typeof projectArchitecture === "object"
+    ? Object.entries(projectArchitecture)
+        .map(([title, tech]) => ({
+          title: title.charAt(0).toUpperCase() + title.slice(1),
+          tech: Array.isArray(tech) ? tech : [],
+          description: "",
+        }))
+        .filter((item) => item.tech.length > 0)
+    : architecture;
+
   return (
     <section className="py-32 border-t border-[#181818]">
       <div className="max-w-[1450px] mx-auto px-6 lg:px-10">
@@ -53,91 +63,11 @@ export default function Architecture() {
           description="A high-level overview of how the application is structured from the client to the database."
         />
 
-        {/* FLOW */}
-
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: .7 }}
-          viewport={{ once: true }}
-          className="mt-20 rounded-[32px] border border-[#202020] bg-[#101010] p-8 lg:p-12"
-        >
-
-          <div className="hidden lg:flex justify-between items-center">
-
-            <FlowCard
-              icon={<MonitorSmartphone size={30} />}
-              title="Client"
-            />
-
-            <ArrowDown className="rotate-[-90deg] text-[#7A93A8]" />
-
-            <FlowCard
-              icon={<Server size={30} />}
-              title="API"
-            />
-
-            <ArrowDown className="rotate-[-90deg] text-[#7A93A8]" />
-
-            <FlowCard
-              icon={<Shield size={30} />}
-              title="Auth"
-            />
-
-            <ArrowDown className="rotate-[-90deg] text-[#7A93A8]" />
-
-            <FlowCard
-              icon={<Database size={30} />}
-              title="Database"
-            />
-
-          </div>
-
-          {/* MOBILE */}
-
-          <div className="lg:hidden space-y-6">
-
-            <FlowCard
-              icon={<MonitorSmartphone size={28} />}
-              title="Client"
-            />
-
-            <div className="flex justify-center">
-              <ArrowDown className="text-[#7A93A8]" />
-            </div>
-
-            <FlowCard
-              icon={<Server size={28} />}
-              title="Backend"
-            />
-
-            <div className="flex justify-center">
-              <ArrowDown className="text-[#7A93A8]" />
-            </div>
-
-            <FlowCard
-              icon={<Shield size={28} />}
-              title="Authentication"
-            />
-
-            <div className="flex justify-center">
-              <ArrowDown className="text-[#7A93A8]" />
-            </div>
-
-            <FlowCard
-              icon={<Database size={28} />}
-              title="Database"
-            />
-
-          </div>
-
-        </motion.div>
-
         {/* DETAILS */}
 
         <div className="grid md:grid-cols-2 gap-8 mt-20">
 
-          {architecture.map((item, index) => {
+          {sections.map((item, index) => {
 
             const Icon = item.icon;
 
@@ -166,10 +96,17 @@ export default function Architecture() {
 
                 <div className="w-14 h-14 rounded-2xl bg-[#7A93A8]/10 border border-[#7A93A8]/20 flex items-center justify-center mb-6">
 
-                  <Icon
-                    size={28}
-                    className="text-[#7A93A8]"
-                  />
+                  {Icon ? (
+                    <Icon
+                      size={28}
+                      className="text-[#7A93A8]"
+                    />
+                  ) : (
+                    <Layers3
+                      size={28}
+                      className="text-[#7A93A8]"
+                    />
+                  )}
 
                 </div>
 
@@ -177,9 +114,11 @@ export default function Architecture() {
                   {item.title}
                 </h3>
 
-                <p className="leading-8 text-neutral-400 mb-8">
-                  {item.description}
-                </p>
+                {item.description ? (
+                  <p className="leading-8 text-neutral-400 mb-8">
+                    {item.description}
+                  </p>
+                ) : null}
 
                 <div className="flex flex-wrap gap-2">
 

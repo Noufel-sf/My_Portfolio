@@ -33,6 +33,22 @@ const ArrowSvg = ({ size = 14 }) => (
   </svg>
 );
 
+const getProjectTechList = (project) => {
+  if (Array.isArray(project.techStack) && project.techStack.length > 0) {
+    return project.techStack;
+  }
+
+  if (Array.isArray(project.tech)) {
+    return project.tech;
+  }
+
+  if (project.tech && typeof project.tech === "object") {
+    return Object.values(project.tech).flat().filter(Boolean);
+  }
+
+  return [];
+};
+
 // ── VARIANTS ─────────────────────────────────────────────────────────────────
 const stagger = { hidden: {}, show: { transition: { staggerChildren: 0.08 } } };
 
@@ -72,6 +88,7 @@ const Badge = ({ children, muted }) =>
 // ── PROJECT CARD ─────────────────────────────────────────────────────────────
 function ProjectCard({ project, featured = false }) {
   const [isHovered, setIsHovered] = useState(false);
+  const techList = getProjectTechList(project);
 
   return (
     <Link
@@ -170,12 +187,18 @@ function ProjectCard({ project, featured = false }) {
 
           {/* Tech Stack */}
           <div className="flex flex-wrap gap-1.5 mb-3">
-            {project.tech.map((tech) => (
-              <span key={tech} className="inline-flex items-center gap-2 bg-[#7A93A8]/10 border border-[#7A93A8]/25 rounded-lg px-3 py-1 font-mono text-[10px] tracking-wider text-[#7A93A8]">
-                <span className="w-1.5 h-1.5 rounded-sm bg-[#7A93A8] pulse inline-block" />
-                {tech}
+            {techList.length > 0 ? (
+              techList.map((tech) => (
+                <span key={tech} className="inline-flex items-center gap-2 bg-[#7A93A8]/10 border border-[#7A93A8]/25 rounded-lg px-3 py-1 font-mono text-[10px] tracking-wider text-[#7A93A8]">
+                  <span className="w-1.5 h-1.5 rounded-sm bg-[#7A93A8] pulse inline-block" />
+                  {tech}
+                </span>
+              ))
+            ) : (
+              <span className="font-mono text-[10px] text-neutral-600">
+                Tech stack unavailable
               </span>
-            ))}
+            )}
           </div>
 
           {/* Action Links */}

@@ -5,10 +5,6 @@ import SectionTitle from "./SectionTitle";
 
 export default function Overview({
   overview,
-  role,
-  duration,
-  year,
-  status,
 }) {
   return (
     <section className="py-28">

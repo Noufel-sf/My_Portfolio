@@ -9,6 +9,28 @@ import {
   Database,
 } from "lucide-react";
 
+const featureIcons = {
+  authentication: ShieldCheck,
+  "user management": Users,
+  "member management": Users,
+  "project showcase": LayoutDashboard,
+  "book management": LayoutDashboard,
+  "event management": Calendar,
+  "table reservation": Calendar,
+  posts: LayoutDashboard,
+  notifications: Bell,
+  database: Database,
+};
+
+const getFeatureIcon = (feature) => {
+  if (feature.icon) {
+    return feature.icon;
+  }
+
+  const key = feature.title?.toLowerCase() ?? "";
+  return featureIcons[key] ?? LayoutDashboard;
+};
+
 export default function ProjectFeatures({ features }) {
   return (
     <section className="py-28 border-t border-[#181818]">
@@ -21,7 +43,8 @@ export default function ProjectFeatures({ features }) {
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-7 mt-16">
           {features.map((feature, index) => {
-            const Icon = feature.icon;
+            const Icon = getFeatureIcon(feature);
+            const description = feature.desc ?? feature.description ?? "";
 
             return (
               <motion.div
@@ -52,7 +75,7 @@ export default function ProjectFeatures({ features }) {
                   {feature.title}
                 </h3>
 
-                <p className="leading-8 text-neutral-400">{feature.desc}</p>
+                <p className="leading-8 text-neutral-400">{description}</p>
               </motion.div>
             );
           })}

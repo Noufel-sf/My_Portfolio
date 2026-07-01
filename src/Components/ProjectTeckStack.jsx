@@ -3,6 +3,17 @@ import { motion } from "framer-motion";
 import SectionTitle from "./SectionTitle";
 
 export default function TechStack({tech}) {
+  const sections = Array.isArray(tech)
+    ? tech
+    : tech && typeof tech === "object"
+      ? Object.entries(tech)
+          .map(([title, items]) => ({
+            title: title.charAt(0).toUpperCase() + title.slice(1),
+            items: Array.isArray(items) ? items : [],
+          }))
+          .filter((category) => category.items.length > 0)
+      : [];
+
   return (
     <section className="py-28 border-t border-[#181818]">
       <div className="max-w-[1450px] mx-auto px-6 lg:px-10">
@@ -15,7 +26,7 @@ export default function TechStack({tech}) {
 
         <div className="grid md:grid-cols-2 gap-8 mt-16">
 
-          {tech.map((category, index) => (
+          {sections.map((category, index) => (
             <motion.div
               key={category.title}
               initial={{ opacity: 0, y: 40 }}
