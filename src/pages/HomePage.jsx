@@ -550,7 +550,7 @@ export default function HomePage() {
               <div className="flex flex-col flex-1 justify-between gap-0">
                 {[
                   { v: "12+", l: "Projects Built" },
-                  { v: "1.5+", l: "Years Exp." },
+                  { v: "2+", l: "Years Exp." },
                   { v: "5+", l: "Clients Served" },
                 ].map((s, i, a) => (
                   <div key={s.l}>
