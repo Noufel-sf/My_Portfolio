@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 import BackToTopButton from "./Components/BackToTopButton";
 import Preloader from "./Components/Preloader";
 import ProjectDetailsPage from "./pages/ProjectDetailsPage";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App() {
   const location = useLocation();
@@ -20,6 +21,7 @@ export default function App() {
       <div className="min-h-screen bg-[#080808]">
         <Preloader />
         <Navbar2 />
+        <Analytics />
         <AnimatePresence mode="wait" initial={false}>
           <MotionMain
             key={location.pathname}
