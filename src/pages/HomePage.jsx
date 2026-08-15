@@ -293,7 +293,7 @@ export default function HomePage() {
           <motion.div variants={up} className="sm:col-span-2 lg:col-span-4">
             <Card className="relative overflow-hidden min-h-[400px] lg:h-full">
               <img
-                src="p.jpg"
+                src="/noufel1.jpg"
                 alt="Noufel seif el islam"
                 className="absolute inset-0 w-full h-full object-cover grayscale"
               />
@@ -301,7 +301,7 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#080808]/75 via-transparent to-transparent" />
 
               <div className="absolute bottom-0 inset-x-0 p-5 z-10">
-                <p className="font-mono text-[10px] tracking-[.14em] uppercase text-neutral-700 mb-1">
+                <p className="font-mono text-[10px] tracking-[.14em] uppercase text-neutral-300 mb-1">
                   Software Engineer
                 </p>
                 <p className="font-bold text-lg">Noufel seif el islam</p>
