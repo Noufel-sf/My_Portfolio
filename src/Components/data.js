@@ -15,7 +15,13 @@ export const PROJECTS = [
       "The Association Website was built to digitize the organization's workflow. Instead of managing members and events manually, administrators can create events, approve registrations, manage members and publish announcements through an intuitive dashboard. The project focuses on simplicity, accessibility and responsiveness while providing a scalable foundation for future features.",
 
     image: "/rokay.png",
-
+    images: [
+      "/rokay.png",
+      "/rockay2.PNG",
+      "/rockay3.PNG",
+      "/rockay4.PNG",
+      "/rockay5.PNG"
+    ],
 
     category: "full Stack",
 
@@ -40,7 +46,7 @@ export const PROJECTS = [
 
       database: ["MongoDB"],
 
-      deployment: ["Vercel"],
+      deployment: ["Vercel" , "hostinger domain" , "Dz security"],
     },
 
     features: [
@@ -130,6 +136,13 @@ export const PROJECTS = [
       "The Library Management System API provides a robust backend for handling books, members, borrowing transactions and authentication. It follows a clean architecture using NestJS modules and integrates PostgreSQL through Prisma while Redis improves performance through caching. The project emphasizes scalability, security and maintainability.",
 
     image: "/b1.jpg",
+    images: [
+      "/nothosted.png",
+      "/nothosted.png",
+      "/nothosted.png",
+      "/nothosted.png",
+      "/nothosted.png"
+    ],
 
     gallery: [
       "/b1.jpg",
@@ -273,8 +286,13 @@ export const PROJECTS = [
       "This portfolio was designed to represent my work as a software engineer while providing visitors with an engaging browsing experience. Instead of using traditional templates, I focused on creating smooth interactions, reusable components and carefully crafted layouts. The project highlights my technical skills, featured projects and professional journey while maintaining excellent performance across all devices.",
 
     image: "/p2.jpg",
-
-    
+    images: [
+      "/p2.jpg",
+      "/abdou2.PNG",
+      "/abdou3.PNG",
+      "/abdou4.PNG",
+      "/abdou3.PNG"
+    ],
 
     category: "Frontend",
 
@@ -389,8 +407,13 @@ export const PROJECTS = [
       "The Social Media Platform was built to simulate a real-world social networking application. Users can register, authenticate securely, publish posts, like and comment on content, and communicate through real-time updates. The application combines REST APIs with Socket.IO to provide an engaging experience similar to modern social platforms.",
 
     image: "/p3.png",
-
-   
+    images: [
+      "/nothosted.png",
+      "/nothosted.png",
+      "/nothosted.png",
+      "/nothosted.png",
+      "/nothosted.png"
+    ],
 
     category: "full Stack",
 
@@ -508,6 +531,13 @@ export const PROJECTS = [
       "The Restaurant Reservation System was developed to modernize restaurant operations by allowing customers to browse the menu, reserve tables and place food orders online. The application includes a responsive customer interface and a scalable backend powered by PostgreSQL and Drizzle ORM. The project focuses on performance, user experience and maintainability while demonstrating modern full-stack development with Next.js.",
 
     image: "/r2.png",
+    images: [
+      "/nothosted.png",
+      "/nothosted.png",
+      "/nothosted.png",
+      "/nothosted.png",
+      "/nothosted.png"
+    ],
   
     category: "full Stack",
 
@@ -635,7 +665,13 @@ export const PROJECTS = [
       "This project was developed to present the DZ Young Leaders initiative through a clean and modern user experience. The website highlights the organization's mission, objectives, team and activities while providing visitors with an engaging browsing experience powered by GSAP animations and responsive layouts.",
 
     image: "/khadijahome.png",
-
+    images: [
+      "/khadijahome.png",
+      "/kh2.PNG",
+      "/kh3.PNG",
+      "/kh4.PNG",
+      "/kh5.PNG"
+    ],
 
     category: "Frontend",
 
@@ -737,7 +773,7 @@ export const PROJECTS = [
 
 
   {
-    id: 6,
+    id: 7,
 
     slug: "dz-young-leaders",
 
@@ -751,7 +787,14 @@ export const PROJECTS = [
     overview:
       "This project was developed to present the DZ Young Leaders initiative through a clean and modern user experience. The website highlights the organization's mission, objectives, team and activities while providing visitors with an engaging browsing experience powered by GSAP animations and responsive layouts.",
 
-    image: "/ilyas.png",
+    image: "/ilyas1.PNG",
+    images: [
+      "/ilyas1.PNG",
+      "/ilyas2.PNG",
+      "/ilyas3.PNG",
+      "/ilyas4.PNG",
+      "/ilyas5.PNG"
+    ],
     category: "Frontend",
 
     date: "2026",
@@ -847,7 +890,7 @@ export const PROJECTS = [
     ],
   },
  {
-    id: 7,
+    id: 8,
 
     slug: "dz-young-leaders",
 
@@ -862,7 +905,13 @@ export const PROJECTS = [
       "This project was developed to present the DZ Young Leaders initiative through a clean and modern user experience. The website highlights the organization's mission, objectives, team and activities while providing visitors with an engaging browsing experience powered by GSAP animations and responsive layouts.",
 
     image: "/lina.png",
-
+    images: [
+      "/lina.png",
+      "/li2.PNG",
+      "/li3.PNG",
+      "/li4.PNG",
+      "/li5.PNG"
+    ],
 
     category: "Frontend",
 
@@ -963,7 +1012,7 @@ export const PROJECTS = [
   },
 
    {
-    id: 8,
+    id: 9,
 
     slug: "Full stack E-commerce & job matching platform",
 
@@ -978,6 +1027,13 @@ export const PROJECTS = [
       "The platform allows customers to browse products, add them to their cart, and complete purchases online. The application includes a responsive customer interface and a scalable backend powered by PostgreSQL and Drizzle ORM. The project focuses on performance, user experience and maintainability while demonstrating modern full-stack development with Next.js.",
 
     image: "/Sauqli.png",
+    images: [
+      "/Sauqli.png",
+      "/so2.PNG",
+      "/so3.PNG",
+      "/so4.PNG",
+      "/so5.PNG"
+    ],
   
     category: "full Stack",
 
