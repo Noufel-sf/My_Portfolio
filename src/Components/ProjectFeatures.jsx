@@ -31,7 +31,7 @@ const getFeatureIcon = (feature) => {
   return featureIcons[key] ?? LayoutDashboard;
 };
 
-export default function ProjectFeatures({ features }) {
+export default function ProjectFeatures({ features = [] }) {
   return (
     <section className="py-28 border-t border-[#181818]">
       <div className="max-w-[1450px] mx-auto px-6 lg:px-10">
@@ -43,12 +43,13 @@ export default function ProjectFeatures({ features }) {
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-7 mt-16">
           {features.map((feature, index) => {
-            const Icon = getFeatureIcon(feature);
-            const description = feature.desc ?? feature.description ?? "";
+            const featObj = typeof feature === "string" ? { title: feature, description: feature } : feature;
+            const Icon = getFeatureIcon(featObj);
+            const description = featObj.desc ?? featObj.description ?? "";
 
             return (
               <motion.div
-                key={feature.title}
+                key={featObj.title || index}
                 initial={{
                   opacity: 0,
                   y: 35,

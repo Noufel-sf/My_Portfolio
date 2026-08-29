@@ -38,12 +38,20 @@ const getProjectTechList = (project) => {
     return project.techStack;
   }
 
+  if (Array.isArray(project.technologies) && project.technologies.length > 0) {
+    return project.technologies;
+  }
+
   if (Array.isArray(project.tech)) {
     return project.tech;
   }
 
   if (project.tech && typeof project.tech === "object") {
     return Object.values(project.tech).flat().filter(Boolean);
+  }
+
+  if (Array.isArray(project.tags) && project.tags.length > 0) {
+    return project.tags;
   }
 
   return [];
@@ -89,6 +97,9 @@ const Badge = ({ children, muted }) =>
 function ProjectCard({ project, featured = false }) {
   const [isHovered, setIsHovered] = useState(false);
   const techList = getProjectTechList(project);
+  const projectImg = project.image || project.img;
+  const projectDesc = project.desc || project.description || project.subtitle;
+  const previewUrl = project.preview || project.live || project.github;
 
   return (
     <Link
@@ -103,9 +114,9 @@ function ProjectCard({ project, featured = false }) {
       >
         {/* Project Image */}
         <div className="relative h-48 bg-gradient-to-br from-[#1a1a1a] to-[#0f0f0f] overflow-hidden">
-          {project.image ? (
+          {projectImg ? (
             <img
-              src={project.image}
+              src={projectImg}
               alt={project.name}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -135,36 +146,42 @@ function ProjectCard({ project, featured = false }) {
             animate={{ opacity: isHovered ? 1 : 0 }}
             className="absolute inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center gap-3"
           >
-            <motion.a
-              href={project.preview}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 bg-[#7A93A8] text-white px-4 py-2 rounded-full font-mono text-[11px] tracking-wider hover:bg-[#7A93A8]/90 transition-colors"
-            >
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
+            {previewUrl && (
+              <motion.a
+                href={previewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex items-center gap-2 bg-[#7A93A8] text-white px-4 py-2 rounded-full font-mono text-[11px] tracking-wider hover:bg-[#7A93A8]/90 transition-colors"
+                onClick={(e) => e.stopPropagation()}
               >
-                <path d={EXTERNAL_LINK} />
-              </svg>
-              Preview
-            </motion.a>
-            <motion.a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
-            >
-              <Icon d={GITHUB} size={18} />
-            </motion.a>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path d={EXTERNAL_LINK} />
+                </svg>
+                Preview
+              </motion.a>
+            )}
+            {project.github && (
+              <motion.a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <Icon d={GITHUB} size={18} />
+              </motion.a>
+            )}
           </motion.div>
         </div>
 
@@ -172,9 +189,11 @@ function ProjectCard({ project, featured = false }) {
         <div className="p-5">
           <div className="flex items-center gap-2 mb-2 flex-wrap">
             <Badge>{project.category}</Badge>
-            <span className="font-mono text-[10px] text-neutral-700">
-              {project.date}
-            </span>
+            {project.date && (
+              <span className="font-mono text-[10px] text-neutral-700">
+                {project.date}
+              </span>
+            )}
           </div>
 
           <h3 className="font-bold text-[15px] tracking-tight mb-2 group-hover:text-[#7A93A8] transition-colors duration-200">
@@ -182,7 +201,7 @@ function ProjectCard({ project, featured = false }) {
           </h3>
 
           <p className="text-[13px] text-neutral-600 leading-relaxed mb-3">
-            {project.desc}
+            {projectDesc}
           </p>
 
           {/* Tech Stack */}
@@ -203,23 +222,31 @@ function ProjectCard({ project, featured = false }) {
 
           {/* Action Links */}
           <div className="flex items-center gap-3 pt-3 border-t border-[#1a1a1a]">
-            <a
-              href={project.preview}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 font-mono text-[11px] text-neutral-600 hover:text-[#7A93A8] transition-colors"
-            >
-              Live Site <ArrowSvg size={12} />
-            </a>
-            <span className="text-neutral-800">•</span>
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 font-mono text-[11px] text-neutral-600 hover:text-[#7A93A8] transition-colors"
-            >
-              Code <ArrowSvg size={12} />
-            </a>
+            {previewUrl && (
+              <>
+                <a
+                  href={previewUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 font-mono text-[11px] text-neutral-600 hover:text-[#7A93A8] transition-colors"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Live Site <ArrowSvg size={12} />
+                </a>
+                <span className="text-neutral-800">•</span>
+              </>
+            )}
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 font-mono text-[11px] text-neutral-600 hover:text-[#7A93A8] transition-colors"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Code <ArrowSvg size={12} />
+              </a>
+            )}
           </div>
         </div>
       </div>

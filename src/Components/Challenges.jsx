@@ -9,7 +9,7 @@ import SectionTitle from "./SectionTitle";
 
 
 
-export default function Challenges({ challenges, lessons }) {
+export default function Challenges({ challenges = [], lessons = [] }) {
   return (
     <section className="py-32 border-t border-[#181818]">
       <div className="max-w-[1450px] mx-auto px-6 lg:px-10">
@@ -29,7 +29,7 @@ export default function Challenges({ challenges, lessons }) {
 
             {challenges.map((item, index) => (
               <motion.div
-                key={item.challenge}
+                key={item.challenge || item.problem || index}
                 initial={{
                   opacity: 0,
                   x: -40,

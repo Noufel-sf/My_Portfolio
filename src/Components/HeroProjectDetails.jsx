@@ -85,7 +85,7 @@ export default function HeroProjectDetails({ project }) {
             variants={fadeUp}
             initial="hidden"
             animate="show"
-            className="mt-6 text-4xl sm:text-6xl md:text-7xl font-black tracking-[-0.05em] leading-tight text-white"
+            className="mt-6 text-4xl  sm:text-6xl md:text-7xl font-black tracking-[0em] leading-tight text-white"
           >
             {project.name}
           </motion.h1>

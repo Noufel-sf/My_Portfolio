@@ -1134,4 +1134,116 @@ export const PROJECTS = [
       "Seo optimization and server-side rendering techniques.",
     ],
   },
+  {
+    id: 10,
+
+    slug: "ai-technical-interview-coach",
+
+    name: "AI Technical Interview Coach & RAG Simulator",
+
+    subtitle:
+      "A high-caliber technical interview practice platform simulating realistic engineering interviews with multi-axis scoring and grounded evaluations.",
+
+    desc: "A technical interview practice platform simulating realistic engineering interviews with multi-axis scoring, semantic concept coverage, and grounded evaluations using an end-to-end RAG pipeline.",
+
+    overview:
+      "The AI Technical Interview Coach is a high-caliber interview simulation and preparation platform built with Next.js, Google Gemini, and Vector Embeddings. It provides candidates with dynamic, role-specific technical questions, evaluates answers against authoritative engineering documentation using a custom RAG pipeline, and generates comprehensive 4-axis feedback reports with benchmark senior engineer model answers.",
+
+    image: "/ai.PNG",
+    img: "/ai.PNG",
+    images: [
+      "/ai.PNG",
+      "/ai2.PNG",
+      "/ai3.PNG",
+      "/ai4.PNG",
+      "/ai5.PNG"
+    ],
+
+    category: "full Stack",
+
+    date: "2026",
+
+    duration: "2 Months",
+
+    role: "Full Stack & AI Engineer",
+
+    status: "Completed",
+
+    preview: "https://github.com/Noufel-sf/Ai_interviewer",
+
+    github: "https://github.com/Noufel-sf/Ai_interviewer",
+
+    tech: {
+      frontend: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+
+      backend: ["Google Gemini API", "Vector Embeddings", "RAG Pipeline", "Zod"],
+
+      database: ["Vector Store"],
+
+      deployment: ["Vercel"],
+    },
+
+    features: [
+      {
+        title: "RAG-Grounded Evaluations",
+        description:
+          "Retrieval-Augmented Generation (RAG) grounding evaluations in verified engineering docs using cosine similarity and vector embeddings.",
+      },
+      {
+        title: "4-Axis Granular Scoring",
+        description:
+          "Rigorous rubric covering Knowledge Depth, Technical Accuracy, Problem-Solving Clarity, and Completeness.",
+      },
+      {
+        title: "Adaptive Follow-Up Probing",
+        description:
+          "Dynamically targets candidate concept gaps using Gemini function calling and semantic coverage analysis.",
+      },
+      {
+        title: "Senior Engineer Model Answers",
+        description:
+          "Exemplar benchmark responses featuring production-grade code, architectural trade-offs, and design patterns.",
+      },
+      {
+        title: "Structured Output Validation",
+        description:
+          "Guaranteed deterministic scoring schema through Zod validation and structured JSON decoding.",
+      },
+    ],
+
+    architecture: {
+      frontend: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+
+      backend: ["Next.js API Routes", "Google Gemini API", "Vector Embeddings"],
+
+      database: ["Vector Store"],
+
+      deployment: ["Vercel"],
+    },
+
+    challenges: [
+      {
+        problem: "Preventing hallucinated scoring and ensuring objective technical feedback.",
+        solution:
+          "Constructed an end-to-end RAG architecture with vector embeddings to ground scoring against authoritative engineering references.",
+      },
+      {
+        problem: "Extracting deterministic multi-axis scores from LLM completions.",
+        solution:
+          "Enforced strict Zod schema validation on structured JSON outputs with automated validation fallbacks.",
+      },
+      {
+        problem: "Generating dynamic, contextual follow-up questions tailored to candidate weak spots.",
+        solution:
+          "Integrated function calling and semantic similarity metrics to identify missed concepts and probe deeper.",
+      },
+    ],
+
+    learnings: [
+      "Building production-ready RAG architectures with Vector Stores and Cosine Similarity.",
+      "Calibrating strict evaluation prompts with low-temperature LLM outputs.",
+      "Implementing resilient structured JSON generation and Zod schema validation.",
+      "Building adaptive AI systems using LLM Tool/Function Calling.",
+    ],
+  },
 ];
