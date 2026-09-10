@@ -532,11 +532,11 @@ export const PROJECTS = [
 
     image: "/r2.png",
     images: [
-      "/nothosted.png",
-      "/nothosted.png",
-      "/nothosted.png",
-      "/nothosted.png",
-      "/nothosted.png"
+      "/food1.PNG",
+      "/food2.PNG",
+      "/food3.PNG",
+      "/food4.PNG",
+      "/food5.PNG"
     ],
   
     category: "full Stack",
@@ -547,7 +547,7 @@ export const PROJECTS = [
 
     status: "Completed",
 
-    preview: "https://github.com/Noufel-sf/Restorent_postgress",
+    preview: "https://restorent-postgress-taxf.vercel.app/",
 
     github: "https://github.com/Noufel-sf/Restorent_postgress",
 
