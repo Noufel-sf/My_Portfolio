@@ -8,6 +8,7 @@ import {
   ArrowLeft,
   Calendar,
   Layers3,
+  Database,
 } from "lucide-react";
 
 
@@ -114,6 +115,34 @@ export default function HeroProjectDetails({ project }) {
               </span>
             </div>
           </motion.div>
+
+          {/* Architecture / Storage Notice Banner */}
+          {project.notice && (
+            <motion.div
+              custom={0.45}
+              variants={fadeUp}
+              initial="hidden"
+              animate="show"
+              className="mt-8 max-w-2xl mx-auto rounded-2xl border border-amber-500/30 bg-amber-500/[0.07] backdrop-blur-md p-4 sm:p-5 text-left flex items-start gap-3.5 shadow-lg shadow-amber-500/5"
+            >
+              <div className="p-2.5 rounded-xl bg-amber-500/20 text-amber-400 shrink-0 mt-0.5 border border-amber-500/30">
+                <Database size={18} />
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center gap-2 mb-1.5 flex-wrap">
+                  <span className="font-mono text-[11px] uppercase tracking-wider text-amber-400 font-semibold">
+                    Architecture & Live Demo Notice
+                  </span>
+                  <span className="inline-flex items-center rounded-full border border-amber-500/30 bg-amber-500/20 px-2.5 py-0.5 font-mono text-[9px] text-amber-300">
+                    LocalStorage Mode
+                  </span>
+                </div>
+                <p className="text-xs sm:text-[13px] text-neutral-300 leading-relaxed">
+                  {project.notice}
+                </p>
+              </div>
+            </motion.div>
+          )}
 
           <motion.div
             custom={0.5}

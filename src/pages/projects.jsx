@@ -189,6 +189,12 @@ function ProjectCard({ project, featured = false }) {
         <div className="p-5">
           <div className="flex items-center gap-2 mb-2 flex-wrap">
             <Badge>{project.category}</Badge>
+            {project.notice && (
+              <span className="inline-flex items-center gap-1.5 bg-amber-500/10 border border-amber-500/25 rounded-md px-2 py-0.5 font-mono text-[10px] tracking-wider text-amber-400">
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+                Local DB Demo
+              </span>
+            )}
             {project.date && (
               <span className="font-mono text-[10px] text-neutral-700">
                 {project.date}

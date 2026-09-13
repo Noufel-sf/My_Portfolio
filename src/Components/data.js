@@ -271,123 +271,124 @@ export const PROJECTS = [
   },
 
   {
-    id: 3,
+    id: 9,
 
-    slug: "designer-portfolio",
+    slug: "Full stack E-commerce & job matching platform",
 
-    name: "Developer Portfolio",
+    name: "Ecommerce & job matching platform",
 
     subtitle:
-      "A modern portfolio built to showcase projects, skills and professional experience.",
+      "A modern full-stack e-commerce & job matching platform like wad kniss.",
 
-    desc: "A personal portfolio website with modern animations and responsive design.",
+    desc: "A ecommerce and job matching platform built with Next.js, TypeScript, PostgreSQL, Spring Boot and Cloudinary.",
 
     overview:
-      "This portfolio was designed to represent my work as a software engineer while providing visitors with an engaging browsing experience. Instead of using traditional templates, I focused on creating smooth interactions, reusable components and carefully crafted layouts. The project highlights my technical skills, featured projects and professional journey while maintaining excellent performance across all devices.",
+      "The platform allows customers to browse products, add them to their cart, and complete purchases online while offering job matching listings. The application includes a responsive customer interface and a scalable backend powered by PostgreSQL and Spring Boot. The project focuses on performance, user experience and maintainability while demonstrating modern full-stack development with Next.js.",
 
-    image: "/p2.jpg",
+    image: "/Sauqli.png",
     images: [
-      "/p2.jpg",
-      "/abdou2.PNG",
-      "/abdou3.PNG",
-      "/abdou4.PNG",
-      "/abdou3.PNG"
+      "/Sauqli.png",
+      "/so2.PNG",
+      "/so3.PNG",
+      "/so4.PNG",
+      "/so5.PNG"
     ],
-
-    category: "Frontend",
+  
+    category: "full Stack",
 
     date: "2026",
 
-    duration: "1 Month",
-
-    role: "UI Designer & Frontend Developer",
+    role: "Full Stack Developer",
 
     status: "Completed",
 
-    preview: "https://abdou-portfolio-tau.vercel.app/",
+    preview: "https://www.souaqlidz.shop/",
 
-    github: "https://github.com/Noufel-sf/Abdou_portfolio",
-
-  
+    github: "https://www.souaqlidz.shop/",
 
     tech: {
-      frontend: ["React", "Tailwind CSS", "Framer Motion", "GSAP"],
+      frontend: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCn UI"],
 
-      backend: [],
+      backend: ["Cloudinary", "Spring boot" ],
 
-      database: [],
+      database: ["PostgreSQL"],
 
-      deployment: ["Vercel"],
+      deployment: ["Dz security" , "Vercel" ],
     },
 
     features: [
       {
-        title: "Project Showcase",
-        description: "Displays featured projects with smooth navigation.",
+        title: "Job Matching",
+        description: "Browse job listings and apply directly.",
       },
 
       {
-        title: "Modern Animations",
-        description: "Built using GSAP and Framer Motion.",
+        title: "Online Ordering",
+        description: "Customers can place food orders digitally.",
       },
 
       {
-        title: "Responsive Layout",
-        description: "Optimized for every screen size.",
+        title: "Responsive Design",
+        description: "Optimized for desktop and mobile devices.",
       },
 
       {
-        title: "SEO",
-        description: "Search engine optimized pages.",
+        title: "Admin Dashboards",
+        description: "Manage products, orders and job listings with ease.",
       },
 
       {
-        title: "Interactive UI",
-        description: "Micro interactions improve user engagement.",
+        title: "Modern Database",
+        description: "Efficient relational data management using PostgreSQL.",
       },
-
       {
-        title: "Performance",
-        description: "Optimized assets and lazy loading.",
+        title: "Secure Authentication",
+        description: "Implementing robust user authentication and authorization.",
       },
     ],
 
     architecture: {
-      frontend: ["React", "Tailwind CSS", "Framer Motion", "GSAP"],
+      frontend: ["Next.js", "Tailwind CSS", "Framer Motion"],
 
-      backend: [],
+      backend: ["Next.js API Routes", "Drizzle ORM", "Spring boot"],
 
-      database: [],
+      database: ["PostgreSQL"],
 
       deployment: ["Vercel"],
     },
 
     challenges: [
       {
-        problem: "Creating a portfolio that stands out from common templates.",
+        problem: "Designing an intuitive ordering workflow.",
 
         solution:
-          "Designed custom layouts and implemented smooth animations with reusable components.",
+          "Created a streamlined booking experience with clear validation and user feedback.",
       },
 
       {
-        problem: "Keeping animations smooth without affecting performance.",
+        problem: "Managing relational website data.",
 
-        solution: "Optimized animation timing and lazy-loaded assets.",
+        solution:
+          "Used Spring boot and PostgreSQL for type-safe database operations.",
       },
 
       {
-        problem: "Maintaining responsiveness while preserving visual quality.",
+        problem: "Maintaining responsiveness while displaying rich content.",
 
-        solution: "Adopted a mobile-first design approach using Tailwind CSS.",
+        solution: "Adopted a mobile-first design using Tailwind CSS.",
+      },
+      {
+        problem: "Server-side rendering and SEO optimization.",
+
+        solution: "Implemented Next.js SSR features and optimized meta tags for better search engine visibility.",
       },
     ],
 
     learnings: [
-      "Advanced animation techniques with GSAP.",
-      "Creating reusable UI components.",
-      "Improving accessibility and SEO.",
-      "Building polished user experiences.",
+      "Building production-ready applications with Next.js.",
+      "Working with ShadCn UI and Tailwind CSS for responsive design.",
+      "Implementing secure authentication and authorization.",
+      "Seo optimization and server-side rendering techniques.",
     ],
   },
 
@@ -404,15 +405,18 @@ export const PROJECTS = [
     desc: "A MERN-based social media platform where users can create posts, connect with friends and interact in real time.",
 
     overview:
-      "The Social Media Platform was built to simulate a real-world social networking application. Users can register, authenticate securely, publish posts, like and comment on content, and communicate through real-time updates. The application combines REST APIs with Socket.IO to provide an engaging experience similar to modern social platforms.",
+      "The Social Media Platform was built to simulate a real-world social networking application. The full system was developed with a complete backend (Node.js, Express, Socket.IO, MongoDB). Because the live backend is not hosted on a remote cluster, an interactive client-side LocalStorage database layer is implemented for the live demo so visitors can test creating posts, profiles, and real-time UI interactions live.",
+
+    notice:
+      "Full-Stack Architecture Note: Built with a complete backend & database (Node.js, Express, Socket.IO, MongoDB). For the live demo deployment, since the backend server is not hosted remotely, an interactive client-side LocalStorage database is implemented to allow testing all posting, profile, and interaction features seamlessly.",
 
     image: "/p3.png",
     images: [
-      "/nothosted.png",
-      "/nothosted.png",
-      "/nothosted.png",
-      "/nothosted.png",
-      "/nothosted.png"
+      "/p3.png",
+      "/social2.PNG",
+      "/social3.PNG",
+      "/social4.PNG",
+      "/social5.PNG",
     ],
 
     category: "full Stack",
@@ -425,11 +429,9 @@ export const PROJECTS = [
 
     status: "Completed",
 
-    preview: "https://github.com/Noufel-sf/Social_mediaApp",
+    preview: "https://social-media-app-chi-umber.vercel.app/",
 
     github: "https://github.com/Noufel-sf/Social_mediaApp",
-
-  
 
     tech: {
       frontend: ["React", "Tailwind CSS"],
@@ -442,9 +444,9 @@ export const PROJECTS = [
         "Express Session",
       ],
 
-      database: ["MongoDB"],
+      database: ["MongoDB", "LocalStorage (Demo Fallback)"],
 
-      deployment: [],
+      deployment: ["Vercel (Client Demo)"],
     },
 
     features: [
@@ -463,8 +465,6 @@ export const PROJECTS = [
         description: "Create, edit and delete posts.",
       },
 
-     
-
       {
         title: "Real-Time Communication",
         description: "Socket.IO updates content instantly without refreshing.",
@@ -481,9 +481,9 @@ export const PROJECTS = [
 
       backend: ["Node.js", "Express", "Socket.IO"],
 
-      database: ["MongoDB"],
+      database: ["MongoDB", "LocalStorage"],
 
-      deployment: [],
+      deployment: ["Vercel"],
     },
 
     challenges: [
@@ -501,10 +501,10 @@ export const PROJECTS = [
       },
 
       {
-        problem: "Keeping the codebase organized as features increased.",
+        problem: "Demonstrating dynamic database persistence on unhosted live demo.",
 
         solution:
-          "Separated controllers, routes, middleware and services into reusable modules.",
+          "Engineered a resilient LocalStorage client-side database simulation that mirrors the MongoDB data structure.",
       },
     ],
 
@@ -512,7 +512,7 @@ export const PROJECTS = [
       "Building real-time applications with Socket.IO.",
       "Managing authentication and sessions.",
       "Structuring scalable MERN applications.",
-      "Handling complex application state.",
+      "Handling complex application state and client-side database adapters.",
     ],
   },
   {
@@ -528,7 +528,10 @@ export const PROJECTS = [
     desc: "A restaurant management platform built with Next.js, PostgreSQL and Drizzle ORM.",
 
     overview:
-      "The Restaurant Reservation System was developed to modernize restaurant operations by allowing customers to browse the menu, reserve tables and place food orders online. The application includes a responsive customer interface and a scalable backend powered by PostgreSQL and Drizzle ORM. The project focuses on performance, user experience and maintainability while demonstrating modern full-stack development with Next.js.",
+      "The Restaurant Reservation System was developed to modernize restaurant operations by allowing customers to browse the menu, reserve tables and place food orders online. The application was built with a complete backend and real database powered by PostgreSQL and Drizzle ORM. Because the backend is not hosted on a remote cluster for the live demo, a full client-side LocalStorage database was implemented so all reservations, cart flows, and ordering can be actively tested.",
+
+    notice:
+      "Full-Stack Architecture Note: Developed with a full backend and real database (PostgreSQL with Drizzle ORM). Because the live backend is not hosted on a remote server, an interactive LocalStorage mock database layer is implemented for the live demo so visitors can test reservations, menu filtering, and ordering workflows end-to-end.",
 
     image: "/r2.png",
     images: [
@@ -575,7 +578,7 @@ export const PROJECTS = [
 
       backend: ["Next.js API", "Drizzle ORM"],
 
-      database: ["PostgreSQL"],
+      database: ["PostgreSQL", "LocalStorage (Demo Fallback)"],
 
       deployment: ["Vercel"],
     },
@@ -585,8 +588,6 @@ export const PROJECTS = [
         title: "Restaurant Menu",
         description: "Browse food categories and menu items.",
       },
-
-    
 
       {
         title: "Online Ordering",
@@ -605,7 +606,7 @@ export const PROJECTS = [
 
       {
         title: "Modern Database",
-        description: "Efficient relational data management using PostgreSQL.",
+        description: "Efficient relational data management using PostgreSQL & LocalStorage fallback.",
       },
     ],
 
@@ -614,7 +615,7 @@ export const PROJECTS = [
 
       backend: ["Next.js API Routes", "Drizzle ORM"],
 
-      database: ["PostgreSQL"],
+      database: ["PostgreSQL", "LocalStorage"],
 
       deployment: ["Vercel"],
     },
@@ -628,10 +629,10 @@ export const PROJECTS = [
       },
 
       {
-        problem: "Managing relational restaurant data.",
+        problem: "Managing relational restaurant data on live unhosted demo.",
 
         solution:
-          "Used PostgreSQL with Drizzle ORM for type-safe database operations.",
+          "Built a LocalStorage data adapter simulating PostgreSQL relational queries for seamless client interaction.",
       },
 
       {
@@ -645,7 +646,7 @@ export const PROJECTS = [
       "Building production-ready applications with Next.js.",
       "Working with Drizzle ORM.",
       "Designing relational database schemas.",
-      "Creating responsive booking experiences.",
+      "Creating responsive booking experiences and client-side persistence fallback.",
     ],
   },
 
@@ -834,6 +835,7 @@ export const PROJECTS = [
       },
 
      
+
       {
         title: "Responsive Design",
         description: "Fully optimized for mobile, tablet and desktop.",
@@ -1011,127 +1013,122 @@ export const PROJECTS = [
     ],
   },
 
-   {
-    id: 9,
+  {
+    id: 3,
 
-    slug: "Full stack E-commerce & job matching platform",
+    slug: "designer-portfolio",
 
-    name: "Ecommerce & job matching platform",
+    name: "Developer Portfolio",
 
     subtitle:
-      "A modern full-stack e-commerce & job matching platform like wad kniss.",
+      "A modern portfolio built to showcase projects, skills and professional experience.",
 
-    desc: "A ecommerce and job matching platform built with Next.js,Type script ,PostgreSQL and Spring boot cloudinary and .",
+    desc: "A personal portfolio website with modern animations and responsive design.",
 
     overview:
-      "The platform allows customers to browse products, add them to their cart, and complete purchases online. The application includes a responsive customer interface and a scalable backend powered by PostgreSQL and Drizzle ORM. The project focuses on performance, user experience and maintainability while demonstrating modern full-stack development with Next.js.",
+      "This portfolio was designed to represent my work as a software engineer while providing visitors with an engaging browsing experience. Instead of using traditional templates, I focused on creating smooth interactions, reusable components and carefully crafted layouts. The project highlights my technical skills, featured projects and professional journey while maintaining excellent performance across all devices.",
 
-    image: "/Sauqli.png",
+    image: "/p2.jpg",
     images: [
-      "/Sauqli.png",
-      "/so2.PNG",
-      "/so3.PNG",
-      "/so4.PNG",
-      "/so5.PNG"
+      "/p2.jpg",
+      "/abdou2.PNG",
+      "/abdou3.PNG",
+      "/abdou4.PNG",
+      "/abdou3.PNG"
     ],
-  
-    category: "full Stack",
+
+    category: "Frontend",
 
     date: "2026",
 
-    role: "Full Stack Developer",
+    duration: "1 Month",
+
+    role: "UI Designer & Frontend Developer",
 
     status: "Completed",
 
-    preview: "https://www.souaqlidz.shop/",
+    preview: "https://abdou-portfolio-tau.vercel.app/",
 
-    github: "https://www.souaqlidz.shop/",
-
-   
+    github: "https://github.com/Noufel-sf/Abdou_portfolio",
 
     tech: {
-      frontend: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCn UI"],
+      frontend: ["React", "Tailwind CSS", "Framer Motion", "GSAP"],
 
-      backend: ["Cloudinary", "Spring boot" ],
+      backend: [],
 
-      database: ["PostgreSQL"],
+      database: [],
 
-      deployment: ["Dz security" , "Vercel" ],
+      deployment: ["Vercel"],
     },
 
     features: [
       {
-        title: "Job Matching",
-        description: "Browse job listings and apply directly.",
+        title: "Project Showcase",
+        description: "Displays featured projects with smooth navigation.",
       },
 
       {
-        title: "Online Ordering",
-        description: "Customers can place food orders digitally.",
+        title: "Modern Animations",
+        description: "Built using GSAP and Framer Motion.",
       },
 
       {
-        title: "Responsive Design",
-        description: "Optimized for desktop and mobile devices.",
+        title: "Responsive Layout",
+        description: "Optimized for every screen size.",
       },
 
       {
-        title: "Admin Dashboards",
-        description: "Manage products, orders and job listings with ease.",
+        title: "SEO",
+        description: "Search engine optimized pages.",
       },
 
       {
-        title: "Modern Database",
-        description: "Efficient relational data management using PostgreSQL.",
+        title: "Interactive UI",
+        description: "Micro interactions improve user engagement.",
       },
-       {
-        title: "Secure Authentication",
-        description: "Implementing robust user authentication and authorization.",
+
+      {
+        title: "Performance",
+        description: "Optimized assets and lazy loading.",
       },
     ],
 
     architecture: {
-      frontend: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      frontend: ["React", "Tailwind CSS", "Framer Motion", "GSAP"],
 
-      backend: ["Next.js API Routes", "Drizzle ORM"],
+      backend: [],
 
-      database: ["PostgreSQL"],
+      database: [],
 
       deployment: ["Vercel"],
     },
 
     challenges: [
       {
-        problem: "Designing an intuitive ordering workflow.",
+        problem: "Creating a portfolio that stands out from common templates.",
 
         solution:
-          "Created a streamlined booking experience with clear validation and user feedback.",
+          "Designed custom layouts and implemented smooth animations with reusable components.",
       },
 
       {
-        problem: "Managing relational website data.",
+        problem: "Keeping animations smooth without affecting performance.",
 
-        solution:
-          "Used Spring boot and PostgreSQL for type-safe database operations.",
+        solution: "Optimized animation timing and lazy-loaded assets.",
       },
 
       {
-        problem: "Maintaining responsiveness while displaying rich content.",
+        problem: "Maintaining responsiveness while preserving visual quality.",
 
-        solution: "Adopted a mobile-first design using Tailwind CSS.",
-      },
-       {
-        problem: "Server-side rendering and SEO optimization.",
-
-        solution: "Implemented Next.js SSR features and optimized meta tags for better search engine visibility.",
+        solution: "Adopted a mobile-first design approach using Tailwind CSS.",
       },
     ],
 
     learnings: [
-      "Building production-ready applications with Next.js.",
-      "Working with ShadCn UI and Tailwind CSS for responsive design.",
-      "Implementing secure authentication and authorization.",
-      "Seo optimization and server-side rendering techniques.",
+      "Advanced animation techniques with GSAP.",
+      "Creating reusable UI components.",
+      "Improving accessibility and SEO.",
+      "Building polished user experiences.",
     ],
   },
   {
