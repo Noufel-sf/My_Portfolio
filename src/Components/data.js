@@ -1243,4 +1243,121 @@ export const PROJECTS = [
       "Building adaptive AI systems using LLM Tool/Function Calling.",
     ],
   },
+
+  {
+    id: 11,
+
+    slug: "flutter-travel-app",
+
+    name: "Flutter Travel Discovery & Booking App",
+
+    subtitle:
+      "A modern cross-platform mobile travel and exploration application built with Flutter & Dart.",
+
+    desc: "A sleek mobile travel application crafted with Flutter and Dart featuring dynamic destination discovery, travel booking UI, custom micro-animations, and modern UI/UX design.",
+
+    overview:
+      "The Flutter Travel App was built to deepen mobile development expertise and implement modern UI/UX design principles with Flutter and Dart. The application offers users an engaging travel planning experience, allowing exploration of top destinations, category filtering, trip bookings, and wishlist management with fluid native transitions and responsive layouts across all mobile screen sizes.",
+
+    image: "/travelapp.png",
+    images: [
+      "/travelapp.png",
+      "/travelapp.png",
+      "/travelapp.png",
+      "/travelapp.png",
+      "/travelapp.png"
+    ],
+
+    category: "Frontend",
+
+    date: "2026",
+
+    duration: "1 Month",
+
+    role: "Mobile App Developer & UI/UX Designer",
+
+    status: "Completed",
+
+    preview: "https://github.com/Noufel-sf/Flutter_Travel_app",
+
+    github: "https://github.com/Noufel-sf/Flutter_Travel_app",
+
+    tech: {
+      frontend: ["Flutter", "Dart", "Material 3", "Cupertino Widgets"],
+
+      backend: [],
+
+      database: [],
+
+      deployment: ["Android / iOS Build"],
+    },
+
+    features: [
+      {
+        title: "Destination Discovery",
+        description:
+          "Interactive feed showcasing featured travel destinations with high-resolution imagery, ratings, and reviews.",
+      },
+      {
+        title: "Smart Filtering & Search",
+        description:
+          "Filter trips by category, price range, popularity, and climate for rapid itinerary discovery.",
+      },
+      {
+        title: "Interactive Booking Workflow",
+        description:
+          "Streamlined booking interface with interactive calendar date pickers, guest selection, and trip confirmations.",
+      },
+      {
+        title: "Saved Wishlist & Favorites",
+        description:
+          "Save and manage dream destinations for offline review and trip planning.",
+      },
+      {
+        title: "Fluid Hero Micro-Animations",
+        description:
+          "Polished page transitions, interactive cards, and haptic-friendly mobile micro-interactions.",
+      },
+      {
+        title: "Adaptive Responsive Layout",
+        description:
+          "Responsive mobile layouts crafted to render consistently on diverse phone and tablet form factors.",
+      },
+    ],
+
+    architecture: {
+      frontend: ["Flutter SDK", "Dart", "Custom Widgets", "Flutter Animations"],
+
+      backend: [],
+
+      database: [],
+
+      deployment: ["Android / iOS Build"],
+    },
+
+    challenges: [
+      {
+        problem: "Building a responsive and pixel-perfect UI across different screen sizes and aspect ratios.",
+        solution:
+          "Utilized Flutter flexible layout widgets (LayoutBuilder, MediaQuery, and Flex containers) for adaptive rendering.",
+      },
+      {
+        problem: "Creating smooth, seamless page navigation and hero image transitions.",
+        solution:
+          "Leveraged Flutter Hero animations and customized page route transitions for high frame-rate native animations.",
+      },
+      {
+        problem: "Designing an intuitive, modern travel UI/UX from scratch.",
+        solution:
+          "Designed clean card-based layouts, curated color palettes, and balanced typography inspired by modern travel platforms.",
+      },
+    ],
+
+    learnings: [
+      "Mastering Flutter widget hierarchy, custom layouts, and reactive UI patterns.",
+      "Cross-platform mobile architecture and Dart best practices.",
+      "Designing engaging UI/UX with fluid micro-animations and tactile user feedback.",
+      "Managing local mobile state and optimizing asset performance.",
+    ],
+  },
 ];
