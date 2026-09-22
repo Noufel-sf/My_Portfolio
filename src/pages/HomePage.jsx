@@ -198,6 +198,259 @@ const Pill = ({ label }) => (
   </motion.span>
 );
 
+// ── TECH STACKS DATA & ICONS ────────────────────────────────────────────────
+const TECH_STACK_ROW_1 = [
+  {
+    name: "Next.js",
+    category: "Fullstack",
+    icon: (
+      <svg viewBox="0 0 180 180" width="28" height="28" fill="none">
+        <circle cx="90" cy="90" r="90" fill="#050505" />
+        <path d="M149.508 157.438L69.147 54H54V125.97H66.0136V69.3831L139.999 164.845C143.333 162.614 146.509 160.134 149.508 157.438Z" fill="url(#next_grad)" />
+        <rect x="115" y="54" width="12" height="72" fill="url(#next_grad_2)" />
+        <defs>
+          <linearGradient id="next_grad" x1="109" y1="116.5" x2="144.5" y2="160.5" gradientUnits="userSpaceOnUse">
+            <stop stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
+          </linearGradient>
+          <linearGradient id="next_grad_2" x1="121" y1="54" x2="120.799" y2="106.875" gradientUnits="userSpaceOnUse">
+            <stop stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+    ),
+  },
+  {
+    name: "React",
+    category: "Frontend",
+    icon: (
+      <svg viewBox="-11.5 -10.23174 23 20.46348" width="28" height="28">
+        <circle cx="0" cy="0" r="2.05" fill="#61dafb" />
+        <g stroke="#61dafb" strokeWidth="1" fill="none">
+          <ellipse rx="11" ry="4.2" />
+          <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+          <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+        </g>
+      </svg>
+    ),
+  },
+  {
+    name: "TypeScript",
+    category: "Language",
+    icon: (
+      <div className="w-6 h-6 rounded-md bg-[#3178C6] flex items-center justify-center font-bold text-white text-[12px] font-mono tracking-tight shadow-md">
+        TS
+      </div>
+    ),
+  },
+  {
+    name: "Node.js",
+    category: "Backend",
+    icon: (
+      <svg viewBox="0 0 256 289" width="26" height="26">
+        <path d="M128 0L256 73.9V215.1L128 289L0 215.1V73.9L128 0Z" fill="#539E43" fillOpacity="0.25" stroke="#539E43" strokeWidth="14" />
+        <text x="128" y="168" fill="#539E43" fontSize="96" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">JS</text>
+      </svg>
+    ),
+  },
+  {
+    name: "NestJS",
+    category: "Architecture",
+    icon: (
+      <svg viewBox="0 0 256 256" width="26" height="26">
+        <path d="M226.7 54.4c-9.8-15.6-26.2-26.6-45-30.2-18.8-3.6-38.2 1-53.1 12.6L44.2 98.7C33 107.5 25.8 120.3 24.2 134.4c-1.6 14.1 2.5 28.1 11.3 39.3l21.4 27.2c7.8 9.9 19.1 16.1 31.6 17.4 12.5 1.3 25-2.5 34.9-10.4l84.4-67.2c11.2-8.9 18.4-21.7 20-35.8 1.6-14.1-2.5-28.1-11.1-39.3v-1.2zm-97.9 31.5L62.7 139c-3.7 3-8.4 4.4-13.1 3.9-4.7-.5-8.9-2.8-11.8-6.6l-21.4-27.2c-3.3-4.2-4.9-9.5-4.3-14.8.6-5.3 3.3-10.1 7.5-13.4l84.4-67.2c5.6-4.4 12.9-6.1 19.9-4.8 7 1.3 13.2 5.5 16.8 11.3l8.1 13.9-12 7.8z" fill="#E0234E" />
+      </svg>
+    ),
+  },
+  {
+    name: "Tailwind",
+    category: "Styling",
+    icon: (
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="#38BDF8">
+        <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.335 6.182 14.975 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.335 13.382 8.975 12 6.001 12z" />
+      </svg>
+    ),
+  },
+  {
+    name: "PostgreSQL",
+    category: "Database",
+    icon: (
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#4169E1" strokeWidth="1.8">
+        <ellipse cx="12" cy="5" rx="9" ry="3" />
+        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+      </svg>
+    ),
+  },
+  {
+    name: "MongoDB",
+    category: "Database",
+    icon: (
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="#47A248">
+        <path d="M17.193 9.555c-1.292-4.339-4.39-6.702-4.715-7.555-.477 1.332-1.562 3.195-2.733 4.908-1.637 2.394-3.328 4.869-2.646 7.917.653 2.923 2.87 5.093 5.438 6.075-.121-.777-.245-1.554-.245-2.33 0-4.004 2.298-6.19 4.896-8.995.004-.007.004-.014.005-.02z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Flutter",
+    category: "Mobile",
+    icon: (
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="#40D0FD">
+        <path d="M14.314 0L2.3 12 6 15.7 21.686 0h-7.372zM14.314 11.229l-5.657 5.657 5.657 5.657h7.372L16 16.886l5.686-5.657h-7.372z" />
+      </svg>
+    ),
+  },
+
+];
+
+const TECH_STACK_ROW_2 = [
+  {
+    name: "Express.js",
+    category: "Backend",
+    icon: (
+      <div className="w-6 h-6 rounded-md bg-[#222] border border-[#333] flex items-center justify-center font-bold text-white text-[10px] font-mono">
+        ex
+      </div>
+    ),
+  },
+  {
+    name: "React Native",
+    category: "Mobile",
+    icon: (
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="#40D0FD">
+        <path d="M14.314 0L2.3 12 6 15.7 21.686 0h-7.372zM14.314 11.229l-5.657 5.657 5.657 5.657h7.372L16 16.886l5.686-5.657h-7.372z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Redis",
+    category: "Caching",
+    icon: (
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="#DC382D">
+        <path d="M22.5 15.5l-10.5 6-10.5-6v-7l10.5-6 10.5 6v7zm-10.5 3.5l7-4-7-4-7 4 7 4z" />
+      </svg>
+    ),
+  },
+  {
+    name:"java script",
+    category: "Language",
+    icon: (
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="#f7df1e" stroke="#2D3748" strokeWidth="1.5">
+        <path d="M12 2L2 20h20L12 2zm0 4.5l6.5 11.5h-13L12 6.5z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Prisma",
+    category: "ORM",
+    icon: (
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="#2D3748" stroke="#5A67D8" strokeWidth="1.5">
+        <path d="M12 2L2 20h20L12 2zm0 4.5l6.5 11.5h-13L12 6.5z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Docker",
+    category: "DevOps",
+    icon: (
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="#2496ED">
+        <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.186.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.186.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.186v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.185-.186H5.136a.186.186 0 00-.186.186v1.888c0 .102.084.185.186.185m-2.928 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.185-.186H2.208a.186.186 0 00-.186.186v1.888c0 .102.084.185.186.185" />
+      </svg>
+    ),
+  },
+  {
+    name: "GraphQL",
+    category: "API",
+    icon: (
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="#E10098">
+        <path d="M12 2l8.66 5v10L12 22 3.34 17V7L12 2zm0 2.31L5.34 8.16v7.68L12 19.69l6.66-3.85V8.16L12 4.31z" />
+      </svg>
+    ),
+  },
+
+  {
+    name: "Dart",
+    category: "Language",
+    icon: (
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="#0175C2">
+        <path d="M4.1 4.1l11.7 11.7-4.1 4.1L0 8.2l4.1-4.1zm15.8 4.1L8.2 0 4.1 4.1l11.7 11.7 4.1-4.1v-.1z" />
+      </svg>
+    ),
+  },
+
+  {
+    name: "Git",
+    category: "VCS",
+    icon: (
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="#F05032">
+        <path d="M21.6 10.9L13.1 2.4c-.6-.6-1.5-.6-2.1 0L8.9 4.5l2.7 2.7c.6-.2 1.3 0 1.8.5.5.5.7 1.2.5 1.8l2.6 2.6c.6-.2 1.3 0 1.8.5.7.7.7 1.9 0 2.6-.7.7-1.9.7-2.6 0-.6-.6-.7-1.4-.4-2.1l-2.4-2.4v5.6c.2.1.4.3.5.5.7.7.7 1.9 0 2.6-.7.7-1.9.7-2.6 0-.7-.7-.7-1.9 0-2.6.2-.2.4-.4.6-.5V8.7c-.2-.1-.4-.3-.6-.5-.5-.5-.7-1.2-.5-1.8L8.1 3.7 2.4 9.4c-.6.6-.6 1.5 0 2.1l8.5 8.5c.6.6 1.5.6 2.1 0l8.6-8.6c.6-.5.6-1.5 0-2.1z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Jest",
+    category: "Testing",
+    icon: (
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="#C21325">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z" />
+      </svg>
+    ),
+  },
+];
+
+// ── GITHUB CONTRIBUTION HEATMAP MATRIX ──────────────────────────────────────
+const GITHUB_CONTRIBUTIONS = [
+  [1, 0, 0, 3, 0, 0, 2, 2, 3, 1, 1, 0, 2, 0, 3, 2, 3, 1],
+  [0, 2, 1, 1, 2, 3, 0, 2, 1, 2, 0, 1, 3, 2, 1, 0, 2, 3],
+  [2, 2, 3, 3, 1, 2, 3, 0, 1, 1, 1, 3, 0, 1, 2, 3, 3, 2],
+  [0, 1, 0, 0, 1, 2, 0, 3, 2, 2, 0, 2, 1, 0, 3, 2, 1, 4],
+];
+
+const GITHUB_LEVEL_COLORS = [
+  "bg-[#151515] border-[#222222]",
+  "bg-[#0e4429] border-[#15603b]",
+  "bg-[#006d32] border-[#0c8c43]",
+  "bg-[#26a641] border-[#39d353]/70",
+  "bg-[#39d353] border-[#5ff378]",
+];
+
+// ── 3D EVOLVING SKILLS BOOKS DATA ───────────────────────────────────────────
+const EVOLVING_SKILLS_BOOKS = [
+  {
+    title: "LEETCODE",
+    badge: "DSA",
+    gradient: "from-[#C94A4A] via-[#B83E3E] to-[#8E2828]",
+    border: "border-[#E86C6C]/40",
+    badgeStyle: "bg-white/15 border-white/30 text-white",
+    desc: "Problem Solving, Data Structures & Algorithm Optimization",
+  },
+  {
+    title: "FRONTEND",
+    badge: "UI",
+    gradient: "from-[#2E8B9E] via-[#247585] to-[#17525E]",
+    border: "border-[#4AB8CE]/40",
+    badgeStyle: "bg-white/15 border-white/30 text-white",
+    desc: "React 19, Next.js 15, Tailwind, Framer Motion & Responsive Design",
+  },
+  {
+    title: "BACKEND",
+    badge: "API",
+    gradient: "from-[#D49E35] via-[#BA8624] to-[#8C6314]",
+    border: "border-[#E5B552]/40",
+    badgeStyle: "bg-white/15 border-white/30 text-white",
+    desc: "Node.js, Express, PostgreSQL, NestJS, REST APIs & Redis Caching",
+  },
+  {
+    title: "AI / ML",
+    badge: "AI",
+    gradient: "from-[#5A9474] via-[#4A7F62] to-[#335B44]",
+    border: "border-[#7CB997]/40",
+    badgeStyle: "bg-white/15 border-white/30 text-white",
+    desc: "RAG Pipelines, Gemini API Function Calling & Vector Store Embeddings",
+  },
+];
+
 // ── MAIN ─────────────────────────────────────────────────────────────────────
 export default function HomePage() {
   const ref = useRef(null);
@@ -310,11 +563,303 @@ export default function HomePage() {
               <svg
                 viewBox="0 0 22 24"
                 fill="currentColor"
-                class="w-10 h-10 m-4 text-white animate-[spin_10s_linear_infinite]"
+                className="w-10 h-10 m-4 text-white animate-[spin_10s_linear_infinite]"
               >
                 <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"></path>
               </svg>
             </Card>
+          </motion.div>
+
+          {/* MY TECH STACKS ─ col-span-6 */}
+          <motion.div variants={up} className="sm:col-span-2 lg:col-span-6">
+            <Card className="p-6 sm:p-7 flex flex-col justify-between h-full group hover:border-[#7A93A8]/40 transition-all duration-300">
+              <div>
+                <div className="flex items-center gap-2 mb-1.5">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#7A93A8"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="animate-pulse"
+                  >
+                    <path d="M15 4V2m0 16v-2m8-8h-2M4 10H2m15.071 7.071l-1.414-1.414M4.343 4.343L2.93 2.93m14.142 0l-1.414 1.414M4.343 15.657l-1.414 1.414M16 10a6 6 0 11-12 0 6 6 0 0112 0z" />
+                  </svg>
+                  <h2 className="font-extrabold text-[17px] tracking-tight text-white">
+                    My tech stacks
+                  </h2>
+                </div>
+                <p className="text-[12px] text-neutral-500 mb-5">
+                  If you like using these tools too, we'll get along.
+                </p>
+
+                {/* Infinite Multi-Row Marquee */}
+                <div className="space-y-3 overflow-hidden py-1">
+                  {/* Row 1 - Left */}
+                  <div className="marquee-mask relative w-full overflow-hidden">
+                    <div className="marquee-track flex gap-3 w-max">
+                      {[...TECH_STACK_ROW_1, ...TECH_STACK_ROW_1, ...TECH_STACK_ROW_1].map((item, idx) => (
+                        <div
+                          key={`r1-${item.name}-${idx}`}
+                          className="group/item flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl bg-[#141414] border border-[#242424] hover:border-[#7A93A8]/60 hover:bg-[#191919] hover:scale-105 shadow-md transition-all cursor-pointer shrink-0"
+                        >
+                          <div className="w-7 h-7 flex items-center justify-center shrink-0 drop-shadow-sm">
+                            {item.icon}
+                          </div>
+                          <div className="flex flex-col">
+                            <span className="font-semibold text-[12px] text-neutral-200 group-hover/item:text-white transition-colors whitespace-nowrap">
+                              {item.name}
+                            </span>
+                            <span className="font-mono text-[8.5px] text-neutral-500 uppercase tracking-wider">
+                              {item.category}
+                            </span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Row 2 - Right (Reverse) */}
+                  <div className="marquee-mask relative w-full overflow-hidden">
+                    <div className="marquee-track-reverse flex gap-3 w-max">
+                      {[...TECH_STACK_ROW_2, ...TECH_STACK_ROW_2, ...TECH_STACK_ROW_2].map((item, idx) => (
+                        <div
+                          key={`r2-${item.name}-${idx}`}
+                          className="group/item flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl bg-[#141414] border border-[#242424] hover:border-[#7A93A8]/60 hover:bg-[#191919] hover:scale-105 shadow-md transition-all cursor-pointer shrink-0"
+                        >
+                          <div className="w-7 h-7 flex items-center justify-center shrink-0 drop-shadow-sm">
+                            {item.icon}
+                          </div>
+                          <div className="flex flex-col">
+                            <span className="font-semibold text-[12px] text-neutral-200 group-hover/item:text-white transition-colors whitespace-nowrap">
+                              {item.name}
+                            </span>
+                            <span className="font-mono text-[8.5px] text-neutral-500 uppercase tracking-wider">
+                              {item.category}
+                            </span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-5 pt-3.5 border-t border-[#1a1a1a] flex items-center justify-between">
+                <span className="font-mono text-[10px] text-neutral-600 tracking-wider">
+                  MODERN ECOSYSTEM ({TECH_STACK_ROW_1.length + TECH_STACK_ROW_2.length}+ TOOLS)
+                </span>
+                <span className="font-mono text-[10px] text-[#7A93A8] flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#7A93A8] pulse inline-block" />
+                  Production-Ready
+                </span>
+              </div>
+            </Card>
+          </motion.div>
+
+          {/* CONSISTENT BUILDER ─ col-span-6 */}
+          <motion.div variants={up} className="sm:col-span-2 lg:col-span-6">
+            <Card className="p-6 sm:p-7 flex flex-col justify-between h-full group hover:border-[#7A93A8]/40 transition-all duration-300">
+              <div>
+                <div className="flex items-center gap-2 mb-1.5">
+                  <Icon d={GITHUB} size={20} />
+                  <h2 className="font-extrabold text-[17px] tracking-tight text-white">
+                    Consistent Builder
+                  </h2>
+                </div>
+                <p className="text-[12px] text-neutral-500 mb-6">
+                  I push code almost every day. Visit my GitHub:{" "}
+                  <a
+                    href="https://github.com/Noufel-sf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#7A93A8] hover:underline font-mono font-medium inline-flex items-center gap-1"
+                  >
+                    github.com/Noufel-sf <ArrowSvg size={11} />
+                  </a>
+                </p>
+
+                {/* GitHub Contribution Heatmap Grid */}
+                <div className="p-4 rounded-2xl bg-[#0c0c0c] border border-[#1b1b1b] overflow-x-auto">
+                  <div className="flex flex-col gap-1.5 min-w-[280px]">
+                    {GITHUB_CONTRIBUTIONS.map((row, rowIdx) => (
+                      <div key={rowIdx} className="flex gap-1.5 justify-between">
+                        {row.map((level, colIdx) => (
+                          <motion.div
+                            key={`${rowIdx}-${colIdx}`}
+                            whileHover={{ scale: 1.35, zIndex: 10 }}
+                            transition={{ duration: 0.15 }}
+                            className={`w-full aspect-square rounded-[4px] border transition-all cursor-pointer shadow-sm ${GITHUB_LEVEL_COLORS[level]} hover:shadow-emerald-500/20`}
+                            title={`${level > 0 ? `${level * 3} commits` : "No contributions"}`}
+                          />
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Legend */}
+                  <div className="flex items-center justify-between mt-4 pt-3 border-t border-[#181818] text-[10px] font-mono text-neutral-600">
+                    <div className="flex items-center gap-1.5">
+                      <span>Less</span>
+                      <span className="w-2.5 h-2.5 rounded-[2px] bg-[#151515] border border-[#222]" />
+                      <span className="w-2.5 h-2.5 rounded-[2px] bg-[#0e4429]" />
+                      <span className="w-2.5 h-2.5 rounded-[2px] bg-[#006d32]" />
+                      <span className="w-2.5 h-2.5 rounded-[2px] bg-[#26a641]" />
+                      <span className="w-2.5 h-2.5 rounded-[2px] bg-[#39d353]" />
+                      <span>More</span>
+                    </div>
+                    <span className="text-[#7A93A8] font-semibold">Active Streak 🔥</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-[#1a1a1a] flex items-center justify-between">
+                <span className="font-mono text-[10px] text-neutral-600 tracking-wider">
+                  OPEN SOURCE &amp; COMMITS
+                </span>
+                <a
+                  href="https://github.com/Noufel-sf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mono text-[10px] text-[#7A93A8] hover:text-white transition-colors flex items-center gap-1"
+                >
+                  View Activity <ArrowSvg size={10} />
+                </a>
+              </div>
+            </Card>
+          </motion.div>
+
+          {/* I KEEP EVOLVING MY SKILLS ─ col-span-6 */}
+          <motion.div variants={up} className="sm:col-span-2 lg:col-span-6">
+            <Card className="p-6 sm:p-7 flex flex-col justify-between h-full group hover:border-[#7A93A8]/40 transition-all duration-300">
+              <div>
+                <div className="flex items-center gap-2 mb-1.5">
+                  <div className="w-6 h-6 rounded-lg bg-[#7A93A8]/20 flex items-center justify-center text-[#7A93A8]">
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                    </svg>
+                  </div>
+                  <h2 className="font-extrabold text-[17px] tracking-tight text-white">
+                    I Keep evolving my skills
+                  </h2>
+                </div>
+                <p className="text-[12px] text-neutral-500 mb-5 leading-relaxed">
+                  From enhancing my problem solving skills to keeping myself updated with new tech
+                </p>
+
+                {/* 3D Book Spines Stack */}
+                <div className="flex flex-col gap-2.5">
+                  {EVOLVING_SKILLS_BOOKS.map((book) => (
+                    <motion.div
+                      key={book.title}
+                      whileHover={{ x: 6, scale: 1.01 }}
+                      transition={{ duration: 0.18 }}
+                      className={`relative group/book rounded-xl p-3 sm:p-3.5 bg-gradient-to-r ${book.gradient} border ${book.border} shadow-lg cursor-pointer transition-all overflow-hidden flex items-center justify-between before:absolute before:left-0 before:inset-y-0 before:w-3.5 before:bg-gradient-to-r before:from-black/45 before:to-transparent before:rounded-l-xl after:absolute after:-right-1.5 after:top-1.5 after:bottom-1.5 after:w-2 after:bg-[#f6eee0] after:rounded-r-[3px] after:shadow-sm after:border-y after:border-r after:border-[#dcd3c1]`}
+                    >
+                      <div className="relative z-10 pl-2.5">
+                        <h3 className="font-black text-[14px] sm:text-[16px] tracking-[0.14em] text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)] uppercase font-mono">
+                          {book.title}
+                        </h3>
+                        <p className="text-[10.5px] text-white/85 font-medium leading-tight mt-0.5 max-w-[220px] sm:max-w-none truncate sm:whitespace-normal">
+                          {book.desc}
+                        </p>
+                      </div>
+
+                      <div className="relative z-10 pr-2">
+                        <span className={`px-2 py-0.5 rounded-md font-mono text-[10px] font-black tracking-wider uppercase shadow-md border backdrop-blur-sm ${book.badgeStyle}`}>
+                          {book.badge}
+                        </span>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-[#1a1a1a] flex items-center justify-between">
+                <span className="font-mono text-[10px] text-neutral-600 tracking-wider">
+                  CONTINUOUS GROWTH
+                </span>
+                <span className="font-mono text-[10px] text-[#7A93A8]">
+                  Daily Learning Loop
+                </span>
+              </div>
+            </Card>
+          </motion.div>
+
+          {/* PROJECTS ─ col-span-6 */}
+          <motion.div variants={up} className="sm:col-span-2 lg:col-span-6">
+            <div className="p-6 rounded-2xl bg-[#d1d1d1] h-full flex flex-col justify-between" id="projects">
+              <div>
+                <div className="flex items-center justify-between mb-5">
+                  <h2 className="font-bold text-black text-[15px] tracking-tight">
+                    Featured Projects
+                  </h2>
+                  <Link
+                    to="/projects"
+                    className="flex items-center gap-1 font-mono text-[11px] text-[#7A93A8] hover:opacity-70 transition-opacity"
+                  >
+                    View all <ArrowSvg size={12} />
+                  </Link>
+                </div>
+                <div className="flex flex-col gap-4">
+                  {PROJECTS.map((p, i) => (
+                    <motion.div
+                      key={p.name}
+                      whileHover={{ x: 4 }}
+                      transition={{ duration: 0.18 }}
+                      className="group cursor-pointer"
+                    >
+                      <div className="flex justify-between items-start gap-3">
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 mb-1.5 flex-wrap">
+                            <span className="font-semibold text-black text-sm text-b transition-colors duration-200">
+                              {p.name}
+                            </span>
+                            <Badge>{p.tag}</Badge>
+                          </div>
+                          <p className="text-[12px] text-neutral-700 leading-relaxed">
+                            {p.desc}
+                          </p>
+                          <p className="font-mono text-[10px] text-neutral-800 mt-1.5">
+                            {p.date}
+                          </p>
+                        </div>
+                        <span className="text-neutral-800 group-hover:text-[#7A93A8] transition-colors shrink-0 mt-0.5">
+                          <ArrowSvg size={13} />
+                        </span>
+                      </div>
+                      {i < PROJECTS.length - 1 && (
+                        <div className="mt-4 h-px bg-[#b8b8b8]" />
+                      )}
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+              <div className="mt-5 pt-3 border-t border-[#b8b8b8] flex items-center justify-between">
+                <span className="font-mono text-[10px] text-neutral-600 tracking-wider">
+                  CASE STUDIES
+                </span>
+                <Link
+                  to="/projects"
+                  className="font-mono text-[10px] text-black font-semibold hover:underline flex items-center gap-1"
+                >
+                  All Case Studies <ArrowSvg size={10} />
+                </Link>
+              </div>
+            </div>
           </motion.div>
 
           {/* SOFT SKILLS ─ col-span-3 */}
@@ -472,56 +1017,6 @@ export default function HomePage() {
             </Card>
           </motion.div>
 
-          {/* PROJECTS ─ col-span-4 */}
-          <motion.div variants={up} className="sm:col-span-2 lg:col-span-4">
-            <div className="p-6 rounded-2xl bg-[#d1d1d1]" id="projects">
-              <div className="flex items-center justify-between mb-5">
-                <h2 className="font-bold  text-black text-[15px] tracking-tight">
-                  Projects
-                </h2>
-                <Link
-                  to="/projects"
-                  className="flex items-center gap-1 font-mono text-[11px] text-[#7A93A8] hover:opacity-70 transition-opacity"
-                >
-                  View all <ArrowSvg size={12} />
-                </Link>
-              </div>
-              <div className="flex flex-col gap-4">
-                {PROJECTS.map((p, i) => (
-                  <motion.div
-                    key={p.name}
-                    whileHover={{ x: 4 }}
-                    transition={{ duration: 0.18 }}
-                    className="group cursor-pointer"
-                  >
-                    <div className="flex justify-between items-start gap-3">
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2 mb-1.5 flex-wrap">
-                          <span className="font-semibold text-black text-sm text-b transition-colors duration-200">
-                            {p.name}
-                          </span>
-                          <Badge>{p.tag}</Badge>
-                        </div>
-                        <p className="text-[12px] text-neutral-700 leading-relaxed">
-                          {p.desc}
-                        </p>
-                        <p className="font-mono text-[10px] text-neutral-800 mt-1.5">
-                          {p.date}
-                        </p>
-                      </div>
-                      <span className="text-neutral-800 group-hover:text-[#7A93A8] transition-colors shrink-0 mt-0.5">
-                        <ArrowSvg size={13} />
-                      </span>
-                    </div>
-                    {i < PROJECTS.length - 1 && (
-                      <div className="mt-4 h-px bg-[#1a1a1a]" />
-                    )}
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </motion.div>
-
           {/* ABOUT + SKILLS ─ col-span-5 */}
           <motion.div variants={up} className="sm:col-span-2 lg:col-span-5">
             <div className="p-6 h-full bg-[#7A93A8] rounded-2xl  ">
@@ -599,8 +1094,8 @@ export default function HomePage() {
             </Card>
           </motion.div>
 
-          {/* EXPERIENCE ─ col-span-8 */}
-          <motion.div variants={up} className="sm:col-span-2 lg:col-span-8">
+          {/* EXPERIENCE ─ col-span-12 */}
+          <motion.div variants={up} className="sm:col-span-2 lg:col-span-12">
             <Card className="p-6 h-full" id="experience">
               <h2 className="font-bold text-[15px] tracking-tight mb-5">
                 Experience

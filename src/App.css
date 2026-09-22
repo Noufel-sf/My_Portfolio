@@ -66,6 +66,14 @@ body {
     transform: translateX(-50%);
   }
 }
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 @keyframes fadeSlideUp {
   from {
     opacity: 0;
@@ -84,10 +92,20 @@ body {
   animation: floatUp 4s ease-in-out infinite;
 }
 .marquee-track {
-  animation: marquee 26s linear infinite;
+  animation: marquee 28s linear infinite;
   display: flex;
-  gap: 10px;
+  gap: 12px;
   width: max-content;
+}
+.marquee-track-reverse {
+  animation: marquee-reverse 28s linear infinite;
+  display: flex;
+  gap: 12px;
+  width: max-content;
+}
+.marquee-track:hover,
+.marquee-track-reverse:hover {
+  animation-play-state: paused;
 }
 .marquee-mask {
   overflow: hidden;
