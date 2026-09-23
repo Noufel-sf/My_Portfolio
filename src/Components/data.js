@@ -1360,4 +1360,115 @@ export const PROJECTS = [
       "Managing local mobile state and optimizing asset performance.",
     ],
   },
+  {
+    id: 12,
+    slug: "lumina-books",
+    name: "React Native Books Ecommerce app",
+    subtitle:
+      "A state-of-the-art mobile commerce application and digital reading platform built with React Native, Expo SDK 57 & TypeScript.",
+    desc: "A playful Neo-Pop mobile bookstore and digital reader built with React Native, Expo SDK 57, and Zustand 5 featuring tactile 2.5D hard offset shadows, gesture interactions, dynamic pricing, and an in-app e-reader.",
+    overview:
+      "Lumina Books is a mobile commerce application and digital reading platform built with React Native, Expo SDK 57, and TypeScript. Designed in a playful Neo-Pop / Gumroad aesthetic with crisp 2px black outlines and 2.5D hard offset shadows, the app delivers a tactile sticker feel. It combines a rich storefront with trending showcases, spotlight book carousels, dynamic free-shipping progress indicators, multi-step checkout with simulated digital receipts, and a comprehensive in-app E-Reader featuring warm sepia, OLED dark, and classic light themes with real-time font scaling.",
+    image: "/mobileReact.png",
+    images: [
+      "/mobileReact.png",
+      "/mobileReact.png",
+      "/mobileReact.png",
+      "/mobileReact.png",
+      "/mobileReact.png"
+    ],
+    category: "Mobile",
+    date: "2026",
+    duration: "1.5 Months",
+    role: "Mobile App Developer & UI/UX Designer",
+    status: "Completed",
+    preview: "https://github.com/Noufel-sf/React_Native-Books-Ecommerce-app",
+    github: "https://github.com/Noufel-sf/React_Native-Books-Ecommerce-app",
+    tech: {
+      frontend: [
+        "React Native",
+        "Expo SDK 57",
+        "TypeScript",
+        "Zustand 5",
+        "Reanimated 4",
+        "Gesture Handler"
+      ],
+      backend: ["Expo Router v4", "Flux State Flow", "AsyncStorage"],
+      database: ["Zustand Atomic Stores", "Local Persistence"],
+      deployment: ["Expo Go", "iOS & Android Builds"],
+    },
+    features: [
+      {
+        title: "Playful Neo-Pop / Gumroad Design System",
+        description:
+          "Crisp 1.8px–2px solid black borders, 2.5D hard offset shadows, tactile micro-haptics, and high-energy color blocking.",
+      },
+      {
+        title: "Comprehensive In-App E-Reader",
+        description:
+          "Integrated reader with 3 themes (Classic Light, Warm Sepia, OLED Dark), real-time font scaling (A- / A+), and reading progress tracking.",
+      },
+      {
+        title: "Interactive Gestures & Micro-Interactions",
+        description:
+          "Pinch-to-zoom book covers, smooth swipe-to-delete reading list items, and spring-animated floating dock navigation.",
+      },
+      {
+        title: "Dynamic Cart & Free Shipping Bar",
+        description:
+          "Real-time free shipping threshold calculation, reactive QTY steppers, and automated discount & subtotal summaries.",
+      },
+      {
+        title: "3-Step Checkout & Digital Receipt",
+        description:
+          "Visual checkout stepper (Shipping ➔ Payment ➔ Confirm), interactive credit card preview, and ticket receipt with barcode graphic.",
+      },
+      {
+        title: "Curated Storefront & Reading Habits",
+        description:
+          "Trending showcases, spotlight book cards, reading streak ribbons (5-Day Streak 🔥), and segmented library controls.",
+      },
+    ],
+    architecture: {
+      frontend: [
+        "React Native 0.86+",
+        "Expo SDK 57",
+        "TypeScript 5.3+",
+        "Vanilla StyleSheet Tokens"
+      ],
+      backend: [
+        "Flux / Unidirectional State (Zustand 5)",
+        "Observer / Pub-Sub Toast System",
+        "Facade Store Hooks"
+      ],
+      database: ["Zustand Local Storage", "AsyncStorage Persistence"],
+      deployment: ["Expo Router v4", "Android APK / iOS IPA"],
+    },
+    challenges: [
+      {
+        problem:
+          "Maintaining smooth 60fps gesture animations and interactive physics across iOS and Android.",
+        solution:
+          "Leveraged React Native Reanimated 4 and Gesture Handler 2 to run gesture calculations directly on the UI thread.",
+      },
+      {
+        problem:
+          "Achieving authentic 2.5D zero-blur hard offset shadows consistently on Android without elevation blur artifacts.",
+        solution:
+          "Designed cross-platform shadow token abstractions and layered border offsets that render identical crisp shadows on both platforms.",
+      },
+      {
+        problem:
+          "Building an in-app e-reader with fluid real-time typography scaling and theme switches without re-rendering entire screen trees.",
+        solution:
+          "Isolated reading preferences inside atomic Zustand stores and wrapped the reading canvas in memoized render trees.",
+      },
+    ],
+    learnings: [
+      "Architecting complex mobile apps using React Native 0.86+ and Expo SDK 57.",
+      "Implementing custom tactile design systems (Neo-Pop/Gumroad aesthetic) with rigid tokens.",
+      "Mastering Reanimated 4 worklets and off-thread native gesture handling.",
+      "Unidirectional data flow, facade patterns, and atomic store design with Zustand 5.",
+    ],
+  },
 ];
