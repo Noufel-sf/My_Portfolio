@@ -46,12 +46,7 @@ function Footer() {
                 </p>
               </div>
 
-              <a
-                href="https://www.linkedin.com/in/noufel-seif-el-islam-nasri/"
-                className="inline-flex items-center justify-center rounded-full bg-neutral-900 mb-4 text-white font-mono text-[11px] tracking-[0.12em] uppercase px-6 py-3 transition-colors duration-200 w-fit"
-              >
-                contact me
-              </a>
+           
             </div>
 
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 border-t border-[#1b1b1b] pt-6">

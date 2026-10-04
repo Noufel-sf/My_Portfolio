@@ -90,6 +90,18 @@ const EDUCATION = [
     primary: false,
   },
 ];
+const ACHIEVEMENTS = [
+  {
+    title: "Hackathon Winner – 1st Place",
+    year: "2026",
+    desc: "Won first place in a hackathon and qualified for the next stage, representing Mila in the following round.",
+  },
+  {
+    title: "Web Expo Hackathon – 4th Place",
+    year: "2026",
+    desc: "Worked as part of a team that placed 4th out of 11 teams and 2nd in the E-Tourism track with a smart hiking platform.",
+  },
+];
 const EXPERIENCE = [
   {
     role: "Mern Stack Developer",
@@ -1070,26 +1082,60 @@ export default function HomePage() {
             </div>
           </motion.div>
 
-          {/* EDUCATION ─ col-span-4 */}
+          {/* EDUCATION & ACHIEVEMENTS ─ col-span-4 */}
           <motion.div variants={up} className="sm:col-span-2 lg:col-span-4">
-            <Card className="p-6 h-full">
-              <h2 className="font-bold text-[15px] tracking-tight mb-5">
-                Education &amp; Certs
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3.5">
-                {EDUCATION.map((e) => (
-                  <div key={e.name} className="flex items-start gap-3">
+            <Card className="p-6 h-full flex flex-col justify-between">
+              <div>
+                <h2 className="font-bold text-[15px] tracking-tight mb-4">
+                  Education &amp; Certs
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3.5">
+                  {EDUCATION.map((e) => (
+                    <div key={e.name} className="flex items-start gap-3">
+                      <div
+                        className={`w-1.5 h-1.5 rounded-full shrink-0 mt-1.5 ${
+                          e.primary ? "bg-[#7A93A8]" : "bg-[#2e2e2e]"
+                        }`}
+                      />
+                      <div>
+                        <p className="font-semibold text-[13px]">{e.name}</p>
+                        <p className="font-mono text-[10px] text-neutral-500 mt-0.5">
+                          {e.school} · {e.year}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="h-px bg-[#1a1a1a] my-5" />
+
+                <div className="flex items-center gap-2 mb-3.5">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#7A93A8]" />
+                  <h3 className="font-bold text-[14px] tracking-tight text-white">
+                    Achievements
+                  </h3>
+                </div>
+
+                <div className="space-y-3.5">
+                  {ACHIEVEMENTS.map((a) => (
                     <div
-                      className={`w-1.5 h-1.5 rounded-full shrink-0 mt-1.5 ${e.primary ? "bg-[#7A93A8]" : "bg-[#2e2e2e]"}`}
-                    />
-                    <div>
-                      <p className="font-semibold text-[13px]">{e.name}</p>
-                      <p className="font-mono text-[10px] text-neutral-700 mt-0.5">
-                        {e.school} · {e.year}
+                      key={a.title}
+                      className="pl-3 border-l border-[#7A93A8]/30"
+                    >
+                      <div className="flex items-center justify-between gap-2 mb-1 flex-wrap">
+                        <p className="font-semibold text-[12.5px] text-neutral-200">
+                          {a.title}
+                        </p>
+                        <span className="font-mono text-[10px] text-[#7A93A8]">
+                          {a.year}
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-neutral-500 leading-relaxed">
+                        {a.desc}
                       </p>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </Card>
           </motion.div>
