@@ -1169,6 +1169,129 @@ export default function HomePage() {
             </Card>
           </motion.div>
 
+          {/* COMMUNITY & ASSOCIATION ─ col-span-12 */}
+          <motion.div variants={up} className="col-span-1 sm:col-span-2 lg:col-span-12">
+            <Card className="p-6 sm:p-8 relative overflow-hidden group hover:border-[#7A93A8]/40 transition-all duration-300" id="community">
+              {/* Ambient Glow */}
+              <div className="absolute top-0 right-0 w-96 h-96 bg-[#7A93A8]/5 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20" />
+
+              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+                {/* Left: Info and Growth */}
+                <div className="lg:col-span-7 flex flex-col justify-between">
+                  <div>
+                    {/* Header tags */}
+                    <div className="flex items-center gap-2.5 mb-3 flex-wrap">
+                      <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#7A93A8]/10 border border-[#7A93A8]/25 text-[#7A93A8] font-mono text-[10.5px] font-semibold tracking-wider uppercase">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#7A93A8] animate-pulse" />
+                        Community &amp; Civic Engagement
+                      </span>
+                      <span className="font-mono text-[10.5px] text-neutral-500">
+                        2024 – Present · Mila
+                      </span>
+                    </div>
+
+                    <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-white mb-2">
+                      Association Rockay Chabab{" "}
+                      <span className="text-[#7A93A8] text-base font-normal font-mono block sm:inline">
+                        (جمعية رقي للشباب)
+                      </span>
+                    </h2>
+
+                    <p className="text-[13px] sm:text-[13.5px] text-neutral-400 leading-relaxed mb-5">
+                      Since 2024, I have been actively involved in <span className="text-neutral-200 font-semibold">Rockay Chabab</span>, a local youth and community association. I built their full-stack digital platform from scratch to streamline member registrations, organize events, and manage human resources.
+                    </p>
+
+                    {/* Growth Cards */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                      <div className="p-3.5 rounded-xl bg-[#161616] border border-[#222] hover:border-[#7A93A8]/30 transition-colors">
+                        <div className="flex items-center gap-2 mb-1.5">
+                          <div className="w-6 h-6 rounded-md bg-[#7A93A8]/15 flex items-center justify-center text-[#7A93A8]">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                          </div>
+                          <h4 className="font-semibold text-[12.5px] text-white">Social Intelligence</h4>
+                        </div>
+                        <p className="text-[11px] text-neutral-500 leading-relaxed">
+                          Developed deep empathy, active listening, and high-level interpersonal communication by working directly with youth and community leaders.
+                        </p>
+                      </div>
+
+                      <div className="p-3.5 rounded-xl bg-[#161616] border border-[#222] hover:border-[#7A93A8]/30 transition-colors">
+                        <div className="flex items-center gap-2 mb-1.5">
+                          <div className="w-6 h-6 rounded-md bg-[#7A93A8]/15 flex items-center justify-center text-[#7A93A8]">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <path d="m4.93 4.93 4.24 4.24"></path>
+                              <path d="m14.83 9.17 4.24-4.24"></path>
+                              <path d="m14.83 14.83 4.24 4.24"></path>
+                              <path d="m9.17 14.83-4.24 4.24"></path>
+                              <circle cx="12" cy="12" r="4"></circle>
+                            </svg>
+                          </div>
+                          <h4 className="font-semibold text-[12.5px] text-white">Teamwork &amp; Leadership</h4>
+                        </div>
+                        <p className="text-[11px] text-neutral-500 leading-relaxed">
+                          Collaborated with multidisciplinary teams, organizing educational workshops, on-the-ground initiatives, and youth development events.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Links */}
+                  <div className="flex items-center gap-3 flex-wrap pt-1">
+                    <a
+                      href="https://rokaichabab.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-[#7A93A8] hover:bg-[#7A93A8]/90 text-white font-semibold text-[12px] px-4 py-2 rounded-xl transition-all duration-200"
+                    >
+                      Visit Live Platform <ArrowSvg size={12} />
+                    </a>
+                    <Link
+                      to="/projectdetailspage/1"
+                      className="inline-flex items-center gap-2 bg-[#1a1a1a] hover:bg-[#222] text-neutral-300 hover:text-white border border-[#2c2c2c] font-semibold text-[12px] px-4 py-2 rounded-xl transition-all duration-200"
+                    >
+                      View Case Study <ArrowSvg size={12} />
+                    </Link>
+                  
+                  </div>
+                </div>
+
+                {/* Right: Preview Image */}
+                <div className="lg:col-span-5">
+                  <div className="relative rounded-xl overflow-hidden border border-[#222] group/img bg-[#0d0d0d] shadow-2xl">
+                    <div className="relative aspect-[16/10] overflow-hidden">
+                      <img
+                        src="/rockay2.PNG"
+                        alt="Rockay Chabab Association Activities and Team"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-transparent to-transparent opacity-75" />
+                    </div>
+
+                    <div className="p-3.5 bg-[#141414] border-t border-[#1e1e1e] flex items-center justify-between">
+                      <div>
+                        <p className="font-semibold text-xs text-neutral-200">
+                          Digital Platform &amp; Community Impact
+                        </p>
+                        <p className="font-mono text-[10px] text-neutral-500 mt-0.5">
+                          Built with React &amp; Node.js · 200+ Active Members
+                        </p>
+                      </div>
+                      <span className="w-7 h-7 rounded-lg bg-[#7A93A8]/10 text-[#7A93A8] flex items-center justify-center">
+                        <ArrowSvg size={13} />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
+
           {/* MARQUEE ─ full width */}
           <motion.div
             variants={up}
