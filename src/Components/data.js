@@ -1472,142 +1472,234 @@ export const PROJECTS = [
     ],
   },
 
+  // {
+  //   id: 13,
+  //   slug: "cinematch-movie-recommendation",
+  //   name: "CineMatch — AI Movie Recommendation Platform",
+  //   subtitle:
+  //     "An end-to-end, enterprise-grade movie recommendation platform featuring multi-stage ML algorithms, pgvector HNSW search, and Next.js 15 streaming interface.",
+  //   desc: "An enterprise-grade movie recommendation platform built with FastAPI, Next.js 15, PostgreSQL, and pgvector. Features multi-stage ML models (Matrix Factorization, Content-Based TF-IDF, Bayesian Popularity, and Hybrid Ensembles), cold-start onboarding, 64-dimensional dense vector embeddings with HNSW index, and transparent recommendation explanations.",
+  //   overview:
+  //     "CineMatch is an end-to-end, enterprise-grade movie recommendation platform engineered with a high-throughput FastAPI backend, Next.js 15 streaming frontend, and PostgreSQL 16 with pgvector. The system features a multi-stage machine learning recommendation engine combining Matrix Factorization (Latent Factor SGD, k=20), Content-Based filtering with TF-IDF, IMDb Bayesian weighted popularity, and a 60/25/15 Hybrid Ensemble. It solves the cold-start problem with an interactive onboarding taste centroid projection (User #999), provides sub-millisecond semantic search via 64-dimensional dense vector embeddings indexed with HNSW, and delivers transparent, model-derived explanations for every recommended title.",
+  //   image: "/Aimovie.jpg",
+  //   images: [
+  //     "/Aimovie.jpg",
+  //     "/Aimovie.jpg",
+  //     "/Aimovie.jpg",
+  //     "/Aimovie.jpg",
+  //     "/Aimovie.jpg"
+  //   ],
+  //   category: "full Stack",
+  //   date: "2026",
+  //   duration: "2 Months",
+  //   role: "Full Stack & Machine Learning Engineer",
+  //   status: "Completed",
+  //   preview: "https://github.com/Noufel-sf/Movie_Recommendation_System",
+  //   github: "https://github.com/Noufel-sf/Movie_Recommendation_System",
+  //   tech: {
+  //     frontend: [
+  //       "Next.js 15",
+  //       "React",
+  //       "TypeScript",
+  //       "Tailwind CSS",
+  //       "Radix UI",
+  //       "Lucide React"
+  //     ],
+     
+
+  //     deployment: [
+  //       "Vercel",
+  //     ],
+  //   },
+  //   features: [
+  //     {
+  //       title: "Multi-Stage ML Recommendation Engine",
+  //       description:
+  //         "Hybrid ensemble combining 60% Matrix Factorization (Latent SGD k=20), 25% Content-Based TF-IDF, and 15% IMDb Bayesian popularity baseline.",
+  //     },
+  //     {
+  //       title: "Cold-Start Interactive Onboarding (User #999)",
+  //       description:
+  //         "Instant taste centroid vector projection calculated across seed movies in 6 core genres to activate zero-history user profiles without retraining.",
+  //     },
+  //     {
+  //       title: "Dense Vector Embeddings & pgvector HNSW",
+  //       description:
+  //         "64-dimensional dense vectors combining genre distributions, rating priors, and title projections with sub-millisecond approximate nearest neighbor search.",
+  //     },
+  //     {
+  //       title: "Transparent Recommendation Explainability",
+  //       description:
+  //         "Model-derived rationales for every item indicating whether recommendations stem from latent factor alignment, content similarity, or community popularity.",
+  //     },
+  //     {
+  //       title: "High-Throughput FastAPI REST Gateway",
+  //       description:
+  //         "Dual-route endpoints (/api/v1/...) supporting paginated catalogs, semantic similarity, real-time ratings, watch telemetry, and interactive OpenAPI Swagger docs.",
+  //     },
+  //     {
+  //       title: "Next.js 15 Streaming Interface",
+  //       description:
+  //         "Modern streaming UI with dynamic genre filtering, real-time user taste profiles, interactive modals, and responsive catalog browsing.",
+  //     },
+  //   ],
+  //   architecture: {
+  //     frontend: [
+  //       "Next.js 15 App Router",
+  //       "React 19 & TypeScript",
+  //       "Tailwind CSS & Radix UI",
+  //       "Client-Side State & Streaming"
+  //     ],
+  //     backend: [
+  //       "FastAPI Asynchronous Gateway",
+  //       "Decoupled RecommendationEngineService",
+  //       "Multi-Model Ensemble Pipeline",
+  //       "Pydantic Validation"
+  //     ],
+  //     database: [
+  //       "PostgreSQL 16 + pgvector",
+  //       "HNSW Cosine Index (m=16, ef=64)",
+  //       "Optimized B-tree & Composite Indexes",
+  //       "MovieLens 100k + TMDB Parquet Caches"
+  //     ],
+  //     deployment: [
+  //       "Docker Containerization",
+  //       "Uvicorn ASGI Server",
+  //       "Pytest ML & API Test Suite"
+  //     ],
+  //   },
+  //   challenges: [
+  //     {
+  //       problem:
+  //         "Eliminating the cold-start barrier for new users with zero interaction history.",
+  //       solution:
+  //         "Engineered an onboarding survey that projects seed movie choices into a mathematical taste centroid vector (C_u), instantly generating personalized recommendations.",
+  //     },
+  //     {
+  //       problem:
+  //         "Performing real-time similarity search across large embedding spaces without latency degradation.",
+  //       solution:
+  //         "Implemented 64-dimensional dense L2-normalized embeddings paired with PostgreSQL pgvector HNSW index, achieving sub-millisecond approximate nearest neighbor lookups.",
+  //     },
+  //     {
+  //       problem:
+  //         "Balancing accuracy with discovery in recommendation lists (avoiding over-fitting to narrow user history).",
+  //       solution:
+  //         "Created a weighted hybrid ensemble blending collaborative filtering (SVD), content-based TF-IDF features, and time-decay exponential popularity.",
+  //     },
+  //   ],
+  //   learnings: [
+  //     "Designing and implementing production-grade recommendation systems from Bayesian baselines to matrix factorization and hybrid ensembles.",
+  //     "Working with pgvector and tuning HNSW indexing parameters (m, ef_construction) for sub-millisecond vector similarity.",
+  //     "Building asynchronous, high-throughput machine learning inference APIs with FastAPI and Pydantic.",
+  //     "Cold-start resolution techniques using taste centroid synthesis and interactive user onboarding.",
+  //   ],
+  // },
+
   {
     id: 13,
-    slug: "cinematch-movie-recommendation",
-    name: "CineMatch — AI Movie Recommendation Platform",
+    slug: "dar-chabab-platform",
+    name: "Dar Chabab — Youth & Cultural Platform",
     subtitle:
-      "An end-to-end, enterprise-grade movie recommendation platform featuring multi-stage ML algorithms, pgvector HNSW search, and Next.js 15 streaming interface.",
-    desc: "An enterprise-grade movie recommendation platform built with FastAPI, Next.js 15, PostgreSQL, and pgvector. Features multi-stage ML models (Matrix Factorization, Content-Based TF-IDF, Bayesian Popularity, and Hybrid Ensembles), cold-start onboarding, 64-dimensional dense vector embeddings with HNSW index, and transparent recommendation explanations.",
+      "A modern, accessible, and high-performance youth center platform built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.",
+    desc: "A bilingual, high-performance web platform built for Dar Chabab El Aifa Salah (Chelghoum Laïd, Mila) featuring fluid Framer Motion animations, interactive clubs carousel, values showcase, and responsive RTL design.",
     overview:
-      "CineMatch is an end-to-end, enterprise-grade movie recommendation platform engineered with a high-throughput FastAPI backend, Next.js 15 streaming frontend, and PostgreSQL 16 with pgvector. The system features a multi-stage machine learning recommendation engine combining Matrix Factorization (Latent Factor SGD, k=20), Content-Based filtering with TF-IDF, IMDb Bayesian weighted popularity, and a 60/25/15 Hybrid Ensemble. It solves the cold-start problem with an interactive onboarding taste centroid projection (User #999), provides sub-millisecond semantic search via 64-dimensional dense vector embeddings indexed with HNSW, and delivers transparent, model-derived explanations for every recommended title.",
-    image: "/Aimovie.jpg",
+      "Dar Chabab El Aifa Salah is a prominent youth and cultural institution located in Chelghoum Laïd, Mila province. Built as a freelance production platform, this web application connects local youth with educational workshops, specialized clubs (robotics, technology, arts, theatre, music, and environmental initiatives), and community events. Developed with Next.js App Router, TypeScript, Tailwind CSS, and Framer Motion, it features seamless Right-to-Left (RTL) Arabic typography, hardware-accelerated animations, infinite club marquees, and optimized media delivery for exceptional Core Web Vitals.",
+    image: "/darchabab1.png",
     images: [
-      "/Aimovie.jpg",
-      "/Aimovie.jpg",
-      "/Aimovie.jpg",
-      "/Aimovie.jpg",
-      "/Aimovie.jpg"
+      "/darchabab1.png",
+      "/darchabab2.png",
+      "/darchabab3.png",
+      "/darchabab4.png",
+      "/darchabab5.png"
     ],
-    category: "full Stack",
+    category: "Frontend",
     date: "2026",
-    duration: "2 Months",
-    role: "Full Stack & Machine Learning Engineer",
+    duration: "1 Month",
+    role: "Frontend Developer & UI/UX Designer",
     status: "Completed",
-    preview: "https://github.com/Noufel-sf/Movie_Recommendation_System",
-    github: "https://github.com/Noufel-sf/Movie_Recommendation_System",
+    preview: "https://dar-chabab.vercel.app/",
+    github: "https://dar-chabab.vercel.app/",
     tech: {
       frontend: [
-        "Next.js 15",
+        "Next.js",
         "React",
         "TypeScript",
         "Tailwind CSS",
-        "Radix UI",
-        "Lucide React"
+        "Framer Motion",
+        "Lucide Icons"
       ],
-      backend: [
-        "FastAPI",
-        "Python 3.12",
-        "Matrix Factorization (SGD)",
-        "TF-IDF & Cosine Similarity",
-        "Uvicorn",
-        "Pytest"
-      ],
-      database: [
-        "PostgreSQL 16",
-        "pgvector (HNSW Index)",
-        "Parquet Datasets",
-        "MovieLens 100k + TMDB"
-      ],
-      deployment: [
-        "Docker & Docker Compose",
-        "REST API (/api/v1)",
-        "Vercel",
-        "Uvicorn ASGI"
-      ],
+      deployment: ["Vercel"],
     },
     features: [
       {
-        title: "Multi-Stage ML Recommendation Engine",
+        title: "Hero Storytelling & Announcement Slider",
         description:
-          "Hybrid ensemble combining 60% Matrix Factorization (Latent SGD k=20), 25% Content-Based TF-IDF, and 15% IMDb Bayesian popularity baseline.",
+          "High-impact introductory showcase with dynamic announcements, call-to-action triggers, and responsive hero carousel.",
       },
       {
-        title: "Cold-Start Interactive Onboarding (User #999)",
+        title: "Interactive Specialized Youth Clubs Marquee",
         description:
-          "Instant taste centroid vector projection calculated across seed movies in 6 core genres to activate zero-history user profiles without retraining.",
+          "Continuous smooth horizontal ticker slider highlighting specialized clubs in robotics, theatre, music, digital arts, and volunteering.",
       },
       {
-        title: "Dense Vector Embeddings & pgvector HNSW",
+        title: "Values & Institutional Pillars 3D Cards",
         description:
-          "64-dimensional dense vectors combining genre distributions, rating priors, and title projections with sub-millisecond approximate nearest neighbor search.",
+          "Engaging 3D hover cards illustrating institutional pillars including inclusivity, youth empowerment, cognitive curiosity, and civic responsibility.",
       },
       {
-        title: "Transparent Recommendation Explainability",
+        title: "Interactive 3D Carousel & Memory Album",
         description:
-          "Model-derived rationales for every item indicating whether recommendations stem from latent factor alignment, content similarity, or community popularity.",
+          "Dynamic card carousel and photo memory album documenting community events, childhood workshops, and youth achievements.",
       },
       {
-        title: "High-Throughput FastAPI REST Gateway",
+        title: "Seamless RTL Arabic Typography & UI/UX",
         description:
-          "Dual-route endpoints (/api/v1/...) supporting paginated catalogs, semantic similarity, real-time ratings, watch telemetry, and interactive OpenAPI Swagger docs.",
+          "Fully accessible Right-to-Left Arabic typography, tailored color theory (Forest Green #007A3D and Warm Amber #D48B28), and micro-haptics.",
       },
       {
-        title: "Next.js 15 Streaming Interface",
+        title: "Fast Inquiries & Registration Portal",
         description:
-          "Modern streaming UI with dynamic genre filtering, real-time user taste profiles, interactive modals, and responsive catalog browsing.",
+          "Direct contact channels, interactive club exploration routes, and responsive mobile navigation drawer.",
       },
     ],
     architecture: {
       frontend: [
-        "Next.js 15 App Router",
+        "Next.js App Router",
         "React 19 & TypeScript",
-        "Tailwind CSS & Radix UI",
-        "Client-Side State & Streaming"
+        "Tailwind CSS",
+        "Framer Motion Hardware Acceleration"
       ],
-      backend: [
-        "FastAPI Asynchronous Gateway",
-        "Decoupled RecommendationEngineService",
-        "Multi-Model Ensemble Pipeline",
-        "Pydantic Validation"
-      ],
-      database: [
-        "PostgreSQL 16 + pgvector",
-        "HNSW Cosine Index (m=16, ef=64)",
-        "Optimized B-tree & Composite Indexes",
-        "MovieLens 100k + TMDB Parquet Caches"
-      ],
+   
       deployment: [
-        "Docker Containerization",
-        "Uvicorn ASGI Server",
-        "Pytest ML & API Test Suite"
+        "Vercel ",
       ],
     },
     challenges: [
       {
         problem:
-          "Eliminating the cold-start barrier for new users with zero interaction history.",
+          "Designing an authentic Arabic RTL interface that feels fluid, contemporary, and visually engaging without layout shifts or text alignment glitches.",
         solution:
-          "Engineered an onboarding survey that projects seed movie choices into a mathematical taste centroid vector (C_u), instantly generating personalized recommendations.",
+          "Implemented strict RTL direction tokens, custom Arabic typography pairings, and bidirectional Flexbox/Grid layouts.",
       },
       {
         problem:
-          "Performing real-time similarity search across large embedding spaces without latency degradation.",
+          "Delivering buttery smooth 60fps animations across complex photo sliders and infinite club marquees on low-powered mobile devices.",
         solution:
-          "Implemented 64-dimensional dense L2-normalized embeddings paired with PostgreSQL pgvector HNSW index, achieving sub-millisecond approximate nearest neighbor lookups.",
+          "Leveraged Framer Motion layout animations and hardware-accelerated CSS transform3d infinite tracks with hover-pause states.",
       },
       {
         problem:
-          "Balancing accuracy with discovery in recommendation lists (avoiding over-fitting to narrow user history).",
+          "Optimizing heavy cultural photography and gallery assets for fast mobile loading across mobile networks.",
         solution:
-          "Created a weighted hybrid ensemble blending collaborative filtering (SVD), content-based TF-IDF features, and time-decay exponential popularity.",
+          "Utilized Next.js Image optimization with responsive WebP generation, blur placeholders, and progressive lazy loading.",
       },
     ],
     learnings: [
-      "Designing and implementing production-grade recommendation systems from Bayesian baselines to matrix factorization and hybrid ensembles.",
-      "Working with pgvector and tuning HNSW indexing parameters (m, ef_construction) for sub-millisecond vector similarity.",
-      "Building asynchronous, high-throughput machine learning inference APIs with FastAPI and Pydantic.",
-      "Cold-start resolution techniques using taste centroid synthesis and interactive user onboarding.",
+      "Mastering modern RTL web design and Arabic typography hierarchy in Next.js and Tailwind CSS.",
+      "Crafting high-engagement youth community interfaces with fluid Framer Motion micro-interactions.",
+      "Building accessible, high-performance institutional websites with perfect Core Web Vitals.",
+      "Translating client requirements into clean, scalable frontend architecture for real-world cultural organizations.",
     ],
   },
 ];
