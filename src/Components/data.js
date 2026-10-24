@@ -1702,4 +1702,138 @@ export const PROJECTS = [
       "Translating client requirements into clean, scalable frontend architecture for real-world cultural organizations.",
     ],
   },
+
+  {
+    id: 14,
+    slug: "noor-desktop-prayer-assistant",
+    name: "Noor (نور) — Desktop Prayer & Daily Dikr Companion",
+    subtitle:
+      "A distraction-free, cross-platform desktop application built with Electron 34, React 18, and TypeScript to help developers maintain daily prayers and spiritual habits while working.",
+    desc: "A lightweight cross-platform desktop application built with Electron 34, React 18, TypeScript, and Tailwind CSS. Designed specifically for developers and desk workers to stay mindful of daily prayers without workflow interruptions. Features accurate offline Adhan.js calculation, floating desktop mini-widget, Quran reader with progress tracking, interactive electronic Tasbih, Adhkar collections, Qibla compass, and Hijri calendar.",
+    overview:
+      "Noor (نور) is a calming, distraction-free desktop companion engineered for developers and professionals who spend long hours in front of screens. Built with Electron 34, React 18, TypeScript, and Vite, the application addresses the common problem of losing track of prayer times during intense coding or work sessions. It operates 100% offline using Adhan.js for multi-method prayer calculations and Web Audio API for customizable Adhan audio alerts. In addition to a persistent floating desktop mini-widget that always indicates the next prayer and countdown, Noor features a Quranic reading tracker with last-read bookmarking and daily ayah tafsir, an interactive digital Tasbih with morning/evening/post-prayer Adhkar, dynamic Qibla compass direction, dual Hijri/Gregorian calendars, and responsive dark/light modes designed for minimal CPU and memory overhead.",
+    image: "/dikr1.png",
+    images: [
+      "/dikr1.png",
+      "/dikr2.png",
+      "/dikr3.png",
+      "/dikr4.png",
+      "/dikr5.png"
+    ],
+    category: "Desktop App",
+    date: "October 2026",
+    duration: "1 Month",
+    role: "Desktop & Frontend Developer",
+    status: "Completed",
+    preview: "https://github.com/Noufel-sf/salah-reminder",
+    github: "https://github.com/Noufel-sf/salah-reminder",
+    tech: {
+      frontend: [
+        "React 18",
+        "TypeScript",
+        "Tailwind CSS",
+        "Lucide React",
+        "Vite"
+      ],
+      backend: [
+        "Electron 34",
+        "Node.js",
+        "Adhan.js",
+        "Web Audio API",
+        "Electron IPC"
+      ],
+      database: [
+        "Local Storage",
+        "JSON Store",
+        "Offline-First Storage"
+      ],
+      deployment: [
+        "Electron Builder",
+        "GitHub Releases",
+        "Cross-Platform (Windows / Linux / macOS)"
+      ],
+    },
+    features: [
+      {
+        title: "Accurate Prayer Times & Audio Adhan",
+        description:
+          "Multi-convention prayer calculation via Adhan.js with configurable calculation methods, automatic location-based timings, and customizable Adhan sound notifications.",
+      },
+      {
+        title: "Floating Desktop Mini-Widget",
+        description:
+          "A compact, draggable always-on-top desktop widget displaying upcoming prayer times and a live countdown to keep developers mindful without window switching.",
+      },
+      {
+        title: "Quran Reading Tracker & Daily Ayah",
+        description:
+          "Track Quranic reading progression, automatically save last-read bookmarks, and explore a daily featured Ayah with concise Tafsir reflection.",
+      },
+      {
+        title: "Daily Adhkar & Interactive Electronic Tasbih",
+        description:
+          "Curated morning, evening, and post-prayer Adhkar collections paired with a tactile, interactive digital counter for mindful Tasbih.",
+      },
+      {
+        title: "Qibla Compass & Dual Hijri Calendar",
+        description:
+          "Accurate Qibla direction calculation based on geographic coordinates alongside synchronized Hijri and Gregorian calendar tracking.",
+      },
+      {
+        title: "Distraction-Free Dark/Light Interface",
+        description:
+          "Calming modern aesthetics with smooth dark and light themes, engineered for near-zero idle CPU and memory consumption during intensive work.",
+      },
+    ],
+    architecture: {
+      frontend: [
+        "React 18 Single-Page Application",
+        "TypeScript Strict Typings",
+        "Tailwind CSS Dark/Light Theming",
+        "Lucide React UI Icons"
+      ],
+      backend: [
+        "Electron 34 Main & Preload Process Architecture",
+        "Secure IPC Channel Synchronization",
+        "Adhan.js Astronomical Prayer Calculations",
+        "Web Audio API Sound Engine"
+      ],
+      database: [
+        "Persistent Local Storage",
+        "Zero-Cloud Dependency (100% Offline Capability)",
+        "JSON Configuration Cache"
+      ],
+      deployment: [
+        "Electron Builder Packaging Pipeline",
+        "Portable Executables (Windows, macOS, Linux)",
+        "Open-Source GitHub Repository Distribution"
+      ],
+    },
+    challenges: [
+      {
+        problem:
+          "Designing non-intrusive desktop notifications that alert the user without interrupting deep coding flow or stealing window focus.",
+        solution:
+          "Engineered an always-on-top borderless floating mini-widget with smooth countdown transitions, coupled with gentle background Web Audio chime alerts.",
+      },
+      {
+        problem:
+          "Ensuring total offline reliability for accurate prayer calculations anywhere in the world without third-party API dependencies.",
+        solution:
+          "Embedded Adhan.js directly within the client bundle, enabling mathematical astronomical calculation across multiple international conventions directly on-device.",
+      },
+      {
+        problem:
+          "Minimizing memory and CPU footprint so the application can run in the background all day alongside heavy developer IDEs and dev servers.",
+        solution:
+          "Decoupled calculation intervals from the render loop, purged unnecessary Electron modules, and utilized lightweight SVG icons and native browser Web Audio APIs.",
+      },
+    ],
+    learnings: [
+      "Building robust, cross-platform desktop applications with Electron 34, React 18, and Vite.",
+      "Designing secure, bi-directional IPC (Inter-Process Communication) protocols between main and renderer processes.",
+      "Implementing astronomical algorithms and timezone calculations with Adhan.js.",
+      "Developing distraction-free floating desktop widgets and background audio notifications.",
+    ],
+  },
 ];

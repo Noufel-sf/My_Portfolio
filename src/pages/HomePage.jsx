@@ -57,22 +57,22 @@ const SKILLS = [
 ];
 const PROJECTS = [
   {
+    name: "Noor (نور) — Desktop Prayer & Dikr App",
+    desc: "Offline cross-platform desktop application built with Electron 34, React 18, and Adhan.js",
+    date: "Oct 2026",
+    tag: "Desktop",
+  },
+  {
     name: "Full stack Ecommerce project",
     desc: "A solution for stores to turn thier work online",
     date: "Oct 2026",
     tag: "B2B",
   },
   {
-    name: "Mern stack Social media website",
-    desc: "social media website to practise websocket and enhance my mern stack skills",
-    date: "Sept 2025",
-    tag: "Personal",
-  },
-  {
     name: "Association club website",
     desc: "A landing pages for a club website to facilate registerations and organizing human resources",
     date: "2024",
-    tag: "Freelance",
+    tag: "Community",
   },
 ];
 const EDUCATION = [
