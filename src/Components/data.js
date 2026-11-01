@@ -1836,4 +1836,128 @@ export const PROJECTS = [
       "Developing distraction-free floating desktop widgets and background audio notifications.",
     ],
   },
+
+  {
+    id: 15,
+    slug: "devscope-github-profile-auditor",
+    name: "DevScope — AI GitHub Profile & Repo Auditor",
+    subtitle:
+      "A deterministic engineering review platform & retro arcade auditing suite powered by Gemini AI and Next.js.",
+    desc: "An AI-powered GitHub profile and repository auditor featuring deterministic code health scores, 8-bit arcade aesthetics, and actionable RPG improvement roadmaps.",
+    overview:
+      "DevScope is a production-grade developer auditing suite that evaluates GitHub profiles and individual repositories with engineering rigor. Combining a deterministic multi-metric scoring engine (covering documentation completeness, repository hygiene, architecture patterns, and CI/CD automation) with Google Gemini AI qualitative insights, DevScope turns developer portfolio reviews into an interactive retro arcade experience. Built with Next.js App Router, React 19, TypeScript, and the 8bitcn component library, it delivers 5-category deterministic audits, single-repo deep scans, gamified RPG quest roadmaps, and embeddable SVG badges.",
+    image: "/github1.png",
+    images: [
+      "/github1.png",
+      "/github2.PNG",
+      "/github3.PNG",
+      "/github4.PNG",
+      "/github5.PNG"
+    ],
+    category: "full Stack",
+    date: "2026",
+    duration: "1 Month",
+    role: "Full Stack Developer & Architect",
+    status: "Completed",
+    preview: "https://git-hub-profile-auditor.vercel.app/",
+    github: "https://github.com/Noufel-sf/GitHub-Profile-Auditor",
+    tech: {
+      frontend: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "8bitcn UI",
+        "Framer Motion",
+        "Recharts",
+        "Lucide Icons"
+      ],
+      backend: [
+        "Next.js Route Handlers",
+        "GitHub REST API",
+        "GitHub GraphQL API",
+        "Google Gemini AI",
+        "Axios"
+      ],
+      deployment: [
+        "Vercel",
+      ],
+    },
+    features: [
+      {
+        title: "Deterministic 5-Metric Profile Scoring",
+        description:
+          "Evaluates documentation hygiene, repository health, engineering indicators, and commit velocity using objective deterministic heuristics.",
+      },
+      {
+        title: "Single Repository Deep-Dive Auditor",
+        description:
+          "Scans repository file trees, README completeness, CI/CD workflow automation (.github/workflows), test suites (Jest, Vitest, Pytest), and OSI license compliance.",
+      },
+      {
+        title: "Gemini AI Qualitative Engineering Insights",
+        description:
+          "Generates tailored qualitative analysis, architectural critique, recruiter perception breakdowns, and evidence-backed developer feedback.",
+      },
+      {
+        title: "Gamified RPG Quest Roadmap",
+        description:
+          "Translates audit weaknesses into actionable RPG-style development quests with difficulty tiers, XP progression, and achievement tracking.",
+      },
+      {
+        title: "8-Bit Retro Arcade Design System",
+        description:
+          "Crafted with 8bitcn, nostalgic pixel typography, scanline CRT overlays, arcade sound effects (SFX), and interactive neon cybernetic elements.",
+      },
+      {
+        title: "Dynamic SVG Badges & Public Benchmarks",
+        description:
+          "Generates live markdown badges for GitHub READMEs, real-time developer comparisons, and showcases top community audits.",
+      },
+    ],
+    architecture: {
+      frontend: [
+        "Next.js App Router & React 19",
+        "8bitcn & Custom Tailwind Tokens",
+        "Framer Motion & Canvas Confetti",
+        "Recharts Radar & Visual Metrics"
+      ],
+      backend: [
+        "Next.js API Route Handlers",
+        "GitHub REST & GraphQL Client with Caching",
+        "Google Gemini AI Inference Service",
+        "Dynamic SVG Badge Generation Endpoint"
+      ],
+      deployment: [
+        "Vercel Edge Platform",
+        "GitHub CI/CD Automation"
+      ],
+    },
+    challenges: [
+      {
+        problem:
+          "Handling GitHub REST and GraphQL API rate limits while aggregating rich multi-repository analytics across active developers.",
+        solution:
+          "Implemented intelligent caching, selective field querying via GraphQL, and graceful fallback mechanisms to ensure instant response times without hitting rate caps.",
+      },
+      {
+        problem:
+          "Balancing playful 8-bit retro arcade aesthetics with clean, high-density engineering data visualization without compromising readability.",
+        solution:
+          "Paired pixel-art accents and CRT scanlines with modern sans-serif typography (Space Grotesk & Inter) for reports, accompanied by interactive radar charts and collapsible audit tiers.",
+      },
+      {
+        problem:
+          "Preventing generic AI hallucinations in profile feedback and ensuring actionable, grounded developer advice.",
+        solution:
+          "Engineered a deterministic evaluation pipeline that pre-computes concrete metrics and file facts before feeding them into Gemini prompts for verifiable, evidence-based recommendations.",
+      },
+    ],
+    learnings: [
+      "Mastering Next.js App Router and React 19 architecture for data-dense developer productivity tools.",
+      "Designing hybrid scoring architectures combining deterministic heuristic algorithms with generative AI synthesis.",
+      "Crafting distinctive, theme-driven retro UI experiences using 8bitcn and custom Tailwind design tokens.",
+      "Building robust API layers interacting with GitHub's REST and GraphQL APIs with caching and error resilience.",
+    ],
+  },
 ];
